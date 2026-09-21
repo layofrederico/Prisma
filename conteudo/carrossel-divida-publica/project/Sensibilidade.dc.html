@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Sensibilidade</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+body { margin: 0; background: #0E1116; }
+a { color: #E0A340; } a:hover { color: #C96F4A; }
+</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; box-sizing: border-box; padding: 76px 84px; background: #0E1116; color: #F4F1EA; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 30px;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.22em; color: #9AA0A8;">PRISMA CONTÁBIL</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.14em; color: #E0A340;">09/10</span>
+  </div>
+  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px; min-height: 0;">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: 0.2em; color: #E0A340;">8. SENSIBILIDADE</div>
+    <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 66px; line-height: 1.04; letter-spacing: -0.01em; color: #F4F1EA;">Nenhuma variável<br>resolve sozinha</h1>
+    <div>
+      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
+        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">PIB nominal 5,00% a.a.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">+5,00 p.p.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">cenário adverso</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
+        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">PIB nominal 6,60% a.a.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">+3,70 p.p.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">caso-base</span>
+      </div>
+      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
+        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">PIB nominal 8,00% a.a.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">+2,59 p.p.</span>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">cenário favorável</span>
+      </div>
+    </div>
+    <div style="background: #151A21; border: 1px solid #262B33; border-radius: 14px; padding: 30px;">
+      <div style="font-size: 25px; line-height: 1.5; color: #F4F1EA;">Cada <b>&#8722;1 p.p.</b> no custo implícito da dívida reduz o crescimento do indicador em <b style="color:#E0A340">0,77 p.p. do PIB ao ano</b>. Mesmo no cenário favorável, a dívida continua subindo sem primário positivo.</div>
+    </div>
+  </div>
+  <div style="border-top: 1px solid #262B33; padding-top: 18px; font-size: 16px; line-height: 1.45; color: #9AA0A8;">Variação isolada do PIB nominal, mantidos i = 10,51% e s = &#8722;0,67% do PIB. Cálculo do autor.</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

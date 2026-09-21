@@ -1,0 +1,106 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-21T00:18:33Z"
+  },
+  "title": "Carrossel — A dívida do Brasil lida como balanço",
+  "launch": {
+    "view": "canvas"
+  },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "01 Capa"
+    },
+    "Passivo.dc.html": {
+      "x": 1160,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "02 O passivo"
+    },
+    "DRE.dc.html": {
+      "x": 2320,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "03 A DRE"
+    },
+    "Cobertura.dc.html": {
+      "x": 3480,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "04 Cobertura de juros"
+    },
+    "Indexacao.dc.html": {
+      "x": 4640,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "05 Indexação"
+    },
+    "Equacao.dc.html": {
+      "x": 0,
+      "y": 1200,
+      "w": 1080,
+      "h": 1080,
+      "title": "06 A equação"
+    },
+    "Calculo.dc.html": {
+      "x": 1160,
+      "y": 1200,
+      "w": 1080,
+      "h": 1080,
+      "title": "07 O cálculo"
+    },
+    "Ajuste.dc.html": {
+      "x": 2320,
+      "y": 1200,
+      "w": 1080,
+      "h": 1080,
+      "title": "08 O ajuste"
+    },
+    "Sensibilidade.dc.html": {
+      "x": 3480,
+      "y": 1200,
+      "w": 1080,
+      "h": 1080,
+      "title": "09 Sensibilidade"
+    },
+    "Aplicacao.dc.html": {
+      "x": 4640,
+      "y": 1200,
+      "w": 1080,
+      "h": 1080,
+      "title": "10 Aplicação"
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Passivo.dc.html",
+    "DRE.dc.html",
+    "Cobertura.dc.html",
+    "Indexacao.dc.html",
+    "Equacao.dc.html",
+    "Calculo.dc.html",
+    "Ajuste.dc.html",
+    "Sensibilidade.dc.html",
+    "Aplicacao.dc.html"
+  ],
+  "notes": {
+    "cap": {
+      "x": 0,
+      "y": -300,
+      "text": "Carrossel 1080×1080 · dados de julho/2026 · posição em 21/09/2026",
+      "kind": "title1",
+      "maxW": 5720
+    }
+  },
+  "designSystems": []
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>O tamanho do ajuste</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<style>
+body { margin: 0; background: #0E1116; }
+a { color: #E0A340; } a:hover { color: #C96F4A; }
+</style>
+</helmet>
+<div style="width: 1080px; height: 1080px; box-sizing: border-box; padding: 76px 84px; background: #0E1116; color: #F4F1EA; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 30px;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.22em; color: #9AA0A8;">PRISMA CONTÁBIL</span>
+    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.14em; color: #E0A340;">08/10</span>
+  </div>
+  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px; min-height: 0;">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: 0.2em; color: #E0A340;">7. O TAMANHO DO AJUSTE</div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-weight: 500; font-size: 110px; line-height: 1; letter-spacing: -0.03em; color: #E0A340;">3,03% do PIB</div>
+      <div style="font-size: 26px; line-height: 1.4; color: #F4F1EA;">de superávit primário — apenas para <b>estabilizar</b> a dívida em 82,5%</div>
+    </div>
+    <div style="background: #151A21; border: 1px solid #262B33; border-radius: 14px; padding: 30px;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 26px; line-height: 1.75; color: #F4F1EA;">3,03% &#215; R$ 13,27 tri = <b style="color:#E0A340">R$ 402 bi por ano</b></div>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 24px; line-height: 1.75; color: #9AA0A8;">Esforço sobre o resultado atual: <b>R$ 491 bi</b></div>
+    </div>
+    <p style="margin: 0; font-size: 26px; line-height: 1.52; color: #F4F1EA;">A meta da <b>LDO 2026</b> é superávit de <b>0,25% do PIB</b> (R$ 34,3 bi). O necessário para estabilizar é <b>cerca de 12 vezes a meta vigente</b> — e estabilizar não significa reduzir.</p>
+  </div>
+  <div style="border-top: 1px solid #262B33; padding-top: 18px; font-size: 16px; line-height: 1.45; color: #9AA0A8;">PIB nominal implícito de R$ 13,27 tri derivado de R$ 10,947 tri &#247; 82,5%. Meta: LDO 2026, banda de &#177;0,25 p.p. do PIB (LC 200/2023).</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
