@@ -57,3 +57,28 @@ i = 10,51% (8,67 ÷ 82,5), g = 6,60% (premissa) e d = 82,5% → superávit prim�
 3,03% do PIB ≈ R$ 402 bi/ano. Confronto com os 4,4% do PIB de benefícios federais é
 o que sustenta o slide 04. Teste de sanidade: o modelo projeta +3,70 p.p./ano contra
 +3,9 p.p. observados pelo BC em 12 meses.
+
+## Versão visual e animada (set/2026)
+
+Cada slide passou a ter uma figura de dados em SVG, com objetos em movimento
+(CSS): barras que crescem, a escada do ICMS caindo ano a ano, o fluxo da
+bifurcação do fundo, o marcador "hoje" pulsando na régua do prazo.
+
+Paleta de dados validada com `scripts/validate_palette.js` da skill dataviz
+(modo dark, superfície `#01066A`) — 5 de 5 checks aprovados:
+
+| Papel | Hex |
+|---|---|
+| Destaque / alerta | `#DE3A76` |
+| Série principal | `#1B8CC8` |
+| Comparação | `#B67D0A` |
+| Positivo | `#159B70` |
+
+O gradiente pastel do logo fica restrito a elemento decorativo (barras do
+cabeçalho e do rodapé); dado nunca usa cor decorativa.
+
+### Artboard interativo
+
+`project/Quiz.dc.html` — triagem de onerosidade em três perguntas com botões,
+resultado condicional e chamada para contato. Marcado com `is_interactive`.
+Serve como página de link na bio; não vai para o feed como imagem.

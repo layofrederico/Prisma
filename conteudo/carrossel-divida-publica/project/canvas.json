@@ -23,7 +23,7 @@
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "02 R$ 3,1 bi por dia"
+      "title": "02 Juros x meta"
     },
     "DRE.dc.html": {
       "x": 2320,
@@ -44,7 +44,7 @@
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "05 2029 a 2032"
+      "title": "05 Escada do ICMS"
     },
     "Equacao.dc.html": {
       "x": 0,
@@ -58,14 +58,14 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Os três filtros"
+      "title": "07 Os filtros"
     },
     "Ajuste.dc.html": {
       "x": 2320,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 Prazo 31/12/2028"
+      "title": "08 Restam 27 meses"
     },
     "Sensibilidade.dc.html": {
       "x": 3480,
@@ -80,6 +80,14 @@
       "w": 1080,
       "h": 1350,
       "title": "10 Chamada"
+    },
+    "Quiz.dc.html": {
+      "x": 0,
+      "y": 2940,
+      "w": 1080,
+      "h": 1350,
+      "title": "Teste interativo — link da bio",
+      "is_interactive": true
     }
   },
   "order": [
@@ -92,7 +100,8 @@
     "Calculo.dc.html",
     "Ajuste.dc.html",
     "Sensibilidade.dc.html",
-    "Aplicacao.dc.html"
+    "Aplicacao.dc.html",
+    "Quiz.dc.html"
   ],
   "notes": {
     "cap": {
@@ -101,7 +110,15 @@
       "w": 240,
       "x": 0,
       "y": -300,
-      "text": "Carrossel 1080×1350 · brand Prisma · dados de julho/2026"
+      "text": "Carrossel 1080×1350 · dez slides para o feed"
+    },
+    "int": {
+      "kind": "title1",
+      "maxW": 1080,
+      "w": 240,
+      "x": 0,
+      "y": 2640,
+      "text": "Versão interativa — para o link da bio"
     }
   },
   "designSystems": []

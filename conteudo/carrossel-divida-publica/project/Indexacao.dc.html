@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Data marcada</title>
+<title>Escada do ICMS</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -12,25 +12,60 @@
 <style>
 body { margin: 0; background: #01066A; }
 a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
+@keyframes riseIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@keyframes growX { 0%, 6% { transform: scaleX(0); } 42%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+@keyframes growY { 0%, 6% { transform: scaleY(0); } 42%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.3); } }
+@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes flowDash { to { stroke-dashoffset: -40; } }
+@keyframes fadeCycle { 0%, 12% { opacity: 0; } 30%, 88% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes slideRight { 0%, 8% { transform: translateX(-14px); opacity: 0; } 35%, 92% { transform: none; opacity: 1; } 100% { transform: translateX(-14px); opacity: 0; } }
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+.rise { animation: riseIn 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.grow-x { transform-box: fill-box; transform-origin: left center; animation: growX 6s ease-in-out infinite; }
+.grow-y { transform-box: fill-box; transform-origin: bottom center; animation: growY 6s ease-in-out infinite; }
+.pulse { animation: pulseDot 2.2s ease-in-out infinite; }
+.float { animation: floatY 4.5s ease-in-out infinite; }
+.flow { stroke-dasharray: 10 10; animation: flowDash 1.3s linear infinite; }
+.cycle { animation: fadeCycle 6s ease-in-out infinite; }
+.slide-r { animation: slideRight 6s ease-in-out infinite; }
+.breathe { animation: breathe 3.4s ease-in-out infinite; }
 </style>
 </helmet>
-<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 64px 92px 60px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 60px 84px 56px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 13px;">
+    <span style="font-size: 22px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+  </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;">
+    <h1 class="rise" style="margin: 0; font-size: 56px; font-weight: 700; line-height: 1.07; letter-spacing: -0.02em;">No ICMS isso não é<br>previsão. É calendário.</h1>
+    <svg viewBox="0 0 850 370" width="850" height="370" role="img" xmlns="http://www.w3.org/2000/svg">
+      <rect class="grow-y" style="animation-delay: 0.00s" x="0" y="58" width="108" height="210" rx="10" fill="#1B8CC8"></rect>
+      <text x="54.0" y="42.0" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">100%</text>
+      <text x="54.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">2028</text>
+      <rect class="grow-y" style="animation-delay: 0.35s" x="140" y="79" width="108" height="189" rx="10" fill="#1B8CC8"></rect>
+      <text x="194.0" y="63.0" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">90%</text>
+      <text x="194.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">2029</text>
+      <rect class="grow-y" style="animation-delay: 0.70s" x="280" y="100" width="108" height="168" rx="10" fill="#1B8CC8"></rect>
+      <text x="334.0" y="84.0" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">80%</text>
+      <text x="334.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">2030</text>
+      <rect class="grow-y" style="animation-delay: 1.05s" x="420" y="121" width="108" height="147" rx="10" fill="#1B8CC8"></rect>
+      <text x="474.0" y="105.0" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">70%</text>
+      <text x="474.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">2031</text>
+      <rect class="grow-y" style="animation-delay: 1.40s" x="560" y="142" width="108" height="126" rx="10" fill="#1B8CC8"></rect>
+      <text x="614.0" y="126.0" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#FFFFFF" text-anchor="middle">60%</text>
+      <text x="614.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">2032</text>
+      <rect class="pulse" x="700" y="262" width="108" height="6" rx="3" fill="#DE3A76"></rect>
+      <text x="754.0" y="246" font-family="Poppins, sans-serif" font-size="24" font-weight="700" fill="#DE3A76" text-anchor="middle">zero</text>
+      <text x="754.0" y="306" font-family="Poppins, sans-serif" font-size="27" font-weight="600" fill="#DE3A76" text-anchor="middle">2033</text>
+      <line x1="0" y1="272" x2="850" y2="272" stroke="rgba(255,255,255,0.14)" stroke-width="2"></line>
+      <text x="0" y="360" font-family="Poppins, sans-serif" font-size="24" font-weight="500" fill="rgba(255,255,255,0.56)" text-anchor="start">Quanto resta da alíquota de ICMS — e do benefício calculado sobre ela.</text>
+    </svg>
+    <p style="margin: 0; max-width: 840px; font-size: 21px; line-height: 1.4; color: rgba(255,255,255,0.56);">Transição da EC nº 132/2023: o ICMS é reduzido ano a ano e extinto em 2033.</p>
+  </div>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
-    <span style="font-size: 23px; font-weight: 600; letter-spacing: 0.44em; color: #FFFFFF;">PRISMA CONTÁBIL</span>
     <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
-  </div>
-  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;">
-    <h1 style="margin: 0; font-size: 60px; font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; color: #FFFFFF;">No ICMS, isso<br>não é previsão.<br>É data marcada.</h1>
-    <div style="font-size: 96px; font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: #FFFFFF;">2029 a 2032</div>
-    <p style="margin: 0; max-width: 830px; font-size: 34px; font-weight: 600; line-height: 1.36; color: #FFFFFF;">o ICMS cai ano a ano — e todo benefício calculado sobre ele cai junto.</p>
-    <div style="max-width: 840px; border: 2px solid rgba(255,255,255,0.28); border-radius: 22px; padding: 34px 40px;">
-      <p style="margin: 0; font-size: 34px; font-weight: 500; line-height: 1.38; color: #FFFFFF;">Crédito presumido, redução de base, diferimento: tudo que é percentual de ICMS encolhe no mesmo ritmo, até o imposto desaparecer em 2033.</p>
-    </div>
-    <p style="margin: 0; max-width: 840px; font-size: 22px; font-weight: 400; line-height: 1.4; color: rgba(255,255,255,0.58);">Transição da EC nº 132/2023.</p>
-  </div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
-    <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF;">@prismacontabilto</span>
+    <span style="font-size: 38px; font-weight: 600;">@prismacontabilto</span>
   </div>
 </div>
 </x-dc>
