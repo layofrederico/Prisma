@@ -40,6 +40,13 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .nudge { animation: nudgeX 1.6s ease-in-out infinite; }
 .cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
 @keyframes gaugeFill { 0%, 8% { stroke-dashoffset: 785.4; } 42%, 90% { stroke-dashoffset: 137.4; } 100% { stroke-dashoffset: 785.4; } }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
+
 </style>
 </helmet>
 <div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -59,7 +66,11 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
       <text x="320" y="230" font-family="Poppins, sans-serif" font-size="118" font-weight="800" fill="#FFFFFF" text-anchor="middle">{{ pib }}%</text>
       <text x="320" y="284" font-family="Poppins, sans-serif" font-size="30" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">do PIB</text>
     </svg>
-    <p class="rise" style="margin: 22px 0 0; max-width: 830px; font-size: 25px; line-height: 1.46; color: rgba(255,255,255,0.78); animation-delay: 0.5s;">O ponteiro mede quanto o Brasil deve em relação a tudo o que o país produz em um ano. Quanto mais perto de 100%, menor o espaço que sobra para investir, gastar ou reduzir imposto.</p>
+    <div style="position: relative; max-width: 860px; margin: 26px auto 0; padding: 26px 40px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 26px; font-weight: 500; line-height: 1.46; color: #FFFFFF;">O ponteiro mede quanto o Brasil deve em relação a tudo o que o país produz em um ano. Quanto mais perto de 100%, menor o espaço que sobra para investir, gastar ou reduzir imposto.</p>
+    </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
     <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 36px; font-weight: 600; line-height: 1.34;">Maior nível em 5 anos</span></div>
