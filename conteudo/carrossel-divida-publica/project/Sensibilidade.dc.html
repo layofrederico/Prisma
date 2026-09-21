@@ -39,12 +39,18 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
 .nudge { animation: nudgeX 1.6s ease-in-out infinite; }
 .cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
 
 </style>
 </helmet>
 <div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
@@ -57,13 +63,17 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
       <text x="177.27272727272725" y="96" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">2,0%</text>
       <text class="blink" x="570.2727272727273" y="96" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">2,4%</text>
       <line class="cut" x1="355" y1="10" x2="355" y2="158" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></line>
-      <text x="0" y="196" font-family="Poppins, sans-serif" font-size="24" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="start">teto que a lei manda alcançar</text>
-      <text x="780" y="196" font-family="Poppins, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="end">4,4% do PIB hoje</text>
+      <text x="0" y="196" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="start">teto que a lei manda alcançar</text>
+      <text x="780" y="196" font-family="Poppins, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="end">4,4% do PIB hoje</text>
     </svg>
-    <p class="rise" style="margin: 22px 0 0; max-width: 830px; font-size: 25px; line-height: 1.46; color: rgba(255,255,255,0.78); animation-delay: 0.5s;">A barra é tudo o que a União deixa de arrecadar em benefícios fiscais. A linha marca o teto que a lei manda alcançar — e a fatia rosa é exatamente o que precisa ser cortado para chegar lá.</p>
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">A barra é tudo o que a União deixa de arrecadar em benefícios fiscais. A linha marca o teto que a lei manda alcançar — e a fatia rosa é exatamente o que precisa ser cortado para chegar lá.</p>
+    </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
-    <div class="blink" style="display: inline-flex; align-items: center; gap: 16px; background: rgba(222,58,118,0.16); border: 3px solid #DE3A76; border-radius: 999px; padding: 20px 38px;"><span style="width: 14px; height: 14px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 30px; font-weight: 600;">Alvo de corte: 2,4% do PIB</span></div>
+    <div class="blink" style="display: inline-flex; align-items: center; gap: 16px; background: rgba(222,58,118,0.16); border: 3px solid #DE3A76; border-radius: 999px; padding: 20px 38px;"><span style="width: 14px; height: 14px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 33px; font-weight: 600;">Alvo de corte: 2,4% do PIB</span></div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
       <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>

@@ -39,12 +39,18 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
 .nudge { animation: nudgeX 1.6s ease-in-out infinite; }
 .cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
 @keyframes anelAbre { 0%, 8% { stroke-dashoffset: 942.5; } 42%, 90% { stroke-dashoffset: 460.8; } 100% { stroke-dashoffset: 942.5; } }
 </style>
 </helmet>
 <div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
@@ -55,16 +61,20 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
       <circle cx="220" cy="230" r="150" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="44"></circle>
       <circle cx="220" cy="230" r="150" fill="none" stroke="#B67D0A" stroke-width="44" stroke-linecap="butt" stroke-dasharray="942.5" stroke-dashoffset="460.8" transform="rotate(-90 220 230)" style="animation: anelAbre 6s cubic-bezier(0.22, 0.85, 0.3, 1) infinite;"></circle>
       <text x="220" y="220" font-family="Poppins, sans-serif" font-size="54" font-weight="800" fill="#FFFFFF" text-anchor="middle">51,11%</text>
-      <text x="220" y="262" font-family="Poppins, sans-serif" font-size="24" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">indexado à Selic</text>
+      <text x="220" y="262" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">indexado à Selic</text>
       <rect class="breathe" x="450" y="130" width="360" height="200" rx="22" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.26)" stroke-width="3"></rect>
       <text x="630" y="196" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">+1 p.p. de Selic</text>
       <text x="630" y="258" font-family="Poppins, sans-serif" font-size="50" font-weight="800" fill="#FFFFFF" text-anchor="middle">R$ 4,75 tri</text>
-      <text x="630" y="296" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#B67D0A" text-anchor="middle">reprecificados</text>
+      <text x="630" y="298" font-family="Poppins, sans-serif" font-size="29" font-weight="600" fill="#B67D0A" text-anchor="middle">reprecificados</text>
     </svg>
-    <p class="rise" style="margin: 22px 0 0; max-width: 830px; font-size: 25px; line-height: 1.46; color: rgba(255,255,255,0.78); animation-delay: 0.5s;">O anel representa toda a dívida federal. A fatia âmbar acompanha a Selic dia a dia: quando o juro sobe, essa metade encarece na hora, sem prazo e sem renegociação.</p>
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">O anel representa toda a dívida federal. A fatia âmbar acompanha a Selic dia a dia: quando o juro sobe, essa metade encarece na hora, sem prazo e sem renegociação.</p>
+    </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
-    <p style="margin: 0; max-width: 860px; font-size: 20px; line-height: 1.4; color: rgba(255,255,255,0.56);">Tesouro Nacional, Relatório Mensal da Dívida, julho/2026. Selic de 13,75% a.a.</p>
+    <p style="margin: 0; max-width: 880px; font-size: 26px; line-height: 1.42; color: rgba(255,255,255,0.56);">Tesouro Nacional, Relatório Mensal da Dívida, julho/2026. Selic de 13,75% a.a.</p>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
       <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>

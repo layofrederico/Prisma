@@ -39,12 +39,18 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
 .nudge { animation: nudgeX 1.6s ease-in-out infinite; }
 .cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
 
 </style>
 </helmet>
 <div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
@@ -53,30 +59,34 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <div style="width: 100%; max-width: 840px; display: flex; flex-direction: column; gap: 14px;">
       <div class="rise" style="animation-delay: 1.0s; width: 100%; display: flex; align-items: baseline; gap: 20px; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.26); border-radius: 16px; padding: 18px 28px; text-align: left;">
-        <span style="font-size: 29px; font-weight: 600; flex-grow: 1;">Vender parcelado</span>
-        <span style="font-size: 22px; color: rgba(255,255,255,0.78);">crédito que você concede</span>
+        <span style="font-size: 33px; font-weight: 600; flex-grow: 1;">Vender parcelado</span>
+        <span style="font-size: 27px; color: rgba(255,255,255,0.78);">crédito que você concede</span>
       </div>
       <div class="rise" style="animation-delay: 0.8s; width: 100%; display: flex; align-items: baseline; gap: 20px; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.26); border-radius: 16px; padding: 18px 28px; text-align: left;">
-        <span style="font-size: 29px; font-weight: 600; flex-grow: 1;">Financiar máquina</span>
-        <span style="font-size: 22px; color: rgba(255,255,255,0.78);">48 meses na parcela</span>
+        <span style="font-size: 33px; font-weight: 600; flex-grow: 1;">Financiar máquina</span>
+        <span style="font-size: 27px; color: rgba(255,255,255,0.78);">48 meses na parcela</span>
       </div>
       <div class="rise" style="animation-delay: 0.6s; width: 100%; display: flex; align-items: baseline; gap: 20px; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.26); border-radius: 16px; padding: 18px 28px; text-align: left;">
-        <span style="font-size: 29px; font-weight: 600; flex-grow: 1;">Capital de giro</span>
-        <span style="font-size: 22px; color: rgba(255,255,255,0.78);">renovação do limite</span>
+        <span style="font-size: 33px; font-weight: 600; flex-grow: 1;">Capital de giro</span>
+        <span style="font-size: 27px; color: rgba(255,255,255,0.78);">renovação do limite</span>
       </div>
       <div class="rise" style="animation-delay: 0.4s; width: 100%; display: flex; align-items: baseline; gap: 20px; background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.26); border-radius: 16px; padding: 18px 28px; text-align: left;">
-        <span style="font-size: 29px; font-weight: 600; flex-grow: 1;">Antecipar recebível</span>
-        <span style="font-size: 22px; color: rgba(255,255,255,0.78);">taxa da maquininha</span>
+        <span style="font-size: 33px; font-weight: 600; flex-grow: 1;">Antecipar recebível</span>
+        <span style="font-size: 27px; color: rgba(255,255,255,0.78);">taxa da maquininha</span>
       </div>
       <div class="breathe" style="margin-top: 16px; width: 100%; background: #FFFFFF; color: #01066A; border-radius: 18px; padding: 26px; display: flex; flex-direction: column; align-items: center; gap: 4px;">
         <span style="font-size: 40px; font-weight: 800;">Selic 13,75%</span>
-        <span style="font-size: 25px; font-weight: 600;">o piso de todo crédito do país</span>
+        <span style="font-size: 29px; font-weight: 600;">o piso de todo crédito do país</span>
       </div>
     </div>
-    <p class="rise" style="margin: 22px 0 0; max-width: 830px; font-size: 25px; line-height: 1.46; color: rgba(255,255,255,0.78); animation-delay: 0.5s;">Cada linha é uma operação que a sua empresa faz. Todas são precificadas a partir da mesma base: a Selic. Nenhum banco vai cobrar de você menos do que cobra do governo, que não dá calote.</p>
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">Cada linha é uma operação que a sua empresa faz. Todas são precificadas a partir da mesma base: a Selic. Nenhum banco vai cobrar de você menos do que cobra do governo, que não dá calote.</p>
+    </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
-    <p style="margin: 0; max-width: 860px; font-size: 20px; line-height: 1.4; color: rgba(255,255,255,0.56);">Taxa básica definida pelo Copom em 16/09/2026.</p>
+    <p style="margin: 0; max-width: 880px; font-size: 26px; line-height: 1.42; color: rgba(255,255,255,0.56);">Taxa básica definida pelo Copom em 16/09/2026.</p>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
       <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>

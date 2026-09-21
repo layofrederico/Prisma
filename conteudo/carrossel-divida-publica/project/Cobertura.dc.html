@@ -39,12 +39,18 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
 .nudge { animation: nudgeX 1.6s ease-in-out infinite; }
 .cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
 
 </style>
 </helmet>
 <div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
   <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
-    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
@@ -55,9 +61,13 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
       <rect class="grow-x" x="0" y="30" width="763" height="92" rx="14" fill="#DE3A76"></rect>
       <rect class="grow-x" style="animation-delay: 0.5s" x="766" y="30" width="54" height="92" rx="14" fill="#1B8CC8"></rect>
       <text class="cycle" x="381.29999999999995" y="92" font-family="Poppins, sans-serif" font-size="42" font-weight="700" fill="#FFFFFF" text-anchor="middle">93% juros</text>
-      <text x="820" y="166" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#1B8CC8" text-anchor="end">7% o resto</text>
+      <text x="820" y="166" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="#1B8CC8" text-anchor="end">7% o resto</text>
     </svg>
-    <p class="rise" style="margin: 22px 0 0; max-width: 830px; font-size: 25px; line-height: 1.46; color: rgba(255,255,255,0.78); animation-delay: 0.5s;">A barra inteira é o rombo das contas públicas no ano. A parte rosa é juro da dívida; a azul é todo o resto. Corte de despesa mexe apenas na ponta azul.</p>
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">A barra inteira é o rombo das contas públicas no ano. A parte rosa é juro da dívida; a azul é todo o resto. Corte de despesa mexe apenas na ponta azul.</p>
+    </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
     <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 34px; font-weight: 600; line-height: 1.34;">De cada R$ 100 que faltam, R$ 93 são juros</span></div>
