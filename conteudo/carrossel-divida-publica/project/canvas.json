@@ -91,12 +91,12 @@
       "title": "10 Fechamento",
       "is_interactive": true
     },
-    "Quiz.dc.html": {
+    "Calculadora.dc.html": {
       "x": 0,
       "y": 2940,
       "w": 1080,
       "h": 1350,
-      "title": "Teste interativo — link da bio",
+      "title": "Calculadora — link da bio",
       "is_interactive": true
     }
   },
@@ -111,7 +111,7 @@
     "Ajuste.dc.html",
     "Sensibilidade.dc.html",
     "Aplicacao.dc.html",
-    "Quiz.dc.html"
+    "Calculadora.dc.html"
   ],
   "notes": {
     "cap": {
