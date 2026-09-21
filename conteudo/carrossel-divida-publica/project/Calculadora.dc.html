@@ -38,11 +38,13 @@ input:focus { outline: 3px solid #8ED1F5; outline-offset: 2px; }
         <label for="fat" style="display: block; font-size: 24px; font-weight: 600; margin-bottom: 8px;">Vendas no cartão por mês</label>
         <input id="fat" type="number" min="0" step="1000" value="{{ fat }}" onChange="{{ mudarFat }}"
                style="width: 100%; box-sizing: border-box; background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); border-radius: 14px; color: #FFFFFF; font-size: 32px; font-weight: 600; padding: 16px 20px;">
+        <span style="display: block; margin-top: 6px; font-size: 21px; color: rgba(255,255,255,0.6);">{{ fatFmt }}</span>
       </div>
       <div style="width: 280px;">
         <label for="taxa" style="display: block; font-size: 24px; font-weight: 600; margin-bottom: 8px;">Taxa de antecipação (% ao mês)</label>
         <input id="taxa" type="number" min="0" step="0.1" value="{{ taxa }}" onChange="{{ mudarTaxa }}"
                style="width: 100%; box-sizing: border-box; background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.3); border-radius: 14px; color: #FFFFFF; font-size: 32px; font-weight: 600; padding: 16px 20px;">
+        <span style="display: block; margin-top: 6px; font-size: 21px; color: rgba(255,255,255,0.6);">{{ taxaFmt }} ao mês</span>
       </div>
     </div>
 
@@ -65,7 +67,7 @@ input:focus { outline: 3px solid #8ED1F5; outline-offset: 2px; }
 
   <div style="width: 100%; max-width: 900px; margin-top: 18px; border: 2px solid rgba(255,255,255,0.26); border-radius: 20px; padding: 22px 32px; text-align: left;">
     <p style="margin: 0; font-size: 25px; line-height: 1.42; color: rgba(255,255,255,0.86);">
-      Ao custo do governo, que hoje paga <b>13,75% ao ano</b>, esse mesmo parcelamento sairia por <b>{{ custoSelic }}</b>.
+      Ao custo do governo, que hoje paga <b>13,75% ao ano</b> — <b>{{ selicMes }}</b> ao mês —, esse mesmo parcelamento sairia por <b>{{ custoSelic }}</b>.
       A diferença, <b style="color: #FF8FB4;">{{ spread }}</b> por ano, é o que o intermediário cobra a mais de você.
     </p>
   </div>
@@ -100,7 +102,16 @@ class Component extends DCLogic {
   }
 
   brl(v) {
-    return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+    return v.toLocaleString('pt-BR', {
+      style: 'currency', currency: 'BRL',
+      minimumFractionDigits: 2, maximumFractionDigits: 2
+    });
+  }
+
+  num(v, casas) {
+    return v.toLocaleString('pt-BR', {
+      minimumFractionDigits: casas, maximumFractionDigits: casas
+    });
   }
 
   renderVals() {
@@ -129,9 +140,12 @@ class Component extends DCLogic {
       opcoes: opcoes,
       mudarFat: (e) => this.setState({ fat: e.target.value }),
       mudarTaxa: (e) => this.setState({ taxa: e.target.value }),
+      fatFmt: this.brl(fat),
+      taxaFmt: this.num(taxa, 2) + '%',
       custoAno: this.brl(ano),
       custoMes: this.brl(mes),
       custoSelic: this.brl(anoSelic),
+      selicMes: this.num(iSelic * 100, 4) + '%',
       spread: this.brl(ano - anoSelic),
       percentual: pct.toFixed(2).replace('.', ',') + '%'
     };
