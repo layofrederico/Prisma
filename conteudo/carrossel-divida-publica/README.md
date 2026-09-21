@@ -82,3 +82,30 @@ cabeçalho e do rodapé); dado nunca usa cor decorativa.
 `project/Quiz.dc.html` — triagem de onerosidade em três perguntas com botões,
 resultado condicional e chamada para contato. Marcado com `is_interactive`.
 Serve como página de link na bio; não vai para o feed como imagem.
+
+## Roteiro vigente — a dívida como tema (set/2026)
+
+| # | Slide | Gancho |
+|---|---|---|
+| 01 | Capa | R$ 10,9 trilhões · 82,5% do PIB, maior nível em 5 anos |
+| 02 | A velocidade | 78,6% → 82,5% do PIB em doze meses (+3,9 p.p.) |
+| 03 | Juros por dia | R$ 3,1 bi/dia; um mês de juros contra a meta de economia do ano |
+| 04 | Quase tudo é juro | R$ 93 de cada R$ 100 que faltam |
+| 05 | Metade pós-fixada | 51,11% da DPF acompanha a Selic; 1 p.p. reprecifica R$ 4,75 tri |
+| 06 | Por que cresce | Juro implícito 10,5% contra PIB nominal 6,6% |
+| 07 | Meta × conta | R$ 402 bi necessários contra R$ 34,3 bi de meta |
+| 08 | No seu caixa | Selic 13,75% como piso do crédito: recebível, giro, financiamento, parcelamento |
+| 09 | Benefício na mira | 4,4% do PIB em benefícios; lei manda reduzir a 2% |
+| 10 | Chamada | Fale com um contador |
+
+Artboard extra `Quiz.dc.html` (fora dos dez): triagem interativa de onerosidade
+de benefício de ICMS, para uso como página de link na bio.
+
+### Divergência de fonte a conferir
+
+A matéria secundária sobre o RMD de julho/2026 reporta a composição da DPF como
+Selic 51,11%, índices de preços 25,90%, prefixados 21,04% e câmbio 3,74% — soma
+de **101,79%**, portanto inconsistente. Por isso o slide 05 usa apenas o recorte
+"51,11% pós-fixado contra 48,89% do restante", que não depende da abertura
+completa. Conferir a composição no Relatório Mensal da Dívida original
+(tesourotransparente.gov.br) antes de publicar a abertura em quatro fatias.

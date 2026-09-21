@@ -5,7 +5,7 @@
     "at": "2026-09-21T00:18:33Z",
     "v": 1
   },
-  "title": "Carrossel — Seu benefício fiscal entrou na conta da dívida",
+  "title": "Carrossel — A dívida do Brasil e o caixa da sua empresa",
   "launch": {
     "view": "canvas"
   },
@@ -23,56 +23,56 @@
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "02 Juros x meta"
+      "title": "02 A velocidade"
     },
     "DRE.dc.html": {
       "x": 2320,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "03 Três saídas"
+      "title": "03 R$ 3,1 bi por dia"
     },
     "Cobertura.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "04 4,4% do PIB"
+      "title": "04 Quase tudo é juro"
     },
     "Indexacao.dc.html": {
       "x": 4640,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "05 Escada do ICMS"
+      "title": "05 Metade pós-fixada"
     },
     "Equacao.dc.html": {
       "x": 0,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "06 O fundo"
+      "title": "06 Por que cresce"
     },
     "Calculo.dc.html": {
       "x": 1160,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Os filtros"
+      "title": "07 Meta x conta"
     },
     "Ajuste.dc.html": {
       "x": 2320,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 Restam 27 meses"
+      "title": "08 No seu caixa"
     },
     "Sensibilidade.dc.html": {
       "x": 3480,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 O que fazer"
+      "title": "09 Benefício na mira"
     },
     "Aplicacao.dc.html": {
       "x": 4640,
