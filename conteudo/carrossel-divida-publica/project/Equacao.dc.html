@@ -2,56 +2,38 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>A equação da trajetória</title>
+<title>A conta que falta</title>
 <script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
 <helmet>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
 <style>
-body { margin: 0; background: #0E1116; }
-a { color: #E0A340; } a:hover { color: #C96F4A; }
+body { margin: 0; background: #01066A; }
+a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 </style>
 </helmet>
-<div style="width: 1080px; height: 1080px; box-sizing: border-box; padding: 76px 84px; background: #0E1116; color: #F4F1EA; font-family: 'IBM Plex Sans', system-ui, sans-serif; display: flex; flex-direction: column; gap: 30px;">
-  <div style="display: flex; justify-content: space-between; align-items: baseline;">
-    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.22em; color: #9AA0A8;">PRISMA CONTÁBIL</span>
-    <span style="font-family: 'IBM Plex Mono', monospace; font-size: 19px; letter-spacing: 0.14em; color: #E0A340;">06/10</span>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 64px 92px 60px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
+    <span style="font-size: 23px; font-weight: 600; letter-spacing: 0.44em; color: #FFFFFF;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
-  <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px; min-height: 0;">
-    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: 0.2em; color: #E0A340;">5. A EQUAÇÃO</div>
-    <div style="background: #151A21; border: 1px solid #262B33; border-radius: 14px; padding: 34px;">
-      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 40px; line-height: 1.5; text-align: center; color: #F4F1EA;">&#916;d = <span style="color:#E0A340">[ (i &#8722; g) &#247; (1 + g) ]</span> &#215; d&#8331;&#8321; &#8722; s</div>
-    </div>
-    <p style="margin: 0; font-size: 25px; line-height: 1.52; color: #F4F1EA;">A dívida sobre o PIB cresce quando o <b>juro real supera o crescimento</b>, e só recua quando o superávit primário cobre essa diferença. Não há terceira via aritmética.</p>
-    <div>
-      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
-        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">d&#8331;&#8321; &#183; estoque da dívida</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">82,5% do PIB</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">BCB jul/2026</span>
-      </div>
-      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
-        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">i &#183; juros implícitos</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">10,51% a.a.</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">8,67 &#247; 82,5</span>
-      </div>
-      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
-        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">g &#183; PIB nominal</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">6,60% a.a.</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">premissa</span>
-      </div>
-      <div style="display: flex; align-items: baseline; gap: 20px; padding: 16px 0; border-bottom: 1px solid #262B33;">
-        <span style="flex-grow: 1; font-size: 25px; color: #F4F1EA;">s &#183; resultado primário</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 27px; font-weight: 500; color: #F4F1EA; min-width: 210px; text-align: right;">&#8722;0,67% do PIB</span>
-        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 23px; color: #9AA0A8; min-width: 190px; text-align: right;">BCB jul/2026</span>
-      </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;">
+    <h1 style="margin: 0; font-size: 62px; font-weight: 700; line-height: 1.08; letter-spacing: -0.02em; color: #FFFFFF;">Para a dívida<br>parar de crescer</h1>
+    <p style="margin: 0; max-width: 820px; font-size: 34px; font-weight: 400; line-height: 1.42; color: rgba(255,255,255,0.78);">o governo precisaria sobrar, por ano:</p>
+    <div style="font-size: 126px; font-weight: 800; line-height: 1; letter-spacing: -0.04em; color: #FFFFFF;">R$ 400 bi</div>
+    <div style="max-width: 840px; border: 2px solid rgba(255,255,255,0.28); border-radius: 22px; padding: 34px 40px;">
+      <p style="margin: 0; font-size: 34px; font-weight: 500; line-height: 1.38; color: #FFFFFF;">Hoje não sobra — falta. E o buraco continua sendo coberto com dívida nova, que gera juro novo. É a bola de neve que todo empresário já viu no cheque especial.</p>
     </div>
   </div>
-  <div style="border-top: 1px solid #262B33; padding-top: 18px; font-size: 16px; line-height: 1.45; color: #9AA0A8;">Juros implícitos e PIB nominal são estimativas do autor a partir dos dados oficiais; o PIB nominal é premissa sujeita a sensibilidade (slide 09).</div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+    <span style="font-size: 40px; font-weight: 600; letter-spacing: -0.01em; color: #FFFFFF;">@prismacontabilto</span>
+  </div>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1080}}'>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
 class Component extends DCLogic {
   renderVals() { return {}; }
 }

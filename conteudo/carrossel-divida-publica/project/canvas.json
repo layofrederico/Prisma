@@ -1,10 +1,11 @@
 {
   "v": 3,
+  "attachments": {},
   "createdOnFiles": {
-    "v": 1,
-    "at": "2026-09-21T00:18:33Z"
+    "at": "2026-09-21T00:18:33Z",
+    "v": 1
   },
-  "title": "Carrossel — A dívida do Brasil lida como balanço",
+  "title": "Carrossel — A dívida do governo no caixa da sua empresa",
   "launch": {
     "view": "canvas"
   },
@@ -14,71 +15,71 @@
       "x": 0,
       "y": 0,
       "w": 1080,
-      "h": 1080,
+      "h": 1350,
       "title": "01 Capa"
     },
     "Passivo.dc.html": {
       "x": 1160,
       "y": 0,
       "w": 1080,
-      "h": 1080,
-      "title": "02 O passivo"
+      "h": 1350,
+      "title": "02 R$ 3,1 bi por dia"
     },
     "DRE.dc.html": {
       "x": 2320,
       "y": 0,
       "w": 1080,
-      "h": 1080,
-      "title": "03 A DRE"
+      "h": 1350,
+      "title": "03 De cada R$ 100"
     },
     "Cobertura.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
-      "h": 1080,
-      "title": "04 Cobertura de juros"
+      "h": 1350,
+      "title": "04 O piso do crédito"
     },
     "Indexacao.dc.html": {
       "x": 4640,
       "y": 0,
       "w": 1080,
-      "h": 1080,
-      "title": "05 Indexação"
+      "h": 1350,
+      "title": "05 No seu extrato"
     },
     "Equacao.dc.html": {
       "x": 0,
-      "y": 1200,
+      "y": 1470,
       "w": 1080,
-      "h": 1080,
-      "title": "06 A equação"
+      "h": 1350,
+      "title": "06 A conta que falta"
     },
     "Calculo.dc.html": {
       "x": 1160,
-      "y": 1200,
+      "y": 1470,
       "w": 1080,
-      "h": 1080,
-      "title": "07 O cálculo"
+      "h": 1350,
+      "title": "07 Três saídas"
     },
     "Ajuste.dc.html": {
       "x": 2320,
-      "y": 1200,
+      "y": 1470,
       "w": 1080,
-      "h": 1080,
-      "title": "08 O ajuste"
+      "h": 1350,
+      "title": "08 O que vem aí"
     },
     "Sensibilidade.dc.html": {
       "x": 3480,
-      "y": 1200,
+      "y": 1470,
       "w": 1080,
-      "h": 1080,
-      "title": "09 Sensibilidade"
+      "h": 1350,
+      "title": "09 Três perguntas"
     },
     "Aplicacao.dc.html": {
       "x": 4640,
-      "y": 1200,
+      "y": 1470,
       "w": 1080,
-      "h": 1080,
-      "title": "10 Aplicação"
+      "h": 1350,
+      "title": "10 Chamada"
     }
   },
   "order": [
@@ -95,11 +96,12 @@
   ],
   "notes": {
     "cap": {
+      "kind": "title1",
+      "maxW": 5720,
+      "w": 240,
       "x": 0,
       "y": -300,
-      "text": "Carrossel 1080×1080 · dados de julho/2026 · posição em 21/09/2026",
-      "kind": "title1",
-      "maxW": 5720
+      "text": "Carrossel 1080×1350 · brand Prisma · dados de julho/2026"
     }
   },
   "designSystems": []
