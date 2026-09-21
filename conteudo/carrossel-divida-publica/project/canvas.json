@@ -5,7 +5,7 @@
     "at": "2026-09-21T00:18:33Z",
     "v": 1
   },
-  "title": "Carrossel — A dívida do governo no caixa da sua empresa",
+  "title": "Carrossel — Seu benefício fiscal entrou na conta da dívida",
   "launch": {
     "view": "canvas"
   },
@@ -30,49 +30,49 @@
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "03 De cada R$ 100"
+      "title": "03 Três saídas"
     },
     "Cobertura.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "04 O piso do crédito"
+      "title": "04 4,4% do PIB"
     },
     "Indexacao.dc.html": {
       "x": 4640,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "05 No seu extrato"
+      "title": "05 2029 a 2032"
     },
     "Equacao.dc.html": {
       "x": 0,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "06 A conta que falta"
+      "title": "06 O fundo"
     },
     "Calculo.dc.html": {
       "x": 1160,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Três saídas"
+      "title": "07 Os três filtros"
     },
     "Ajuste.dc.html": {
       "x": 2320,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 O que vem aí"
+      "title": "08 Prazo 31/12/2028"
     },
     "Sensibilidade.dc.html": {
       "x": 3480,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 Três perguntas"
+      "title": "09 O que fazer"
     },
     "Aplicacao.dc.html": {
       "x": 4640,
