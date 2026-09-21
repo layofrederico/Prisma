@@ -1,0 +1,242 @@
+<title>Custo do parcelamento</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+  /* Identidade Prisma Contábil — peça de tema único, pintada explicitamente. */
+  :root {
+    --navy: #01066A;
+    --navy-fundo: #000640;
+    --navy-card: #0A1080;
+    --tinta: #FFFFFF;
+    --tinta-2: rgba(255, 255, 255, 0.78);
+    --tinta-3: rgba(255, 255, 255, 0.56);
+    --borda: rgba(255, 255, 255, 0.24);
+    --rosa: #FF6FA3;
+    --ambar: #F5C451;
+    --prisma: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);
+    --fonte: 'Poppins', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--navy);
+    color: var(--tinta);
+    font-family: var(--fonte);
+    padding-block: 40px 56px;
+    padding-inline: 20px;
+  }
+  .folha { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px; }
+
+  .marca { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .marca span { font-size: 13px; font-weight: 600; letter-spacing: 0.4em; color: var(--tinta); }
+  .fita { width: 140px; height: 7px; border-radius: 999px; background: var(--prisma); }
+
+  h1 { margin: 0; font-size: clamp(32px, 7vw, 46px); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance; text-align: center; }
+  .chamada { margin: 0; text-align: center; font-size: 17px; line-height: 1.5; color: var(--tinta-2); max-width: 52ch; margin-inline: auto; }
+
+  fieldset { border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
+  legend { padding: 0; }
+  .linha { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 520px) { .linha { grid-template-columns: 1fr; } }
+
+  label { display: block; font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+  input[type="number"] {
+    width: 100%; background: rgba(255, 255, 255, 0.08); border: 2px solid var(--borda);
+    border-radius: 12px; color: var(--tinta); font-family: var(--fonte);
+    font-size: 24px; font-weight: 600; padding: 13px 16px; font-variant-numeric: tabular-nums;
+  }
+  input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid #8ED1F5; outline-offset: 2px; }
+  .eco { display: block; margin-top: 6px; font-size: 13px; color: var(--tinta-3); font-variant-numeric: tabular-nums; }
+
+  .parcelas { display: flex; gap: 8px; flex-wrap: wrap; }
+  .parcelas button {
+    flex: 1 1 60px; background: rgba(255, 255, 255, 0.08); color: var(--tinta);
+    border: 2px solid var(--borda); border-radius: 12px; font-family: var(--fonte);
+    font-size: 19px; font-weight: 700; padding: 13px 0; cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .parcelas button[aria-pressed="true"] { background: var(--tinta); color: var(--navy); border-color: var(--tinta); }
+
+  .placar {
+    background: var(--tinta); color: var(--navy); border-radius: 20px; padding: 26px 28px;
+    display: flex; flex-direction: column; gap: 4px;
+  }
+  .placar .rotulo { font-size: 15px; font-weight: 600; }
+  .placar .valor { font-size: clamp(38px, 9vw, 56px); font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .placar .apoio { font-size: 16px; font-weight: 500; }
+
+  .confronto { border: 2px solid var(--borda); border-radius: 16px; padding: 20px 24px; font-size: 16px; line-height: 1.5; color: var(--tinta-2); }
+  .confronto b { color: var(--tinta); }
+  .confronto .spread { color: var(--rosa); }
+
+  details { border-top: 1px solid var(--borda); padding-top: 18px; }
+  summary { cursor: pointer; font-size: 16px; font-weight: 600; }
+  .rolagem { overflow-x: auto; margin-top: 14px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+  th, td { padding: 9px 10px; text-align: right; border-bottom: 1px solid var(--borda); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--tinta-3); font-weight: 600; }
+  tfoot td { font-weight: 700; border-bottom: none; }
+  .formula { margin: 14px 0 0; font-size: 14px; line-height: 1.6; color: var(--tinta-3); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: var(--tinta-2); }
+
+  .acao { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .acao a {
+    background: var(--tinta); color: var(--navy); text-decoration: none;
+    font-size: 19px; font-weight: 700; padding: 16px 34px; border-radius: 999px;
+  }
+  .rodape { text-align: center; font-size: 13px; line-height: 1.55; color: var(--tinta-3); }
+  .rodape strong { color: var(--tinta-2); font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="folha">
+  <header class="marca">
+    <span>PRISMA CONTÁBIL</span>
+    <div class="fita"></div>
+  </header>
+
+  <h1>Quanto o parcelado custa para a sua empresa</h1>
+  <p class="chamada">Você vende parcelado e antecipa o recebível. O desconto que a adquirente cobra some no meio das taxas — aqui ele aparece em reais, no ano.</p>
+
+  <fieldset>
+    <div class="linha">
+      <div>
+        <label for="faturamento">Vendas no cartão por mês</label>
+        <input id="faturamento" type="number" min="0" step="1000" value="100000" inputmode="numeric">
+        <span class="eco" id="ecoFaturamento"></span>
+      </div>
+      <div>
+        <label for="taxa">Taxa de antecipação (% ao mês)</label>
+        <input id="taxa" type="number" min="0" step="0.1" value="2" inputmode="decimal">
+        <span class="eco" id="ecoTaxa"></span>
+      </div>
+    </div>
+    <div>
+      <label id="rotuloParcelas">Em quantas vezes você parcela</label>
+      <div class="parcelas" role="group" aria-labelledby="rotuloParcelas" id="parcelas"></div>
+    </div>
+  </fieldset>
+
+  <div class="placar">
+    <span class="rotulo">Você deixa de receber, por ano</span>
+    <span class="valor" id="custoAno">—</span>
+    <span class="apoio" id="apoio">—</span>
+  </div>
+
+  <p class="confronto">
+    Ao custo do governo, que hoje paga <b>13,75% ao ano</b> — <b id="selicMes">—</b> ao mês —, esse mesmo
+    parcelamento sairia por <b id="custoSelic">—</b>. A diferença, <b class="spread" id="spread">—</b> por ano,
+    é o que o intermediário cobra a mais de você.
+  </p>
+
+  <details>
+    <summary>Ver a memória de cálculo</summary>
+    <div class="rolagem">
+      <table>
+        <thead>
+          <tr><th>Parcela</th><th>Valor</th><th>Espera</th><th>Desconto</th><th>Você recebe</th></tr>
+        </thead>
+        <tbody id="corpoTabela"></tbody>
+        <tfoot><tr><td>Total do mês</td><td id="totBruto">—</td><td></td><td id="totDesconto">—</td><td id="totLiquido">—</td></tr></tfoot>
+      </table>
+    </div>
+    <p class="formula">
+      Cada parcela é descontada pelo prazo que falta para ela cair na conta, em regime composto:
+      <code>desconto = parcela × [1 − (1 + i)⁻ᵏ]</code>, com <code>i</code> = taxa mensal de antecipação e
+      <code>k</code> = número de meses de espera. A taxa do governo entra como equivalente mensal da Selic:
+      <code>(1 + 0,1375)^(1/12) − 1</code>. Arredondamento em duas casas, meio para cima.
+    </p>
+  </details>
+
+  <div class="acao">
+    <a href="https://www.instagram.com/prismacontabilto">Quero reduzir esse custo</a>
+    <p class="rodape">A taxa de antecipação está no seu extrato da maquininha — use a sua para o número ser o seu.</p>
+  </div>
+
+  <p class="rodape">
+    <strong>Prisma Contábil · Palmas/TO</strong><br>
+    Selic de 13,75% ao ano (Copom, 16/09/2026). Estimativa para orientação, não substitui análise do contrato da adquirente.
+  </p>
+</div>
+
+<script>
+  var OPCOES = [2, 3, 6, 10, 12];
+  var estado = { faturamento: 100000, parcelas: 6, taxa: 2 };
+
+  var moeda = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  function numero(v, casas) {
+    return v.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas });
+  }
+
+  // Antecipar uma venda parcelada custa o desconto de cada parcela
+  // pelo tempo que falta para ela ser paga.
+  function desconto(parcela, mesesEspera, taxaMensal) {
+    return parcela * (1 - Math.pow(1 + taxaMensal, -mesesEspera));
+  }
+  function custoMensal(valor, n, taxaMensal) {
+    var parcela = valor / n, total = 0;
+    for (var k = 1; k <= n; k++) { total += desconto(parcela, k, taxaMensal); }
+    return total;
+  }
+
+  var caixaParcelas = document.getElementById('parcelas');
+  OPCOES.forEach(function (n) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.textContent = n + 'x';
+    b.setAttribute('aria-pressed', String(n === estado.parcelas));
+    b.addEventListener('click', function () { estado.parcelas = n; calcular(); });
+    caixaParcelas.appendChild(b);
+  });
+
+  document.getElementById('faturamento').addEventListener('input', function (e) {
+    estado.faturamento = Number(e.target.value) || 0; calcular();
+  });
+  document.getElementById('taxa').addEventListener('input', function (e) {
+    estado.taxa = Number(e.target.value) || 0; calcular();
+  });
+
+  function calcular() {
+    var v = estado.faturamento, n = estado.parcelas, i = estado.taxa / 100;
+    var iSelic = Math.pow(1.1375, 1 / 12) - 1;
+
+    var mes = custoMensal(v, n, i);
+    var ano = mes * 12;
+    var anoSelic = custoMensal(v, n, iSelic) * 12;
+    var pct = v > 0 ? (ano / (v * 12)) * 100 : 0;
+
+    document.getElementById('ecoFaturamento').textContent = moeda.format(v);
+    document.getElementById('ecoTaxa').textContent = numero(estado.taxa, 2) + '% ao mês';
+    document.getElementById('custoAno').textContent = moeda.format(ano);
+    document.getElementById('apoio').textContent =
+      numero(pct, 2) + '% de tudo o que você vende — ou ' + moeda.format(mes) + ' por mês';
+    document.getElementById('selicMes').textContent = numero(iSelic * 100, 4) + '%';
+    document.getElementById('custoSelic').textContent = moeda.format(anoSelic);
+    document.getElementById('spread').textContent = moeda.format(ano - anoSelic);
+
+    Array.prototype.forEach.call(caixaParcelas.children, function (b, idx) {
+      b.setAttribute('aria-pressed', String(OPCOES[idx] === n));
+    });
+
+    var parcela = v / n, corpo = document.getElementById('corpoTabela');
+    corpo.textContent = '';
+    var somaDesconto = 0;
+    for (var k = 1; k <= n; k++) {
+      var d = desconto(parcela, k, i);
+      somaDesconto += d;
+      var tr = document.createElement('tr');
+      [k + 'ª', moeda.format(parcela), k + (k === 1 ? ' mês' : ' meses'), moeda.format(d), moeda.format(parcela - d)]
+        .forEach(function (texto) {
+          var td = document.createElement('td');
+          td.textContent = texto;
+          tr.appendChild(td);
+        });
+      corpo.appendChild(tr);
+    }
+    document.getElementById('totBruto').textContent = moeda.format(v);
+    document.getElementById('totDesconto').textContent = moeda.format(somaDesconto);
+    document.getElementById('totLiquido').textContent = moeda.format(v - somaDesconto);
+  }
+
+  calcular();
+</script>
