@@ -5,7 +5,7 @@
     "at": "2026-09-21T00:18:33Z",
     "v": 1
   },
-  "title": "Carrossel — A dívida do Brasil e o caixa da sua empresa",
+  "title": "Carrossel animado — A dívida do Brasil e o caixa da sua empresa",
   "launch": {
     "view": "canvas"
   },
@@ -16,70 +16,80 @@
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "01 Capa"
+      "title": "01 Gauge 82,5%",
+      "is_interactive": true
     },
     "Passivo.dc.html": {
       "x": 1160,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "02 A velocidade"
+      "title": "02 A velocidade",
+      "is_interactive": true
     },
     "DRE.dc.html": {
       "x": 2320,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "03 R$ 3,1 bi por dia"
+      "title": "03 R$ 3,1 bi por dia",
+      "is_interactive": true
     },
     "Cobertura.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "04 Quase tudo é juro"
+      "title": "04 Quase tudo é juro",
+      "is_interactive": true
     },
     "Indexacao.dc.html": {
       "x": 4640,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "05 Metade pós-fixada"
+      "title": "05 Anel 51,11%",
+      "is_interactive": true
     },
     "Equacao.dc.html": {
       "x": 0,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "06 Por que cresce"
+      "title": "06 Por que cresce",
+      "is_interactive": true
     },
     "Calculo.dc.html": {
       "x": 1160,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Meta x conta"
+      "title": "07 Balança",
+      "is_interactive": true
     },
     "Ajuste.dc.html": {
       "x": 2320,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 No seu caixa"
+      "title": "08 Cascata do caixa",
+      "is_interactive": true
     },
     "Sensibilidade.dc.html": {
       "x": 3480,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 Benefício na mira"
+      "title": "09 Corte do benefício",
+      "is_interactive": true
     },
     "Aplicacao.dc.html": {
       "x": 4640,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "10 Chamada"
+      "title": "10 Fechamento",
+      "is_interactive": true
     },
     "Quiz.dc.html": {
       "x": 0,
@@ -110,7 +120,7 @@
       "w": 240,
       "x": 0,
       "y": -300,
-      "text": "Carrossel 1080×1350 · dez slides para o feed"
+      "text": "Motion design 2D · 1080×1350 · aperte Play para ver a animação"
     },
     "int": {
       "kind": "title1",
@@ -118,7 +128,7 @@
       "w": 240,
       "x": 0,
       "y": 2640,
-      "text": "Versão interativa — para o link da bio"
+      "text": "Peça interativa — triagem de benefício"
     }
   },
   "designSystems": []

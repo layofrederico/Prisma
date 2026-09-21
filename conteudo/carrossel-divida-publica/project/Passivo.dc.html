@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>A escala</title>
+<title>A velocidade</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -12,48 +12,64 @@
 <style>
 body { margin: 0; background: #01066A; }
 a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
-@keyframes riseIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
-@keyframes growX { 0%, 6% { transform: scaleX(0); } 42%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
-@keyframes growY { 0%, 6% { transform: scaleY(0); } 42%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
-@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.3); } }
+
+@keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes growX { 0%, 6% { transform: scaleX(0); } 40%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+@keyframes growY { 0%, 6% { transform: scaleY(0); } 40%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes growYFast { 0%, 10% { transform: scaleY(0); } 28%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes growYSlow { 0%, 10% { transform: scaleY(0); } 62%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(1.3); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 @keyframes flowDash { to { stroke-dashoffset: -40; } }
-@keyframes fadeCycle { 0%, 12% { opacity: 0; } 30%, 88% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes slideRight { 0%, 8% { transform: translateX(-14px); opacity: 0; } 35%, 92% { transform: none; opacity: 1; } 100% { transform: translateX(-14px); opacity: 0; } }
-@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+@keyframes fadeCycle { 0%, 22% { opacity: 0; } 40%, 88% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+@keyframes nudgeX { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(14px); } }
+@keyframes cutLine { 0%, 14% { stroke-dashoffset: 300; opacity: 0; } 30% { opacity: 1; } 42%, 90% { stroke-dashoffset: 0; opacity: 1; } 100% { opacity: 0; } }
 .rise { animation: riseIn 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 .grow-x { transform-box: fill-box; transform-origin: left center; animation: growX 6s ease-in-out infinite; }
 .grow-y { transform-box: fill-box; transform-origin: bottom center; animation: growY 6s ease-in-out infinite; }
+.grow-y-fast { transform-box: fill-box; transform-origin: bottom center; animation: growYFast 6s cubic-bezier(0.16, 0.9, 0.3, 1) infinite; }
+.grow-y-slow { transform-box: fill-box; transform-origin: bottom center; animation: growYSlow 6s cubic-bezier(0.5, 0.2, 0.5, 1) infinite; }
 .pulse { animation: pulseDot 2.2s ease-in-out infinite; }
+.blink { animation: blink 1.6s ease-in-out infinite; }
 .float { animation: floatY 4.5s ease-in-out infinite; }
 .flow { stroke-dasharray: 10 10; animation: flowDash 1.3s linear infinite; }
 .cycle { animation: fadeCycle 6s ease-in-out infinite; }
-.slide-r { animation: slideRight 6s ease-in-out infinite; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
+.nudge { animation: nudgeX 1.6s ease-in-out infinite; }
+.cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+
 </style>
 </helmet>
-<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 60px 84px 56px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 13px;">
-    <span style="font-size: 22px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
-    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
-  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;">
-    <h1 class="rise" style="margin: 0; font-size: 62px; font-weight: 700; line-height: 1.07; letter-spacing: -0.02em;">Não é o tamanho.<br>É a velocidade.</h1>
-    <svg viewBox="0 0 880 380" width="880" height="380" role="img" xmlns="http://www.w3.org/2000/svg">
-      <rect class="grow-y" style="animation-delay: 0.00s" x="140" y="58" width="180" height="192" rx="12" fill="#1B8CC8"></rect>
-      <text x="230" y="37.866666666666674" font-family="Poppins, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">78,6% do PIB</text>
-      <text x="230" y="290" font-family="Poppins, sans-serif" font-size="26" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">julho/2025</text>
-      <rect class="grow-y" style="animation-delay: 0.40s" x="460" y="48" width="180" height="202" rx="12" fill="#DE3A76"></rect>
-      <text x="550" y="28.333333333333343" font-family="Poppins, sans-serif" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">82,5% do PIB</text>
-      <text x="550" y="290" font-family="Poppins, sans-serif" font-size="26" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">julho/2026</text>
-      <line x1="60" y1="254" x2="820" y2="254" stroke="rgba(255,255,255,0.14)" stroke-width="2"></line>
-      <text class="cycle" x="440" y="360" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">+3,9 pontos do PIB em doze meses</text>
+  <div style="width: 100%; margin-top: 34px;">
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">A velocidade</h1>
+  </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <svg viewBox="0 0 820 360" width="820" height="360" role="img" xmlns="http://www.w3.org/2000/svg">
+      <rect x="120" y="69" width="170" height="231" rx="12" fill="#1B8CC8"></rect>
+      <text x="205" y="46.823529411764696" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">78,6%</text>
+      <text x="205" y="342" font-family="Poppins, sans-serif" font-size="26" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">julho/2025</text>
+      <rect class="grow-y-fast" x="430" y="57" width="170" height="243" rx="12" fill="#DE3A76"></rect>
+      <text class="cycle" x="515" y="35.35294117647058" font-family="Poppins, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="middle">82,5%</text>
+      <text x="515" y="342" font-family="Poppins, sans-serif" font-size="26" font-weight="600" fill="#DE3A76" text-anchor="middle">julho/2026</text>
+      <path class="flow" d="M 290 69 L 360 69 L 360 57 L 428 57" fill="none" stroke="rgba(255,255,255,0.26)" stroke-width="3"></path>
+      <text class="cycle" x="660" y="63.35294117647058" font-family="Poppins, sans-serif" font-size="44" font-weight="800" fill="#FFFFFF" text-anchor="start">+3,9</text>
+      <text x="660" y="101.35294117647058" font-family="Poppins, sans-serif" font-size="24" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="start">pontos do PIB</text>
+      <line x1="100" y1="304" x2="780" y2="304" stroke="rgba(255,255,255,0.16)" stroke-width="2"></line>
     </svg>
-    <p style="margin: 0; max-width: 840px; font-size: 21px; line-height: 1.4; color: rgba(255,255,255,0.56);">Banco Central, Dívida Bruta do Governo Geral, julho/2026.</p>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
-    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
-    <span style="font-size: 38px; font-weight: 600;">@prismacontabilto</span>
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+    <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 36px; font-weight: 600; line-height: 1.34;">Evolução em apenas 12 meses</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
+      <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+      <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>
+    </div>
   </div>
 </div>
 </x-dc>

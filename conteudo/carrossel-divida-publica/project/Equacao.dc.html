@@ -12,54 +12,99 @@
 <style>
 body { margin: 0; background: #01066A; }
 a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
-@keyframes riseIn { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
-@keyframes growX { 0%, 6% { transform: scaleX(0); } 42%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
-@keyframes growY { 0%, 6% { transform: scaleY(0); } 42%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
-@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(1.3); } }
+
+@keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes growX { 0%, 6% { transform: scaleX(0); } 40%, 90% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+@keyframes growY { 0%, 6% { transform: scaleY(0); } 40%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes growYFast { 0%, 10% { transform: scaleY(0); } 28%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes growYSlow { 0%, 10% { transform: scaleY(0); } 62%, 90% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(1.3); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
 @keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
 @keyframes flowDash { to { stroke-dashoffset: -40; } }
-@keyframes fadeCycle { 0%, 12% { opacity: 0; } 30%, 88% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes slideRight { 0%, 8% { transform: translateX(-14px); opacity: 0; } 35%, 92% { transform: none; opacity: 1; } 100% { transform: translateX(-14px); opacity: 0; } }
-@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+@keyframes fadeCycle { 0%, 22% { opacity: 0; } 40%, 88% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+@keyframes nudgeX { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(14px); } }
+@keyframes cutLine { 0%, 14% { stroke-dashoffset: 300; opacity: 0; } 30% { opacity: 1; } 42%, 90% { stroke-dashoffset: 0; opacity: 1; } 100% { opacity: 0; } }
 .rise { animation: riseIn 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 .grow-x { transform-box: fill-box; transform-origin: left center; animation: growX 6s ease-in-out infinite; }
 .grow-y { transform-box: fill-box; transform-origin: bottom center; animation: growY 6s ease-in-out infinite; }
+.grow-y-fast { transform-box: fill-box; transform-origin: bottom center; animation: growYFast 6s cubic-bezier(0.16, 0.9, 0.3, 1) infinite; }
+.grow-y-slow { transform-box: fill-box; transform-origin: bottom center; animation: growYSlow 6s cubic-bezier(0.5, 0.2, 0.5, 1) infinite; }
 .pulse { animation: pulseDot 2.2s ease-in-out infinite; }
+.blink { animation: blink 1.6s ease-in-out infinite; }
 .float { animation: floatY 4.5s ease-in-out infinite; }
 .flow { stroke-dasharray: 10 10; animation: flowDash 1.3s linear infinite; }
 .cycle { animation: fadeCycle 6s ease-in-out infinite; }
-.slide-r { animation: slideRight 6s ease-in-out infinite; }
 .breathe { animation: breathe 3.4s ease-in-out infinite; }
+.nudge { animation: nudgeX 1.6s ease-in-out infinite; }
+.cut { stroke-dasharray: 300; animation: cutLine 6s ease-in-out infinite; }
+
 </style>
 </helmet>
-<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 60px 84px 56px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 13px;">
-    <span style="font-size: 22px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
-    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
-  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px;">
-    <h1 class="rise" style="margin: 0; font-size: 66px; font-weight: 700; line-height: 1.07; letter-spacing: -0.02em;">A conta é essa</h1>
-    <svg viewBox="0 0 880 350" width="880" height="350" role="img" xmlns="http://www.w3.org/2000/svg">
-      <text x="220" y="44" font-family="Poppins, sans-serif" font-size="27" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">Juro que a dívida paga</text>
-      <rect class="grow-y" x="130" y="80" width="180" height="180" rx="12" fill="#DE3A76"></rect>
-      <text x="220" y="190" font-family="Poppins, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle">10,5%</text>
-      <text x="660" y="44" font-family="Poppins, sans-serif" font-size="27" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">Quanto a economia cresce</text>
-      <rect class="grow-y" style="animation-delay: .4s" x="570" y="147" width="180" height="113" rx="12" fill="#1B8CC8"></rect>
-      <text x="660" y="220" font-family="Poppins, sans-serif" font-size="52" font-weight="700" fill="#FFFFFF" text-anchor="middle">6,6%</text>
-      <line x1="60" y1="264" x2="820" y2="264" stroke="rgba(255,255,255,0.14)" stroke-width="2"></line>
-      <text class="cycle" x="440" y="330" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="#FFFFFF" text-anchor="middle">Enquanto o de cima for maior, a dívida cresce sozinha.</text>
+  <div style="width: 100%; margin-top: 34px;">
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Por que cresce</h1>
+  </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <svg viewBox="0 0 820 330" width="820" height="330" role="img" xmlns="http://www.w3.org/2000/svg">
+      <text x="210" y="34" font-family="Poppins, sans-serif" font-size="26" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">Juro que a dívida paga</text>
+      <rect class="grow-y-fast" x="120" y="90" width="180" height="210" rx="14" fill="#DE3A76"></rect>
+      <text x="210" y="162.0" font-family="Poppins, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" text-anchor="middle">{{ juro }}%</text>
+      <text x="610" y="34" font-family="Poppins, sans-serif" font-size="26" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">Quanto a economia cresce</text>
+      <rect class="grow-y-slow" x="520" y="168" width="180" height="132" rx="14" fill="#1B8CC8"></rect>
+      <text x="610" y="230.0" font-family="Poppins, sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" text-anchor="middle">{{ pib }}%</text>
+      <line x1="60" y1="304" x2="760" y2="304" stroke="rgba(255,255,255,0.16)" stroke-width="2"></line>
     </svg>
-    <p style="margin: 0; max-width: 840px; font-size: 21px; line-height: 1.4; color: rgba(255,255,255,0.56);">Juro implícito estimado (juros de 8,67% do PIB sobre dívida de 82,5%) e premissa de PIB nominal de 6,6% ao ano.</p>
   </div>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 14px;">
-    <div style="width: 169px; height: 10px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
-    <span style="font-size: 38px; font-weight: 600;">@prismacontabilto</span>
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+    <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 32px; font-weight: 600; line-height: 1.34;">Enquanto o juro correr mais que o PIB, a dívida cresce sozinha</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
+      <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+      <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>
+    </div>
   </div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
 class Component extends DCLogic {
-  renderVals() { return {}; }
+  constructor(props) {
+    super(props);
+    this.alvos = { juro: 10.5, pib: 6.6 };
+    this.state = { juro: 0, pib: 0 };
+  }
+  componentDidMount() {
+    this.rodar();
+    this.ciclo = setInterval(() => this.rodar(), 6000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.ciclo);
+    clearInterval(this.passo);
+  }
+  rodar() {
+    clearInterval(this.passo);
+    const inicio = Date.now();
+    const duracao = 1500;
+    this.passo = setInterval(() => {
+      const t = Math.min(1, (Date.now() - inicio) / duracao);
+      // easing suave na chegada, para o número "travar" no alvo
+      const e = 1 - Math.pow(1 - t, 3);
+      const novo = {};
+      Object.keys(this.alvos).forEach((k) => { novo[k] = this.alvos[k] * e; });
+      this.setState(novo);
+      if (t >= 1) { clearInterval(this.passo); }
+    }, 16);
+  }
+  fmt(v) {
+    return v.toFixed(1).replace('.', ',');
+  }
+  renderVals() {
+    return { juro: this.fmt(this.state.juro), pib: this.fmt(this.state.pib) };
+  }
 }
 </script>
 </body>
