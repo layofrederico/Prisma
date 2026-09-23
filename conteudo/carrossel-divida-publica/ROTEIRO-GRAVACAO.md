@@ -23,7 +23,7 @@ todas cabem em um ciclo único.
 | 08 Balança | 0:36 | 4,4s | 11 |
 | 09 No seu caixa | 0:41 | 5,2s | 13 |
 | 10 Benefício na mira | 0:46 | 4,4s | 11 |
-| 11 Fechamento | 0:51 | 4,4s | 11 |
+| 11 Fechamento | 0:50 | 4,4s | 11 |
 | **Total** | | **55,2s** | **138** |
 
 ## Roteiro slide a slide
@@ -120,7 +120,7 @@ todas cabem em um ciclo único.
 
 ### 10 — Benefício na mira
 
-`0:46 -> 0:51`  ·  4,4 segundos
+`0:46 -> 0:50`  ·  4,4 segundos
 
 **Na tela:** A barra cresce e a linha de corte cruza, isolando a fatia que pisca.
 
@@ -130,7 +130,7 @@ todas cabem em um ciclo único.
 
 ### 11 — Fechamento
 
-`0:51 -> 0:55`  ·  4,4 segundos
+`0:50 -> 0:55`  ·  4,4 segundos
 
 **Na tela:** Ilustração flutuando, card branco entrando, seta deslizando.
 
