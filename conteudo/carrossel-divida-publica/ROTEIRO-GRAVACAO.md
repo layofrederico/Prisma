@@ -1,6 +1,6 @@
 # Roteiro de gravação — carrossel da dívida pública
 
-Vídeo narrado a partir dos onze artboards animados. Duração estimada: **55 segundos** de locução, **~61 segundos** com os respiros entre cortes.
+Vídeo narrado a partir dos onze artboards animados. Duração estimada: **54 segundos** de locução, **~59 segundos** com os respiros entre cortes.
 
 ## Como o tempo foi calculado
 
@@ -19,12 +19,12 @@ todas cabem em um ciclo único.
 | 04 R$ 3,1 bi por dia | 0:16 | 5,6s | 14 |
 | 05 Quase tudo é juro | 0:22 | 4,4s | 11 |
 | 06 Anel 51,11% | 0:26 | 5,2s | 13 |
-| 07 Por que cresce | 0:31 | 5,2s | 13 |
-| 08 Balança | 0:36 | 4,4s | 11 |
-| 09 No seu caixa | 0:41 | 5,2s | 13 |
-| 10 Benefício na mira | 0:46 | 4,4s | 11 |
-| 11 Fechamento | 0:50 | 4,4s | 11 |
-| **Total** | | **55,2s** | **138** |
+| 07 Por que cresce | 0:31 | 4,0s | 10 |
+| 08 Balança | 0:35 | 4,4s | 11 |
+| 09 No seu caixa | 0:39 | 5,2s | 13 |
+| 10 Benefício na mira | 0:45 | 4,4s | 11 |
+| 11 Fechamento | 0:49 | 4,4s | 11 |
+| **Total** | | **54,0s** | **135** |
 
 ## Roteiro slide a slide
 
@@ -90,17 +90,17 @@ todas cabem em um ciclo único.
 
 ### 07 — Por que cresce
 
-`0:31 -> 0:36`  ·  5,2 segundos
+`0:31 -> 0:35`  ·  4,0 segundos
 
-**Na tela:** O bloco rosa sobe rápido até 10,5%; o azul sobe devagar e para em 6,6%.
+**Na tela:** O bloco rosa sobe rápido até 7,7%; o azul sobe devagar e para em 1,9%.
 
-**Locução:** “O juro corre a dez e meio. A economia, a seis e meio.”
+**Locução:** “O juro real é quatro vezes o crescimento da economia.”
 
 **Corte:** Segure até o bloco azul travar — o descompasso é o argumento.
 
 ### 08 — Balança
 
-`0:36 -> 0:41`  ·  4,4 segundos
+`0:35 -> 0:39`  ·  4,4 segundos
 
 **Na tela:** A viga inclina, o prato de 402 bilhões desce, o de 34,3 sobe.
 
@@ -110,7 +110,7 @@ todas cabem em um ciclo único.
 
 ### 09 — No seu caixa
 
-`0:41 -> 0:46`  ·  5,2 segundos
+`0:39 -> 0:45`  ·  5,2 segundos
 
 **Na tela:** Quatro portas entram em cascata — crédito, imposto, dólar e cliente —, cada uma com o que o contador faz.
 
@@ -120,7 +120,7 @@ todas cabem em um ciclo único.
 
 ### 10 — Benefício na mira
 
-`0:46 -> 0:50`  ·  4,4 segundos
+`0:45 -> 0:49`  ·  4,4 segundos
 
 **Na tela:** A barra cresce e a linha de corte cruza, isolando a fatia que pisca.
 
@@ -130,7 +130,7 @@ todas cabem em um ciclo único.
 
 ### 11 — Fechamento
 
-`0:50 -> 0:55`  ·  4,4 segundos
+`0:49 -> 0:53`  ·  4,4 segundos
 
 **Na tela:** Ilustração flutuando, card branco entrando, seta deslizando.
 
@@ -151,7 +151,7 @@ todas cabem em um ciclo único.
 - **Números por extenso na fala.** Está escrito “dez vírgula nove trilhões”, e não “R$ 10,9 tri”,
   de propósito: quem narra lendo o símbolo tropeça.
 - **Silêncio nos cortes.** Meio segundo de respiro entre slides faz o número assentar. O roteiro não conta
-  esse tempo na soma das falas, por isso o vídeo final fica em torno de 61 segundos.
+  esse tempo na soma das falas, por isso o vídeo final fica em torno de 59 segundos.
 - **Legenda queimada.** A maior parte assiste sem som; a locução precisa aparecer escrita.
 - **Trilha.** Instrumental discreto, sem percussão marcada — o ritmo já está nas animações.
 

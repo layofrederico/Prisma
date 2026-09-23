@@ -109,3 +109,34 @@ de **101,79%**, portanto inconsistente. Por isso o slide 05 usa apenas o recorte
 "51,11% pós-fixado contra 48,89% do restante", que não depende da abertura
 completa. Conferir a composição no Relatório Mensal da Dívida original
 (tesourotransparente.gov.br) antes de publicar a abertura em quatro fatias.
+
+### Pendência resolvida — conferência no relatório oficial (23/09/2026)
+
+Conferido direto no Relatório Mensal da Dívida de julho/2026 (Tesouro Nacional, tabelas 2.3 e 4.1):
+
+| Indexador | Jun/26 | Jul/26 |
+|---|---|---|
+| Taxa flutuante (Selic) | 49,32% | **51,11%** |
+| Índices de preços | 25,90% | **26,02%** |
+| Prefixado | 21,04% | **19,22%** |
+| Câmbio | 3,74% | **3,65%** |
+| **Total** | 100,00% | **100,00%** |
+
+A soma de 101,79% da fonte secundária vinha de misturar os 51,11% de julho com os
+percentuais de junho. Estoque da DPF em julho: R$ 9.288,78 bi; em taxa flutuante,
+R$ 4.747,25 bi (o "R$ 4,75 tri" do slide confere). Custo médio da DPF em 12 meses:
+**12,45% a.a.** (a fonte secundária arredondou para 12,4%).
+
+### Slide "Por que cresce" — premissa trocada por dado oficial
+
+A versão anterior mostrava 10,5% (juro implícito estimado) contra 6,6% (premissa de PIB
+nominal), sem nota. Substituído por comparação real contra real, só com dados oficiais:
+
+```
+juro real da dívida = (1 + 12,45%) / (1 + 4,44%) − 1 = 7,67%  → exibido 7,7%
+crescimento real    = 1,9% (PIB, quatro trimestres até jun/2026, IBGE)
+razão               = 7,67 / 1,9 = 4,0 vezes
+```
+
+Fontes: Tesouro Nacional (RMD jul/2026, tabela 4.1), IBGE (IPCA de 12 meses até jul/2026:
+4,44%; PIB do 2º trimestre de 2026).
