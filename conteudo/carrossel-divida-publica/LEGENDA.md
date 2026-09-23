@@ -13,7 +13,7 @@ Link da calculadora: https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
 
 O governo paga R$ 3,1 bilhões de juros por dia. Você não vê esse número no seu extrato — mas ele está lá.
 
-A dívida pública brasileira chegou a R$ 10,9 trilhões, 82,5% de tudo o que o país produz em um ano. E tem um detalhe que quase ninguém comenta: de cada R$ 100 que faltam no caixa do país, R$ 93 são juros. Ou seja, o aperto não vem de gasto com máquina pública — vem de conta financeira.
+A dívida bruta do governo geral — União, estados e municípios — chegou a R$ 10,9 trilhões, 82,5% de tudo o que o país produz em um ano. E tem um detalhe que quase ninguém comenta: de cada R$ 100 que faltam no caixa do país, R$ 93 são juros. Ou seja, o aperto não vem de gasto com máquina pública — vem de conta financeira.
 
 Por que isso é problema seu? Porque o banco empresta ao governo a 13,75% ao ano sem correr risco nenhum. Ele não vai emprestar mais barato para a sua empresa, que tem risco. O juro do governo é o piso de todo crédito do país — e é dali que sai o preço da antecipação do seu recebível, da renovação do seu giro e da parcela da máquina que você financiou.
 
@@ -27,6 +27,8 @@ Copie o link e faça a sua conta:
 https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
 
 Tem a memória de cálculo parcela a parcela lá dentro, para você conferir.
+
+Os R$ 10,9 trilhões são a dívida bruta do governo geral pela metodologia do Banco Central; pelo conceito do FMI, que soma os títulos na carteira do BC, o indicador vai a 95,4% do PIB. Não entram nessa conta as estatais nem a dívida privada.
 
 Fontes: Banco Central (Estatísticas Fiscais de julho/2026), Tesouro Nacional (Relatório Mensal da Dívida) e Copom (16/09/2026).
 
