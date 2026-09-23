@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>Fechamento</title>
+<title>Faça a sua conta</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -54,27 +54,42 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
-
+    <p class="rise" style="margin: 0 0 12px; font-size: 25px; font-weight: 600; letter-spacing: 0.24em; color: rgba(255,255,255,0.56);">CALCULADORA GRATUITA</p>
+    <h1 class="rise" style="margin: 0; font-size: 62px; font-weight: 700; line-height: 1.08; letter-spacing: -0.02em;">Quanto o parcelado<br>custa para você?</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-      <img class="float" src="/_blob/3a46d8e073bfbe366b22f2070e99d10f" alt="" style="width: 230px; height: auto;">
-      <div class="rise" style="max-width: 840px; background: #FFFFFF; color: #01066A; border-radius: 26px; padding: 40px 52px;">
-        <span style="font-size: 58px; font-weight: 800; line-height: 1.1;">A conta chega<br>no seu caixa.</span>
+    <div class="rise" style="width: 100%; max-width: 880px; box-sizing: border-box; border: 2px solid rgba(255,255,255,0.26); border-radius: 26px; padding: 26px 28px 28px; display: flex; flex-direction: column; gap: 20px; background: rgba(255,255,255,0.04); animation-delay: .25s;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 21px; font-weight: 600; letter-spacing: 0.18em; color: rgba(255,255,255,0.56);">EXEMPLO</span>
+        <span style="font-size: 21px; color: rgba(255,255,255,0.56);">na calculadora, use os seus números</span>
       </div>
-      <p class="rise" style="margin: 0; max-width: 830px; font-size: 33px; line-height: 1.44; color: rgba(255,255,255,0.78); animation-delay: 0.4s;">
-        A gente calcula quanto a Selic está tirando da sua margem — no recebível, no giro e no parcelado — e o que dá para renegociar agora.
-      </p>
+      <div style="display: flex; gap: 14px;">
+        <div style="flex: 1.6; min-width: 0; text-align: left;">
+          <div style="font-size: 21px; font-weight: 600; margin-bottom: 8px; color: rgba(255,255,255,0.78);">Faturamento anual no cartão</div>
+          <div style="background: rgba(255,255,255,0.08); color: #FFFFFF; border: 2px solid rgba(255,255,255,0.26); border-radius: 14px; padding: 14px 16px; font-size: 27px; font-weight: 700; white-space: nowrap;">R$ 1.200.000,00</div>
+        </div>
+        <div style="flex: 1; min-width: 0; text-align: left;">
+          <div style="font-size: 21px; font-weight: 600; margin-bottom: 8px; color: rgba(255,255,255,0.78);">Parcelas</div>
+          <div style="background: #FFFFFF; color: #01066A; border: 2px solid #FFFFFF; border-radius: 14px; padding: 14px 16px; font-size: 27px; font-weight: 700; white-space: nowrap;">12x</div>
+        </div>
+        <div style="flex: 1; min-width: 0; text-align: left;">
+          <div style="font-size: 21px; font-weight: 600; margin-bottom: 8px; color: rgba(255,255,255,0.78);">Antecipação</div>
+          <div style="background: rgba(255,255,255,0.08); color: #FFFFFF; border: 2px solid rgba(255,255,255,0.26); border-radius: 14px; padding: 14px 16px; font-size: 27px; font-weight: 700; white-space: nowrap;">2,00% a.m.</div>
+        </div>
+      </div>
+      <div style="background: #FFFFFF; color: #01066A; border-radius: 20px; padding: 24px 24px 22px; display: flex; flex-direction: column; gap: 2px;">
+        <span style="font-size: 25px; font-weight: 600;">A empresa perde, por ano</span>
+        <span style="font-size: 76px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; white-space: nowrap; font-variant-numeric: tabular-nums;">R$ {{ valor }}</span>
+        <span style="font-size: 24px; font-weight: 500;">11,87% do faturamento — R$ 11.872,16 por mês</span>
+      </div>
     </div>
+    <p class="rise" style="margin: 28px 0 0; max-width: 840px; font-size: 30px; line-height: 1.44; color: rgba(255,255,255,0.78); animation-delay: .5s;">Coloque as suas vendas, as parcelas e a taxa do seu extrato. A conta sai na hora.</p>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-      <a href="Calculadora.dc.html" class="breathe" style="display: inline-block; background: #FFFFFF; color: #01066A; font-size: 36px; font-weight: 700; text-decoration: none; padding: 26px 52px; border-radius: 999px;">Calcule quanto te custa</a>
-      <span style="font-size: 28px; color: rgba(255,255,255,0.78);">o link está na legenda deste post</span>
-      <span style="display: inline-flex; align-items: center; gap: 12px; font-size: 27px; color: rgba(255,255,255,0.56); margin-top: 4px;">
-        <span class="nudge" style="font-size: 26px;">&#8595;</span><span>Abra a legenda e toque no link</span>
-      </span>
-    </div>
+    <a href="Calculadora.dc.html" class="breathe" style="display: inline-flex; align-items: center; gap: 16px; background: #FFFFFF; color: #01066A; font-size: 36px; font-weight: 700; text-decoration: none; padding: 24px 50px; border-radius: 999px;">
+      A calculadora está na legenda <span class="nudge" style="display: inline-block; transform: rotate(90deg); font-size: 34px;">&#8594;</span>
+    </a>
+    <span style="font-size: 26px; color: rgba(255,255,255,0.78);">Abra a legenda deste post e toque no link</span>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
       <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>
@@ -84,7 +99,33 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
 class Component extends DCLogic {
-  renderVals() { return {}; }
+  constructor(props) {
+    super(props);
+    this.alvo = 142465.88;
+    this.state = { v: this.alvo };     // começa no alvo: o quadro parado já mostra o número certo
+  }
+  componentDidMount() {
+    this.rodar();
+    this.ciclo = setInterval(() => this.rodar(), 6000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.ciclo);
+    clearInterval(this.passo);
+  }
+  rodar() {
+    clearInterval(this.passo);
+    const inicio = Date.now();
+    const duracao = 1600;
+    this.passo = setInterval(() => {
+      const t = Math.min(1, (Date.now() - inicio) / duracao);
+      const e = 1 - Math.pow(1 - t, 3);
+      this.setState({ v: t >= 1 ? this.alvo : this.alvo * e });
+      if (t >= 1) { clearInterval(this.passo); }
+    }, 16);
+  }
+  renderVals() {
+    return { valor: this.state.v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) };
+  }
 }
 </script>
 </body>
