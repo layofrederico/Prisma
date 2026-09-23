@@ -13,28 +13,32 @@ Link da calculadora: https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
 
 Todo brasileiro nasce devendo R$ 51.103,59. E morre devendo.
 
-É a dívida bruta do governo dividida pela população do país. Uma família de quatro pessoas carrega R$ 204 mil — e só de juros, cada um de nós banca R$ 447 por mês.
+É a dívida bruta do governo — R$ 10,9 trilhões, 82,5% do PIB — dividida pela população. Uma família de quatro carrega R$ 204 mil. E de cada R$ 100 que faltam no caixa do país, R$ 93 são juros.
 
-O governo paga R$ 3,1 bilhões de juros por dia. Você não vê esse número no seu extrato — mas ele está lá.
+Essa conta entra no caixa do comércio por quatro portas:
 
-A dívida bruta do governo geral — União, estados e municípios — chegou a R$ 10,9 trilhões, 82,5% de tudo o que o país produz em um ano. E tem um detalhe que quase ninguém comenta: de cada R$ 100 que faltam no caixa do país, R$ 93 são juros. Ou seja, o aperto não vem de gasto com máquina pública — vem de conta financeira.
+1. Crédito caro. A Selic de 13,75% é o piso do seu giro e da antecipação do cartão.
+→ O contador mede quanto o juro come da margem e onde renegociar.
 
-Por que isso é problema seu? Porque o banco empresta ao governo a 13,75% ao ano sem correr risco nenhum. Ele não vai emprestar mais barato para a sua empresa, que tem risco. O juro do governo é o piso de todo crédito do país — e é dali que sai o preço da antecipação do seu recebível, da renovação do seu giro e da parcela da máquina que você financiou.
+2. Imposto na prateleira. A carga tributária chegou a 32,4% do PIB em 2025, a maior da série, e pesa sobre o consumo.
+→ O contador revisa regime e créditos para você não pagar a mais.
 
-Eu montei uma calculadora para você ver isso em reais, no seu caso.
+3. Dólar e frete. Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto diesel, insumo e frete.
+→ O contador separa esse custo e recalcula o seu preço de venda.
 
-Você informa quanto vende no cartão por mês, em quantas vezes parcela e a taxa de antecipação que está no seu extrato. Ela mostra quanto o parcelamento consome por ano — e quanto isso custaria se fosse ao juro que o governo paga. A diferença entre os dois números é o que o intermediário cobra a mais de você.
+4. Cliente sem crédito. Cartão e carnê caros tiram o poder de compra de quem compra de você.
+→ O contador calcula até onde vale parcelar sem perder margem.
 
-Num exemplo de R$ 100 mil por mês em 6x, com taxa de 2% ao mês, dá R$ 79.713,82 por ano. Ao custo do governo, seriam R$ 44.060,55. Diferença: R$ 35.653,27 por ano.
+Você não controla a dívida do governo. Controla o que ela faz com o seu caixa.
 
-Copie o link e faça a sua conta:
+A quarta porta você mede agora. Informe quanto vende no cartão, em quantas vezes parcela e a taxa do seu extrato: a calculadora mostra quanto o parcelamento custa por ano e quanto custaria ao juro que o governo paga. Exemplo: R$ 100 mil por mês em 6x, a 2% ao mês, custam R$ 79.713,82 por ano — R$ 35.653,27 a mais do que ao custo do governo.
+
+Copie o link:
 https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
 
-Tem a memória de cálculo parcela a parcela lá dentro, para você conferir.
+Nota: R$ 10,9 tri é a dívida bruta do governo geral (metodologia BCB); pelo conceito do FMI, 95,4% do PIB. Não inclui estatais nem dívida privada.
 
-Os R$ 10,9 trilhões são a dívida bruta do governo geral pela metodologia do Banco Central; pelo conceito do FMI, que soma os títulos na carteira do BC, o indicador vai a 95,4% do PIB. Não entram nessa conta as estatais nem a dívida privada.
-
-Fontes: Banco Central (Estatísticas Fiscais de julho/2026), IBGE (população estimada em 01/07/2026: 214.211.951), Tesouro Nacional (Relatório Mensal da Dívida) e Copom (16/09/2026).
+Fontes: BCB (Estatísticas Fiscais, jul/2026), IBGE (população em 01/07/2026), Tesouro Nacional (carga tributária 2025 e Relatório Mensal da Dívida) e Copom (16/09/2026).
 
 #empresario #contabilidade #palmasto #tocantins #gestaofinanceira #capitaldegiro #selic
 
@@ -42,5 +46,5 @@ Fontes: Banco Central (Estatísticas Fiscais de julho/2026), IBGE (população e
 
 ## Versão para LinkedIn
 
-Mesmo texto, com duas trocas: "Copie o link" vira "Clique no link" e o parágrafo das
-hashtags cai para três, no máximo.
+Mesmo texto, com duas trocas: "Copie o link" vira "Clique no link" e as hashtags caem
+para três, no máximo. O LinkedIn aceita até 3.000 caracteres, então cabe sem cortes.
