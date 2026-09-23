@@ -7,9 +7,10 @@ Vídeo narrado a partir dos dez artboards animados. Duração estimada: **51 seg
 Locução institucional em português corre a cerca de **2,5 palavras por segundo** (150 por minuto).
 A duração de cada slide é a contagem de palavras da fala dividida por esse ritmo.
 
-**A restrição que manda no roteiro:** cada animação roda em ciclo de **6 segundos**. Se a fala passar disso,
-a barra cresce, desaparece e recomeça no meio da frase. Por isso nenhuma locução abaixo passa de 15 palavras —
-todas cabem em um ciclo único.
+**Como as animações se comportam:** cada slide anima uma vez ao entrar — números contam, barras e
+arcos crescem — e para no quadro final em cerca de 2 segundos. Só os efeitos de ambiente (holofote,
+pulso, seta) continuam em movimento. Nenhuma fala passa de 15 palavras (6 segundos), então o
+número já está parado na tela antes de a frase terminar.
 
 | # | Entra em | Dura | Palavras |
 |---|---|---|---|
@@ -153,11 +154,13 @@ Quanto o parcelado custa para você? A calculadora está no link da legenda.
 
 ## Como capturar
 
-1. Abra o canvas e entre em **Play** no artboard — a animação roda sozinha, em loop de 6 segundos.
-2. Coloque em tela cheia e grave a tela (no celular, a gravação nativa; no computador, QuickTime ou OBS).
-3. Comece a gravar **um segundo antes** de o ciclo reiniciar, para o slide entrar do zero.
-4. Capture dois ciclos de cada slide e escolha o melhor na edição — refazer depois custa mais caro.
-5. Na montagem, encaixe cada trecho no tempo da tabela acima e narre por cima.
+1. Comece a gravação da tela primeiro e só então entre em **Play** no slide — a animação roda uma
+   vez ao entrar e para no quadro final.
+2. Para repetir a animação, saia do Play e entre de novo.
+3. Grave cada slide por uns 6 segundos: 2 de animação e o resto com o quadro parado, que é quando
+   a pessoa lê.
+4. Capture duas vezes cada slide e escolha a melhor na edição — refazer depois custa mais caro.
+5. Na montagem, encaixe cada trecho no tempo da tabela acima e coloque o áudio por cima.
 
 ## Observações de produção
 
