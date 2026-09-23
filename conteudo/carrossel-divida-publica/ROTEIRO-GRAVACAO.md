@@ -1,6 +1,6 @@
 # Roteiro de gravação — carrossel da dívida pública
 
-Vídeo narrado a partir dos onze artboards animados. Duração estimada: **56 segundos** de locução, **~61 segundos** com os respiros entre cortes.
+Vídeo narrado a partir dos onze artboards animados. Duração estimada: **55 segundos** de locução, **~61 segundos** com os respiros entre cortes.
 
 ## Como o tempo foi calculado
 
@@ -21,10 +21,10 @@ todas cabem em um ciclo único.
 | 06 Anel 51,11% | 0:26 | 5,2s | 13 |
 | 07 Por que cresce | 0:31 | 5,2s | 13 |
 | 08 Balança | 0:36 | 4,4s | 11 |
-| 09 No seu caixa | 0:41 | 5,6s | 14 |
+| 09 No seu caixa | 0:41 | 5,2s | 13 |
 | 10 Benefício na mira | 0:46 | 4,4s | 11 |
 | 11 Fechamento | 0:51 | 4,4s | 11 |
-| **Total** | | **55,6s** | **139** |
+| **Total** | | **55,2s** | **138** |
 
 ## Roteiro slide a slide
 
@@ -110,13 +110,13 @@ todas cabem em um ciclo único.
 
 ### 09 — No seu caixa
 
-`0:41 -> 0:46`  ·  5,6 segundos
+`0:41 -> 0:46`  ·  5,2 segundos
 
-**Na tela:** Os quatro cards sobem em cascata sobre a base branca da Selic.
+**Na tela:** Quatro portas entram em cascata — crédito, imposto, dólar e cliente —, cada uma com o que o contador faz.
 
-**Locução:** “E daqui sai o preço do seu recebível, do seu giro, da sua parcela.”
+**Locução:** “Crédito, imposto, dólar e cliente sem dinheiro. Em cada porta, dá para agir.”
 
-**Corte:** Corte depois que o último card assentar.
+**Corte:** Corte quando o card branco da base aparecer.
 
 ### 10 — Benefício na mira
 
