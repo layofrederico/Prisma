@@ -1,6 +1,6 @@
 # Roteiro de gravação — carrossel da dívida pública
 
-Vídeo narrado a partir dos dez artboards animados. Duração estimada: **50 segundos** de locução, **~55 segundos** com os respiros entre cortes.
+Vídeo narrado a partir dos onze artboards animados. Duração estimada: **56 segundos** de locução, **~61 segundos** com os respiros entre cortes.
 
 ## Como o tempo foi calculado
 
@@ -13,23 +13,34 @@ todas cabem em um ciclo único.
 
 | # | Entra em | Dura | Palavras |
 |---|---|---|---|
-| 01 Gauge 82,5% | 0:00 | 6.0s | 15 |
-| 02 A velocidade | 0:06 | 5.2s | 13 |
-| 03 R$ 3,1 bi por dia | 0:11 | 5.6s | 14 |
-| 04 Quase tudo é juro | 0:16 | 4.4s | 11 |
-| 05 Anel 51,11% | 0:21 | 5.2s | 13 |
-| 06 Por que cresce | 0:26 | 5.2s | 13 |
-| 07 Balança | 0:31 | 4.4s | 11 |
-| 08 No seu caixa | 0:35 | 5.6s | 14 |
-| 09 Benefício na mira | 0:41 | 4.4s | 11 |
-| 10 Fechamento | 0:45 | 4.4s | 11 |
-| **Total** | | **50.4s** | **126** |
+| 01 Cada brasileiro deve | 0:00 | 5,2s | 13 |
+| 02 Gauge 82,5% | 0:05 | 6,0s | 15 |
+| 03 A velocidade | 0:11 | 5,2s | 13 |
+| 04 R$ 3,1 bi por dia | 0:16 | 5,6s | 14 |
+| 05 Quase tudo é juro | 0:22 | 4,4s | 11 |
+| 06 Anel 51,11% | 0:26 | 5,2s | 13 |
+| 07 Por que cresce | 0:31 | 5,2s | 13 |
+| 08 Balança | 0:36 | 4,4s | 11 |
+| 09 No seu caixa | 0:41 | 5,6s | 14 |
+| 10 Benefício na mira | 0:46 | 4,4s | 11 |
+| 11 Fechamento | 0:51 | 4,4s | 11 |
+| **Total** | | **55,6s** | **139** |
 
 ## Roteiro slide a slide
 
-### 01 — Gauge 82,5%
+### 01 — Cada brasileiro deve
 
-`0:00 -> 0:06`  ·  6.0 segundos
+`0:00 -> 0:05`  ·  5,2 segundos
+
+**Na tela:** O número conta de zero até R$ 51.104; os dois cards — família de 4 e juros por pessoa — entram em seguida.
+
+**Locução:** “Todo brasileiro nasce devendo cinquenta e um mil reais. Inclusive quem nasceu hoje.”
+
+**Corte:** Corte quando o número parar e os dois cards estiverem na tela.
+
+### 02 — Gauge 82,5%
+
+`0:05 -> 0:11`  ·  6,0 segundos
 
 **Na tela:** O ponteiro sai do zero e trava em 82,5%. O número conta junto.
 
@@ -37,9 +48,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte assim que o ponteiro parar e o card branco aparecer.
 
-### 02 — A velocidade
+### 03 — A velocidade
 
-`0:06 -> 0:11`  ·  5.2 segundos
+`0:11 -> 0:16`  ·  5,2 segundos
 
 **Na tela:** Coluna de 2025 já em pé; a de 2026 sobe acelerada e a linha liga as duas.
 
@@ -47,9 +58,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte quando o +3,9 terminar de aparecer.
 
-### 03 — R$ 3,1 bi por dia
+### 04 — R$ 3,1 bi por dia
 
-`0:11 -> 0:16`  ·  5.6 segundos
+`0:16 -> 0:22`  ·  5,6 segundos
 
 **Na tela:** A barra branca preenche rápido; a azul, bem menor, preenche logo atrás.
 
@@ -57,9 +68,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte com a tag de alerta piscando.
 
-### 04 — Quase tudo é juro
+### 05 — Quase tudo é juro
 
-`0:16 -> 0:21`  ·  4.4 segundos
+`0:22 -> 0:26`  ·  4,4 segundos
 
 **Na tela:** A barra se divide: rosa avança até 93%, azul fecha os 7% finais.
 
@@ -67,9 +78,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte no card branco.
 
-### 05 — Anel 51,11%
+### 06 — Anel 51,11%
 
-`0:21 -> 0:26`  ·  5.2 segundos
+`0:26 -> 0:31`  ·  5,2 segundos
 
 **Na tela:** O anel abre no sentido horário até a marca de 51,11%.
 
@@ -77,9 +88,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte quando o anel parar.
 
-### 06 — Por que cresce
+### 07 — Por que cresce
 
-`0:26 -> 0:31`  ·  5.2 segundos
+`0:31 -> 0:36`  ·  5,2 segundos
 
 **Na tela:** O bloco rosa sobe rápido até 10,5%; o azul sobe devagar e para em 6,6%.
 
@@ -87,9 +98,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Segure até o bloco azul travar — o descompasso é o argumento.
 
-### 07 — Balança
+### 08 — Balança
 
-`0:31 -> 0:35`  ·  4.4 segundos
+`0:36 -> 0:41`  ·  4,4 segundos
 
 **Na tela:** A viga inclina, o prato de 402 bilhões desce, o de 34,3 sobe.
 
@@ -97,9 +108,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte com a balança no ponto mais inclinado.
 
-### 08 — No seu caixa
+### 09 — No seu caixa
 
-`0:35 -> 0:41`  ·  5.6 segundos
+`0:41 -> 0:46`  ·  5,6 segundos
 
 **Na tela:** Os quatro cards sobem em cascata sobre a base branca da Selic.
 
@@ -107,9 +118,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte depois que o último card assentar.
 
-### 09 — Benefício na mira
+### 10 — Benefício na mira
 
-`0:41 -> 0:45`  ·  4.4 segundos
+`0:46 -> 0:51`  ·  4,4 segundos
 
 **Na tela:** A barra cresce e a linha de corte cruza, isolando a fatia que pisca.
 
@@ -117,9 +128,9 @@ todas cabem em um ciclo único.
 
 **Corte:** Corte no pisca da fatia rosa.
 
-### 10 — Fechamento
+### 11 — Fechamento
 
-`0:45 -> 0:50`  ·  4.4 segundos
+`0:51 -> 0:55`  ·  4,4 segundos
 
 **Na tela:** Ilustração flutuando, card branco entrando, seta deslizando.
 
@@ -140,7 +151,7 @@ todas cabem em um ciclo único.
 - **Números por extenso na fala.** Está escrito “dez vírgula nove trilhões”, e não “R$ 10,9 tri”,
   de propósito: quem narra lendo o símbolo tropeça.
 - **Silêncio nos cortes.** Meio segundo de respiro entre slides faz o número assentar. O roteiro não conta
-  esse tempo na soma das falas, por isso o vídeo final fica em torno de 55 segundos.
+  esse tempo na soma das falas, por isso o vídeo final fica em torno de 61 segundos.
 - **Legenda queimada.** A maior parte assiste sem som; a locução precisa aparecer escrita.
 - **Trilha.** Instrumental discreto, sem percussão marcada — o ritmo já está nas animações.
 

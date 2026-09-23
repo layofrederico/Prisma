@@ -11,6 +11,10 @@ Link da calculadora: https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
 
 ## Versão para Instagram
 
+Todo brasileiro nasce devendo R$ 51.103,59. E morre devendo.
+
+É a dívida bruta do governo dividida pela população do país. Uma família de quatro pessoas carrega R$ 204 mil — e só de juros, cada um de nós banca R$ 447 por mês.
+
 O governo paga R$ 3,1 bilhões de juros por dia. Você não vê esse número no seu extrato — mas ele está lá.
 
 A dívida bruta do governo geral — União, estados e municípios — chegou a R$ 10,9 trilhões, 82,5% de tudo o que o país produz em um ano. E tem um detalhe que quase ninguém comenta: de cada R$ 100 que faltam no caixa do país, R$ 93 são juros. Ou seja, o aperto não vem de gasto com máquina pública — vem de conta financeira.
@@ -30,7 +34,7 @@ Tem a memória de cálculo parcela a parcela lá dentro, para você conferir.
 
 Os R$ 10,9 trilhões são a dívida bruta do governo geral pela metodologia do Banco Central; pelo conceito do FMI, que soma os títulos na carteira do BC, o indicador vai a 95,4% do PIB. Não entram nessa conta as estatais nem a dívida privada.
 
-Fontes: Banco Central (Estatísticas Fiscais de julho/2026), Tesouro Nacional (Relatório Mensal da Dívida) e Copom (16/09/2026).
+Fontes: Banco Central (Estatísticas Fiscais de julho/2026), IBGE (população estimada em 01/07/2026: 214.211.951), Tesouro Nacional (Relatório Mensal da Dívida) e Copom (16/09/2026).
 
 #empresario #contabilidade #palmasto #tocantins #gestaofinanceira #capitaldegiro #selic
 

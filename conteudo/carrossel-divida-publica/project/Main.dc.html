@@ -57,14 +57,16 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <h1 class="rise" style="margin: 0; font-size: 82px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">R$ 10,9 trilhões</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <svg viewBox="0 0 640 340" width="640" height="340" role="img" xmlns="http://www.w3.org/2000/svg">
+    <div style="position: relative; width: 640px; height: 390px;">
+    <svg viewBox="0 0 640 390" width="640" height="390" role="img" xmlns="http://www.w3.org/2000/svg">
       <path d="M 70 300 A 250 250 0 0 1 570 300" fill="none" stroke="rgba(255,255,255,0.14)" stroke-width="34" stroke-linecap="round"></path>
       <path d="M 70 300 A 250 250 0 0 1 570 300" fill="none" stroke="#DE3A76" stroke-width="34" stroke-linecap="round" stroke-dasharray="785.4" stroke-dashoffset="137.4" style="animation: gaugeFill 6s cubic-bezier(0.22, 0.85, 0.3, 1) infinite;"></path>
       <text x="70" y="346" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.56)" text-anchor="middle">0%</text>
       <text x="570" y="346" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.56)" text-anchor="middle">100%</text>
-      <text x="320" y="230" font-family="Poppins, sans-serif" font-size="118" font-weight="800" fill="#FFFFFF" text-anchor="middle">{{ pib }}%</text>
       <text x="320" y="284" font-family="Poppins, sans-serif" font-size="30" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">do PIB</text>
     </svg>
+      <div style="position: absolute; left: 0px; top: 134px; width: 640px; text-align: center; font-size: 118px; font-weight: 800; line-height: 1; color: #FFFFFF; letter-spacing: -0.02em;">{{ pib }}%</div>
+    </div>
     <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
       <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
       <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
@@ -85,7 +87,7 @@ class Component extends DCLogic {
   constructor(props) {
     super(props);
     this.alvos = { pib: 82.5 };
-    this.state = { pib: 0 };
+    this.state = { pib: 82.5 };  // começa no alvo: o quadro parado já mostra o número certo
   }
   componentDidMount() {
     this.rodar();
