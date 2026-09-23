@@ -140,3 +140,12 @@ razão               = 7,67 / 1,9 = 4,0 vezes
 
 Fontes: Tesouro Nacional (RMD jul/2026, tabela 4.1), IBGE (IPCA de 12 meses até jul/2026:
 4,44%; PIB do 2º trimestre de 2026).
+
+### Slide da balança removido (23/09/2026)
+
+O slide comparava o superávit necessário para estabilizar a dívida com a meta de 2026. O
+valor necessário é saída de modelo e muda conforme a taxa usada: R$ 402 bi com o juro
+implícito das estatísticas fiscais, cerca de R$ 620 bi com o custo médio oficial da dívida
+federal. Como não é dado publicado e a mesma mensagem já está no slide "R$ 3,1 bi por dia"
+(um mês de juros supera a meta do ano), o slide saiu. O carrossel passa a ter dez slides,
+todos com dado oficial ou conta direta sobre dado oficial.

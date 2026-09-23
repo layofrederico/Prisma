@@ -52,27 +52,19 @@
       "is_interactive": true
     },
     "Indexacao.dc.html": {
-      "x": 5800,
-      "y": 0,
+      "x": 0,
+      "y": 1470,
       "w": 1080,
       "h": 1350,
       "title": "06 Anel 51,11%",
       "is_interactive": true
     },
     "Equacao.dc.html": {
-      "x": 0,
-      "y": 1470,
-      "w": 1080,
-      "h": 1350,
-      "title": "07 Por que cresce",
-      "is_interactive": true
-    },
-    "Calculo.dc.html": {
       "x": 1160,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 Balança",
+      "title": "07 Por que cresce",
       "is_interactive": true
     },
     "Ajuste.dc.html": {
@@ -80,7 +72,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 Cascata do caixa",
+      "title": "08 No seu caixa",
       "is_interactive": true
     },
     "Sensibilidade.dc.html": {
@@ -88,7 +80,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "10 Corte do benefício",
+      "title": "09 Corte do benefício",
       "is_interactive": true
     },
     "Aplicacao.dc.html": {
@@ -96,7 +88,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "11 Fechamento",
+      "title": "10 Fechamento",
       "is_interactive": true
     },
     "Calculadora.dc.html": {
@@ -116,7 +108,6 @@
     "Cobertura.dc.html",
     "Indexacao.dc.html",
     "Equacao.dc.html",
-    "Calculo.dc.html",
     "Ajuste.dc.html",
     "Sensibilidade.dc.html",
     "Aplicacao.dc.html",
@@ -125,7 +116,7 @@
   "notes": {
     "cap": {
       "kind": "title1",
-      "maxW": 6880,
+      "maxW": 5720,
       "w": 240,
       "x": 0,
       "y": -300,
