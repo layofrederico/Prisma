@@ -31,7 +31,7 @@ Essa conta entra no caixa do comércio por quatro portas:
 
 Você não controla a dívida do governo. Controla o que ela faz com o seu caixa.
 
-A quarta porta você mede agora. Informe quanto vende no cartão, em quantas vezes parcela e a taxa do seu extrato: a calculadora mostra quanto o parcelamento custa por ano e quanto custaria ao juro que o governo paga. Exemplo: faturamento de R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês. A empresa perde R$ 142.465,88 por ano — 11,87% do que fatura. Ao custo do governo, seriam R$ 80.117,50.
+A quarta porta você mede agora. Informe quanto vende no cartão, em quantas vezes parcela e a taxa do seu extrato: a calculadora mostra quanto o parcelamento custa por ano e quanto custaria ao juro que o governo paga. Exemplo: faturamento de R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês. A empresa perde R$ 142.465,88 por ano — 11,87% do que fatura. Ao custo do governo, seriam R$ 80.117,50. A diferença, R$ 62.348,37 por ano, é o que o intermediário cobra a mais.
 
 Copie o link:
 https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
