@@ -1,11 +1,21 @@
 # Legenda do post — carrossel da dívida pública
 
-Link da calculadora: https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
+Chamada do post: **comente EU QUERO** para receber a calculadora no direct. O link não aparece
+na legenda de propósito — quem quiser a calculadora comenta, o que aumenta o alcance do post e
+forma a lista de interessados.
 
-> No Instagram o link da legenda **não fica clicável** — aparece como texto e a pessoa
-> precisa copiar. Por isso a legenda abaixo diz "copie o link"; no LinkedIn e no Facebook,
-> onde o link é clicável, troque por "clique no link".
-> Mantenha o mesmo endereço na bio: é o caminho de menor atrito no Instagram.
+Link para enviar no direct: https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
+(antes de publicar, libere o acesso pelo menu Share — o link está privado)
+
+Mensagem sugerida para o direct:
+
+> Oi, [nome]! Aqui está a calculadora do custo do seu crédito:
+> https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
+> Coloque quanto você vende no cartão por mês, em quantas vezes parcela e a taxa de antecipação
+> do seu extrato. Se o número assustar, me chama aqui que a gente olha junto.
+
+Para dar conta dos comentários, use a resposta automática por palavra-chave do Instagram ou uma
+ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem acima sem espera.
 
 ---
 
@@ -31,10 +41,9 @@ Essa conta entra no caixa do comércio por quatro portas:
 
 Você não controla a dívida do governo. Controla o que ela faz com o seu caixa.
 
-A quarta porta você mede agora. Informe quanto vende no cartão, em quantas vezes parcela e a taxa do seu extrato: a calculadora mostra quanto o parcelamento custa por ano e quanto custaria ao juro que o governo paga. Exemplo: faturamento de R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês. A empresa perde R$ 142.465,88 por ano — 11,87% do que fatura. Ao custo do governo, seriam R$ 80.117,50. A diferença, R$ 62.348,37 por ano, é o que o intermediário cobra a mais.
+A quarta porta dá para medir. Exemplo: faturamento de R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês. A empresa perde R$ 142.465,88 por ano — 11,87% do que fatura. Ao custo do governo, seriam R$ 80.117,50. A diferença, R$ 62.348,37 por ano, é o que o intermediário cobra a mais.
 
-Copie o link:
-https://claude.ai/artifact/WMmFXQqnU3bd2UTJWbDEhu
+Quer saber quanto a sua empresa está perdendo? Comente EU QUERO que a gente te manda no direct a calculadora do custo do seu crédito. Você coloca as suas vendas, as parcelas e a taxa do seu extrato, e a conta sai na hora.
 
 Nota: R$ 10,9 tri é a dívida bruta do governo geral (metodologia BCB); pelo conceito do FMI, 95,4% do PIB. Não inclui estatais nem dívida privada.
 
@@ -46,5 +55,5 @@ Fontes: BCB (Estatísticas Fiscais, jul/2026), IBGE (população em 01/07/2026),
 
 ## Versão para LinkedIn
 
-Mesmo texto, com duas trocas: "Copie o link" vira "Clique no link" e as hashtags caem
-para três, no máximo. O LinkedIn aceita até 3.000 caracteres, então cabe sem cortes.
+Mesmo texto. No LinkedIn a chamada do comentário também funciona; as hashtags caem para três,
+no máximo. O LinkedIn aceita até 3.000 caracteres, então cabe sem cortes.

@@ -23,8 +23,8 @@ número já está parado na tela antes de a frase terminar.
 | 07 Por que cresce | 0:32 | 4,0s | 10 |
 | 08 No seu caixa | 0:36 | 5,2s | 13 |
 | 09 Benefício na mira | 0:41 | 4,4s | 11 |
-| 10 Faça a sua conta | 0:46 | 5,2s | 13 |
-| **Total** | | **51,2s** | **128** |
+| 10 Faça a sua conta | 0:46 | 4,8s | 12 |
+| **Total** | | **50,8s** | **127** |
 
 ## Texto corrido para gravar o áudio
 
@@ -48,7 +48,7 @@ Crédito, imposto, dólar e cliente sem dinheiro. Em cada porta, dá para agir.
 
 Para fechar a conta, benefício fiscal é o primeiro da fila.
 
-Quanto o parcelado custa para você? A calculadora está no link da legenda.
+Quer saber quanto está perdendo? Comente eu quero e receba a calculadora.
 
 ## Roteiro slide a slide
 
@@ -144,13 +144,13 @@ Quanto o parcelado custa para você? A calculadora está no link da legenda.
 
 ### 10 — Faça a sua conta
 
-`0:46 -> 0:51`  ·  5,2 segundos
+`0:46 -> 0:50`  ·  4,8 segundos
 
-**Na tela:** A prévia da calculadora entra com o exemplo fixo (faturamento anual de R$ 1,2 milhão, 12x, 2% ao mês) e o resultado conta até R$ 142.465,88; o botão aponta para a legenda.
+**Na tela:** A prévia da calculadora entra com o exemplo fixo (faturamento anual de R$ 1,2 milhão, 12x, 2% ao mês) e o resultado conta até R$ 142.465,88; embaixo, a chamada “Comente EU QUERO”.
 
-**Locução:** “Quanto o parcelado custa para você? A calculadora está no link da legenda.”
+**Locução:** “Quer saber quanto está perdendo? Comente eu quero e receba a calculadora.”
 
-**Corte:** Segure dois segundos no botão — é o tempo de a pessoa abrir a legenda.
+**Corte:** Segure dois segundos no “Comente EU QUERO” — é o tempo de a pessoa comentar.
 
 ## Como capturar
 
@@ -182,8 +182,8 @@ tabela, com o áudio por cima.
   o tamanho dos slides — nada importante fica de fora.
 - **Duração.** Com os respiros, cerca de 56 segundos, abaixo de um minuto.
 - **Capa do Reel.** Use o quadro final do slide 01, com o R$ 51.104 já parado.
-- **Legenda.** A mesma do carrossel. No Reel o link da legenda também não é clicável: mantenha
-  o "copie o link" e o mesmo endereço na bio.
+- **Legenda.** A mesma do carrossel, com a chamada "comente EU QUERO". No Reel funciona igual:
+  quem comenta recebe a calculadora no direct.
 - **Legenda queimada.** Obrigatória no Reel — a maior parte assiste sem som. O texto corrido
   acima é a própria legenda.
 
