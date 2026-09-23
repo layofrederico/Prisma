@@ -50,6 +50,18 @@ Para fechar a conta, benefício fiscal é o primeiro da fila.
 
 Quer saber quanto está perdendo? Comente eu quero e receba a calculadora.
 
+## Como gravar o áudio para montar o vídeo
+
+O vídeo é montado a partir do seu áudio: as pausas entre os parágrafos marcam a troca de slide.
+
+1. Leia o **texto corrido** acima, na ordem, sem pular parágrafo — a legenda na tela é esse texto.
+2. Entre um parágrafo e o seguinte, faça uma pausa de **1 segundo**. Dentro da frase, respire normalmente:
+   pausas curtas no meio não viram troca de slide, desde que sejam menores que a pausa entre parágrafos.
+3. Grave em lugar silencioso, com o celular a um palmo da boca (o gravador de voz do celular serve).
+4. Mande o arquivo nesta conversa: m4a, mp3, wav ou o áudio do WhatsApp — todos funcionam.
+
+Com o áudio, eu gero o Reel 1080×1920 com a sua voz, legenda na tela e volume no padrão das redes.
+
 ## Roteiro slide a slide
 
 ### 01 — Cada brasileiro deve
