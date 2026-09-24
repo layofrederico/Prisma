@@ -14,7 +14,7 @@ número já está parado na tela antes de a frase terminar.
 
 | # | Entra em | Dura | Palavras |
 |---|---|---|---|
-| 01 Cada brasileiro deve | 0:00 | 5,2s | 13 |
+| 01 Cada brasileiro deve | 0:00 | 5,6s | 14 |
 | 02 Gauge 82,5% | 0:05 | 6,0s | 15 |
 | 03 A velocidade | 0:11 | 5,2s | 13 |
 | 04 R$ 3,1 bi por dia | 0:16 | 5,6s | 14 |
@@ -22,15 +22,15 @@ número já está parado na tela antes de a frase terminar.
 | 06 Anel 51,11% | 0:26 | 6,0s | 15 |
 | 07 Por que cresce | 0:32 | 4,0s | 10 |
 | 08 No seu caixa | 0:36 | 5,2s | 13 |
-| 09 Benefício na mira | 0:41 | 4,4s | 11 |
+| 09 Benefício na mira | 0:42 | 4,4s | 11 |
 | 10 Faça a sua conta | 0:46 | 4,8s | 12 |
-| **Total** | | **50,8s** | **127** |
+| **Total** | | **51,2s** | **128** |
 
 ## Texto corrido para gravar o áudio
 
 Leia em sequência, com meio segundo de pausa entre os parágrafos. Cada parágrafo é um slide.
 
-Todo brasileiro nasce devendo cinquenta e um mil reais. Inclusive quem nasceu hoje.
+Hoje, cada brasileiro deve cinquenta e um mil reais. Inclusive quem acabou de nascer.
 
 O governo deve dez vírgula nove trilhões. Quase oitenta e três por cento do PIB.
 
@@ -66,11 +66,11 @@ Com o áudio, eu gero o Reel 1080×1920 com a sua voz, legenda na tela e volume 
 
 ### 01 — Cada brasileiro deve
 
-`0:00 -> 0:05`  ·  5,2 segundos
+`0:00 -> 0:05`  ·  5,6 segundos
 
 **Na tela:** O número conta de zero até R$ 51.104; os dois cards — família de 4 e juros por pessoa — entram em seguida.
 
-**Locução:** “Todo brasileiro nasce devendo cinquenta e um mil reais. Inclusive quem nasceu hoje.”
+**Locução:** “Hoje, cada brasileiro deve cinquenta e um mil reais. Inclusive quem acabou de nascer.”
 
 **Corte:** Corte quando o número parar e os dois cards estiverem na tela.
 
@@ -136,7 +136,7 @@ Com o áudio, eu gero o Reel 1080×1920 com a sua voz, legenda na tela e volume 
 
 ### 08 — No seu caixa
 
-`0:36 -> 0:41`  ·  5,2 segundos
+`0:36 -> 0:42`  ·  5,2 segundos
 
 **Na tela:** Quatro portas entram em cascata — crédito, imposto, dólar e cliente —, cada uma com o que o contador faz.
 
@@ -146,7 +146,7 @@ Com o áudio, eu gero o Reel 1080×1920 com a sua voz, legenda na tela e volume 
 
 ### 09 — Benefício na mira
 
-`0:41 -> 0:46`  ·  4,4 segundos
+`0:42 -> 0:46`  ·  4,4 segundos
 
 **Na tela:** A barra cresce e a linha de corte cruza, isolando a fatia que pisca.
 
@@ -156,7 +156,7 @@ Com o áudio, eu gero o Reel 1080×1920 com a sua voz, legenda na tela e volume 
 
 ### 10 — Faça a sua conta
 
-`0:46 -> 0:50`  ·  4,8 segundos
+`0:46 -> 0:51`  ·  4,8 segundos
 
 **Na tela:** A prévia da calculadora entra com o exemplo fixo (faturamento anual de R$ 1,2 milhão, 12x, 2% ao mês) e o resultado conta até R$ 142.465,88; embaixo, a chamada “Comente EU QUERO”.
 

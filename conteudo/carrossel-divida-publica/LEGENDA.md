@@ -21,7 +21,7 @@ ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem ac
 
 ## Versão para Instagram
 
-Todo brasileiro nasce devendo R$ 51.103,59. E morre devendo.
+Hoje, cada brasileiro deve R$ 51.103,59 — inclusive quem acabou de nascer.
 
 É a dívida bruta do governo — R$ 10,9 trilhões, 82,5% do PIB — dividida pela população. Uma família de quatro carrega R$ 204 mil. E de cada R$ 100 que faltam no caixa do país, R$ 93 são juros.
 
