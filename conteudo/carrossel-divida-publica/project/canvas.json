@@ -19,36 +19,44 @@
       "title": "01 Cada brasileiro deve",
       "is_interactive": true
     },
-    "Main.dc.html": {
+    "Origem.dc.html": {
       "x": 1160,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "02 Gauge 82,5%",
+      "title": "02 A dívida nasceu com o Brasil",
       "is_interactive": true
     },
-    "Passivo.dc.html": {
+    "Main.dc.html": {
       "x": 2320,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "03 A velocidade",
+      "title": "03 Gauge 82,5%",
       "is_interactive": true
     },
-    "DRE.dc.html": {
+    "Passivo.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "04 R$ 3,1 bi por dia",
+      "title": "04 A velocidade",
       "is_interactive": true
     },
-    "Cobertura.dc.html": {
+    "DRE.dc.html": {
       "x": 4640,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "05 Quase tudo é juro",
+      "title": "05 R$ 3,1 bi por dia",
+      "is_interactive": true
+    },
+    "Cobertura.dc.html": {
+      "x": 5800,
+      "y": 0,
+      "w": 1080,
+      "h": 1350,
+      "title": "06 Quase tudo é juro",
       "is_interactive": true
     },
     "Indexacao.dc.html": {
@@ -56,7 +64,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "06 Anel 51,11%",
+      "title": "07 Anel 51,11%",
       "is_interactive": true
     },
     "Equacao.dc.html": {
@@ -64,7 +72,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Por que cresce",
+      "title": "08 Por que cresce",
       "is_interactive": true
     },
     "Ajuste.dc.html": {
@@ -72,7 +80,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 No seu caixa",
+      "title": "09 No seu caixa",
       "is_interactive": true
     },
     "Sensibilidade.dc.html": {
@@ -80,7 +88,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 Corte do benefício",
+      "title": "10 Corte do benefício",
       "is_interactive": true
     },
     "Aplicacao.dc.html": {
@@ -88,7 +96,7 @@
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "10 Faça a sua conta",
+      "title": "11 Faça a sua conta",
       "is_interactive": true
     },
     "Calculadora.dc.html": {
@@ -102,6 +110,7 @@
   },
   "order": [
     "Capa.dc.html",
+    "Origem.dc.html",
     "Main.dc.html",
     "Passivo.dc.html",
     "DRE.dc.html",
@@ -116,7 +125,7 @@
   "notes": {
     "cap": {
       "kind": "title1",
-      "maxW": 5720,
+      "maxW": 6880,
       "w": 240,
       "x": 0,
       "y": -300,

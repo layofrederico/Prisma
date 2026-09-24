@@ -23,6 +23,8 @@ ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem ac
 
 Hoje, cada brasileiro deve R$ 51.103,59 — inclusive quem acabou de nascer.
 
+E não é de hoje: em 1824, dois anos após a Independência, o Império já tomava em Londres o primeiro empréstimo externo.
+
 É a dívida bruta do governo — R$ 10,9 trilhões, 82,5% do PIB — dividida pela população. Uma família de quatro carrega R$ 204 mil. E de cada R$ 100 que faltam no caixa do país, R$ 93 são juros.
 
 Essa conta entra no caixa do comércio por quatro portas:
@@ -47,7 +49,7 @@ Quer saber quanto a sua empresa está perdendo? Comente EU QUERO que a gente te 
 
 Nota: R$ 10,9 tri é a dívida bruta do governo geral (metodologia BCB); pelo conceito do FMI, 95,4% do PIB. Não inclui estatais nem dívida privada.
 
-Fontes: BCB (Estatísticas Fiscais, jul/2026), IBGE (população em 01/07/2026), Tesouro Nacional (carga tributária 2025 e Relatório Mensal da Dívida) e Copom (16/09/2026).
+Fontes: Tratado de Paz e Aliança (1825), BCB (Estatísticas Fiscais, jul/2026), IBGE (população em 01/07/2026), Tesouro Nacional (carga tributária 2025 e Relatório Mensal da Dívida) e Copom (16/09/2026).
 
 #empresario #contabilidade #palmasto #tocantins #gestaofinanceira #capitaldegiro #selic
 

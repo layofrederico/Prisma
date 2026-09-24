@@ -7,7 +7,7 @@ PROJ = BASE + "/carrossel/project"
 OUT = BASE + "/video/paginas"
 os.makedirs(OUT, exist_ok=True)
 
-ORDEM = ["Capa", "Main", "Passivo", "DRE", "Cobertura", "Indexacao", "Equacao", "Ajuste", "Sensibilidade", "Aplicacao"]
+ORDEM = ["Capa", "Origem", "Main", "Passivo", "DRE", "Cobertura", "Indexacao", "Equacao", "Ajuste", "Sensibilidade", "Aplicacao"]
 # contadores: mesmo alvo, duração e formato dos scripts dos artboards
 CONTADORES = {
     "Capa":      {"valor": {"alvo": 51103.59, "dur": 1.8, "fmt": "int"}},

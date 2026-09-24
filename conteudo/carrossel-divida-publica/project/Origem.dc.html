@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>A dívida nasceu com o Brasil</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body { margin: 0; background: #01066A; }
+a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
+
+@keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(1.3); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes flowDash { to { stroke-dashoffset: -40; } }
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+@keyframes nudgeX { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(14px); } }
+.rise { animation: riseIn 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+@keyframes growXOnce { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growYOnce { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes fadeInOnce { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cutOnce { from { stroke-dashoffset: 300; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
+.grow-x { transform-box: fill-box; transform-origin: left center; animation: growXOnce 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.grow-y { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.grow-y-fast { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 0.9s cubic-bezier(0.16, 0.9, 0.3, 1) both; }
+.grow-y-slow { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 2.4s cubic-bezier(0.5, 0.2, 0.5, 1) both; }
+.pulse { animation: pulseDot 2.2s ease-in-out infinite; }
+.blink { animation: blink 1.6s ease-in-out infinite; }
+.float { animation: floatY 4.5s ease-in-out infinite; }
+.flow { stroke-dasharray: 10 10; animation: flowDash 1.3s linear infinite; }
+.cycle { animation: fadeInOnce 0.7s ease-out 1.2s both; }
+.breathe { animation: breathe 3.4s ease-in-out infinite; }
+.nudge { animation: nudgeX 1.6s ease-in-out infinite; }
+.cut { stroke-dasharray: 300; animation: cutOnce 1.1s ease-out 1s both; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
+
+@keyframes viagem {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(141px, -60px); }
+  50%  { transform: translate(274px, -79px); }
+  75%  { transform: translate(399px, -57px); }
+  100% { transform: translate(515px, 5px); }
+}
+@keyframes balanco { 0%, 100% { transform: rotate(-2.5deg) translateY(0); } 50% { transform: rotate(2.5deg) translateY(-4px); } }
+.viagem { animation: viagem 3.4s cubic-bezier(0.45, 0.05, 0.35, 1) 0.4s both; }
+.balanco { transform-origin: 50% 85%; animation: balanco 2.4s ease-in-out infinite; }
+.chegada { animation: fadeInOnce 0.7s ease-out 3.7s both; }
+
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+  </div>
+  <div style="width: 100%; margin-top: 34px;">
+    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">A DÍVIDA NASCEU COM O BRASIL</p>
+    <h1 class="rise" style="margin: 0; font-size: 60px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">O país mal tinha nascido<br>e já devia</h1>
+  </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="position: relative; width: 900px; height: 400px;">
+    <svg viewBox="0 0 900 400" width="900" height="400" role="img" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 240 L55 255 L85 285 L98 318 L78 360 L50 400 L0 400 Z" fill="rgba(255,255,255,0.13)"></path>
+      <circle cx="98" cy="318" r="7" fill="#FEDF00"></circle>
+      <text x="112" y="350" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="start">Rio de Janeiro</text>
+      <path d="M740 40 L772 52 L766 88 L786 118 L776 150 L802 188 L812 212 L796 236 L808 254 L770 266 L730 270 L698 282 L714 262 L704 246 L688 232 L704 214 L720 200 L710 180 L724 160 L704 140 L714 114 L694 98 L720 70 Z" fill="rgba(255,255,255,0.22)"></path>
+      <path d="M638 110 C668 110 674 142 664 164 C654 190 626 192 616 170 C608 150 614 110 638 110 Z" fill="rgba(255,255,255,0.16)"></path>
+      <circle cx="782" cy="243" r="7" fill="#FEDF00"></circle>
+      <text x="800" y="308" font-family="Poppins, sans-serif" font-size="28" font-weight="600" fill="rgba(255,255,255,0.78)" text-anchor="middle">Londres</text>
+      <path class="flow" d="M110 300 Q400 140 625 305" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3"></path>
+      <path d="M300 372 Q312 364 324 372 T348 372 M420 386 Q432 378 444 386 T468 386 M540 368 Q552 360 564 368 T588 368" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2.5"></path>
+    </svg>
+      <div class="viagem" style="position: absolute; left: 55px; top: 205px; width: 110px; height: 110px;">
+        <div class="balanco" style="width: 110px; height: 110px;">
+        <svg viewBox="0 0 110 110" width="110" height="110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Navio com a bandeira do Império do Brasil">
+          <line x1="35" y1="22" x2="35" y2="80" stroke="#F4EDE1" stroke-width="3"></line>
+          <line x1="58" y1="10" x2="58" y2="80" stroke="#F4EDE1" stroke-width="3"></line>
+          <line x1="81" y1="26" x2="81" y2="80" stroke="#F4EDE1" stroke-width="3"></line>
+          <path d="M23 26 Q35 31 47 26 L46 46 Q35 51 24 46 Z" fill="#FFFFFF"></path>
+          <path d="M22 50 Q35 55 48 50 L47 70 Q35 74 23 70 Z" fill="#FFFFFF"></path>
+          <path d="M44 20 Q58 26 72 20 L71 42 Q58 48 45 42 Z" fill="#FFFFFF"></path>
+          <path d="M43 47 Q58 53 73 47 L72 70 Q58 75 44 70 Z" fill="#FFFFFF"></path>
+          <path d="M70 32 Q81 36 92 32 L91 50 Q81 54 71 50 Z" fill="#FFFFFF"></path>
+          <path d="M69 54 Q81 58 93 54 L92 71 Q81 75 70 71 Z" fill="#FFFFFF"></path>
+          <rect x="58" y="1" width="24" height="15" fill="#009C3B"></rect>
+          <polygon points="70,2.5 80,8.5 70,14.5 60,8.5" fill="#FEDF00"></polygon>
+          <circle cx="70" cy="8.5" r="2.8" fill="#1E3A8A"></circle>
+          <path d="M6 80 L104 80 L92 100 L18 100 Z" fill="#C9A26B"></path>
+          <line x1="12" y1="87" x2="98" y2="87" stroke="#8A6A3F" stroke-width="2"></line>
+        </svg>
+        </div>
+      </div>
+      <div class="chegada" style="position: absolute; left: 395px; top: 340px; width: 460px; text-align: center;">
+        <span style="display: inline-block; white-space: nowrap; background: #FFFFFF; color: #01066A; font-size: 26px; font-weight: 700; padding: 10px 24px; border-radius: 999px;">1824 · primeiro empréstimo</span>
+      </div>
+    </div>
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">Dois anos após a Independência, o Império já pedia dinheiro em Londres — inclusive para indenizar Portugal.</p>
+    </div>
+  </div>
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+    <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 38px; font-weight: 600; line-height: 1.34;">Há 200 anos rolando a conta</span></div>
+    <p style="margin: 0; max-width: 880px; font-size: 26px; line-height: 1.42; color: rgba(255,255,255,0.56);">Primeiro empréstimo externo contratado em Londres em 20/08/1824; indenização de £ 2 milhões a Portugal pelo Tratado de 29/08/1825.</p>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
+      <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+      <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

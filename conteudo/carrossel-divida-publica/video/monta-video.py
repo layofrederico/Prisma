@@ -9,7 +9,7 @@ import imageio_ffmpeg
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FF = imageio_ffmpeg.get_ffmpeg_exe()
-ORDEM = ["Capa", "Main", "Passivo", "DRE", "Cobertura", "Indexacao", "Equacao", "Ajuste", "Sensibilidade", "Aplicacao"]
+ORDEM = ["Capa", "Origem", "Main", "Passivo", "DRE", "Cobertura", "Indexacao", "Equacao", "Ajuste", "Sensibilidade", "Aplicacao"]
 MIN_SLIDE = 2.6       # s — tempo para as animações terminarem (a mais longa leva ~2,4 s)
 SEGURA_FIM = 1.5      # s — o último slide fica parado depois da última palavra
 
@@ -27,15 +27,15 @@ def silencios(arq, ruido_db, minimo):
 
 def cortes(arq):
     total = duracao(arq)
-    # tenta limiares do mais rigoroso ao mais tolerante até achar as 9 pausas entre os 10 parágrafos
+    # tenta limiares do mais rigoroso ao mais tolerante até achar as pausas entre os parágrafos
     for ruido in (-40, -35, -30, -25):
         sil = silencios(arq, ruido, 0.35)
         internos = [(a, b) for a, b in sil if a > 0.3 and b < total - 0.3]   # descarta silêncio de início e de fim
-        if len(internos) >= 9:
-            maiores = sorted(sorted(internos, key=lambda p: p[1] - p[0], reverse=True)[:9])
+        if len(internos) >= len(ORDEM) - 1:
+            maiores = sorted(sorted(internos, key=lambda p: p[1] - p[0], reverse=True)[:len(ORDEM) - 1])
             return total, [(a + b) / 2 for a, b in maiores], ruido
-    raise SystemExit("Encontrei só %d pausas entre parágrafos (preciso de 9). Regrave com uma pausa de "
-                     "1 segundo entre cada parágrafo, ou me passe os tempos de troca de slide." % len(internos))
+    raise SystemExit("Encontrei só %d pausas entre parágrafos (preciso de %d). Regrave com uma pausa de "
+                     "1 segundo entre cada parágrafo, ou me passe os tempos de troca de slide." % (len(internos), len(ORDEM) - 1))
 
 def main():
     audio = os.path.abspath(sys.argv[1])
