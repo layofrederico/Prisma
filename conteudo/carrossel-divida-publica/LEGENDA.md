@@ -19,33 +19,33 @@ ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem ac
 
 ---
 
-## Versão para Instagram — foco no comércio
+## Versão para Instagram — foco no comércio (usar no post)
 
-1.888 caracteres de 2.200. Liga a dívida pública ao balcão da loja: giro, parcelado, cliente, imposto e câmbio.
+1.756 caracteres de 2.200. Segue a ordem dos slides e as mesmas quatro portas do card 06. Texto puro para colar: `legenda-instagram.txt`.
 
 Hoje, cada brasileiro deve R$ 51.103,59. E quem sente essa conta primeiro é o balcão da sua loja.
 
-A dívida bruta do governo chegou a R$ 10,9 trilhões, 82,5% do PIB. Para rolar esse valor, o governo disputa o mesmo dinheiro que financia o comércio. Quanto mais a dívida pesa, mais o mercado cobra para emprestar ao governo, e mais tempo os juros ficam altos. A Selic está em 13,75% ao ano.
+A dívida bruta do governo chegou a R$ 10,9 trilhões, 82,5% do PIB. E não é de hoje: o primeiro empréstimo foi tomado em Londres, em 1824. De cada R$ 100 que faltam nas contas públicas, R$ 93 são juros.
 
-Veja como isso chega na sua loja:
+Para rolar essa dívida, o governo disputa o mesmo dinheiro que financia o comércio, e os juros ficam altos por mais tempo. A Selic está em 13,75% ao ano.
 
-1. O giro fica mais caro. Capital de giro, cheque especial e antecipação do cartão partem da Selic. Estoque parado passa a custar juros todo mês.
+Arraste o carrossel e veja as quatro portas por onde essa conta entra na sua loja:
 
-2. O parcelado come a margem. Uma loja que fatura R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês, perde R$ 142.465,88 por ano. São 11,87% do faturamento.
+1. Crédito caro. Capital de giro, cheque especial e antecipação do cartão partem da Selic. Estoque parado custa juros todo mês.
 
-3. O cliente compra menos. Com crédito caro, o consumidor adia a compra, pede mais prazo ou troca por um produto mais barato. O ticket cai e o risco de calote sobe.
+2. Imposto na prateleira. A carga tributária foi de 32,4% do PIB em 2025 e pesa sobre o consumo, ou seja, sobre o que você vende.
 
-4. O imposto já vem na etiqueta. A carga tributária foi de 32,4% do PIB em 2025, e boa parte dela recai sobre o consumo, ou seja, sobre o que você vende.
+3. Dólar e frete. Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto produto importado, diesel e frete.
 
-5. O dólar mexe na prateleira. Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto produto importado, diesel e frete.
+4. Cliente sem crédito. Com cartão e carnê caros, o consumidor adia a compra, pede mais prazo ou leva o produto mais barato.
 
-O comércio não controla a dívida do governo. Controla preço, prazo e margem.
+O comércio não controla a dívida do governo. Controla preço, prazo e margem. Em cada porta, o contador mede o custo, revisa regime e créditos e refaz o preço.
 
-É aí que entra o contador: medir quanto o juro come da sua margem, calcular até quantas parcelas vale vender, revisar regime e créditos para não pagar imposto a mais e refazer o preço quando o custo muda.
+Um exemplo: a loja que fatura R$ 1,2 milhão por ano no cartão, vende em 12x e antecipa a 2% ao mês perde R$ 142.465,88 por ano. São 11,87% do faturamento.
 
 Quer saber quanto o parcelado custa para a sua loja? Comente EU QUERO e receba no direct a calculadora do custo do seu crédito.
 
-Fontes: BCB (dívida bruta do governo geral, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026) e Tesouro Nacional (carga tributária 2025).
+Fontes: BCB (dívida bruta do governo geral, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026), Tesouro Nacional (carga tributária 2025).
 
 #comercio #varejo #lojista #empresario #contabilidade #palmasto #tocantins #capitaldegiro #selic
 
