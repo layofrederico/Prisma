@@ -37,14 +37,16 @@ window.__setTime = function (t) {
 };
 </script>"""
 
-def converte(nome, legenda):
+def converte(nome, legenda, carrossel=False):
     s = open("%s/%s.dc.html" % (PROJ, nome), encoding="utf-8").read()
     helmet = re.search(r"<helmet>(.*?)</helmet>", s, re.S).group(1)
     helmet = re.sub(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com[^>]*>', "", helmet)
     raiz = re.search(r"</helmet>(.*)</x-dc>", s, re.S).group(1)
     raiz = re.sub(r"\{\{\s*(\w+)\s*\}\}", r'<span data-hole="\1"></span>', raiz)
-    # no vídeo não há o que arrastar: tira o "Arraste" da capa
-    raiz = re.sub(r'<span style="display: inline-flex;[^"]*">\s*Arraste<span class="nudge"[^>]*>&#8594;</span>\s*</span>', "", raiz)
+    # no Reel não há o que arrastar: tira o "Arraste" da capa; o carrossel (carrossel=True) mantém
+    if not carrossel:
+        raiz, n = re.subn(r'<span class="arraste"[^>]*>.*?</span>\s*</span>', "", raiz, flags=re.S)
+        assert n <= 1
     legenda = legenda.replace("R$ ", "R$&nbsp;")          # "R$" nunca fica sozinho no fim da linha
     assert "{{" not in raiz
     html = """<!doctype html>
@@ -63,11 +65,13 @@ html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; backgro
 <div id="legenda">%s</div>
 %s
 </body></html>""" % (helmet, TOPO_SLIDE, TOPO_LEGENDA, raiz, legenda, DRIVER % json.dumps(CONTADORES.get(nome, {})))
-    open("%s/%s.html" % (OUT, nome), "w", encoding="utf-8").write(html)
+    destino = "%s/%s%s.html" % (OUT, nome, "-carrossel" if carrossel else "")
+    open(destino, "w", encoding="utf-8").write(html)
 
 if __name__ == "__main__":
     legendas = json.load(open(sys.argv[1], encoding="utf-8"))
     assert len(legendas) == len(ORDEM)
     for nome, leg in zip(ORDEM, legendas):
         converte(nome, leg)
-    print("convertidos:", len(ORDEM))
+    converte("Capa", legendas[0], carrossel=True)   # capa do carrossel, com o "Arraste para o lado"
+    print("convertidos:", len(ORDEM) + 1)

@@ -16,6 +16,15 @@ TOPO_SLIDE = 110   # mesmo valor de converte.py: onde o slide 4:5 começa no qua
 ANIMA = 6.0        # s — trecho animado aproveitado de cada slide (a animação mais longa leva ~4 s)
 SEGURA = 30.0      # s — duração total de cada card
 
+def renderiza_propria(pagina):
+    pasta = os.path.join(AQUI, "quadros-" + pagina.lower())
+    plano = os.path.join(AQUI, "plano-" + pagina.lower() + ".json")
+    json.dump([{"slide": pagina, "dur": ANIMA}], open(plano, "w"))
+    env = dict(os.environ, NODE_PATH=subprocess.run(["npm", "root", "-g"], capture_output=True, text=True).stdout.strip())
+    subprocess.run(["node", os.path.join(AQUI, "renderiza.js"), plano, pasta, "30"], check=True, env=env,
+                   stdout=subprocess.DEVNULL)
+    return pasta
+
 def main():
     args = sys.argv[1:]
     vinheta = None
@@ -30,8 +39,12 @@ def main():
         quadros = round(p["dur"] * 30)
         usa = min(quadros, round(ANIMA * 30))
         arq = os.path.join(saida, "%02d-%s.mp4" % (n, p["slide"].lower()))
+        origem, primeiro = pasta, inicio + 1
+        if os.path.exists(os.path.join(AQUI, "paginas", p["slide"] + "-carrossel.html")):
+            # versão própria do carrossel (a capa, com o "Arraste para o lado"): renderiza só ela
+            origem, primeiro = renderiza_propria(p["slide"] + "-carrossel"), 1
         subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y",
-                        "-framerate", "30", "-start_number", str(inicio + 1), "-i", os.path.join(pasta, "%05d.jpg"),
+                        "-framerate", "30", "-start_number", str(primeiro), "-i", os.path.join(origem, "%05d.jpg"),
                         "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
                         "-frames:v", str(round(SEGURA * 30)),
                         "-vf", "trim=end_frame=%d,crop=1080:1350:0:%d,tpad=stop_mode=clone:stop_duration=%.1f"
