@@ -35,68 +35,36 @@
       "title": "03 Gauge 82,5%",
       "is_interactive": true
     },
-    "Passivo.dc.html": {
+    "DRE.dc.html": {
       "x": 3480,
       "y": 0,
       "w": 1080,
       "h": 1350,
-      "title": "04 A velocidade",
-      "is_interactive": true
-    },
-    "DRE.dc.html": {
-      "x": 4640,
-      "y": 0,
-      "w": 1080,
-      "h": 1350,
-      "title": "05 R$ 3,1 bi por dia",
+      "title": "04 R$ 3,1 bi por dia",
       "is_interactive": true
     },
     "Cobertura.dc.html": {
-      "x": 5800,
-      "y": 0,
-      "w": 1080,
-      "h": 1350,
-      "title": "06 Quase tudo é juro",
-      "is_interactive": true
-    },
-    "Indexacao.dc.html": {
       "x": 0,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "07 Anel 51,11%",
+      "title": "05 Quase tudo é juro",
       "is_interactive": true
     },
-    "Equacao.dc.html": {
+    "Ajuste.dc.html": {
       "x": 1160,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "08 Por que cresce",
+      "title": "06 No seu caixa",
       "is_interactive": true
     },
-    "Ajuste.dc.html": {
+    "Aplicacao.dc.html": {
       "x": 2320,
       "y": 1470,
       "w": 1080,
       "h": 1350,
-      "title": "09 No seu caixa",
-      "is_interactive": true
-    },
-    "Sensibilidade.dc.html": {
-      "x": 3480,
-      "y": 1470,
-      "w": 1080,
-      "h": 1350,
-      "title": "10 Corte do benefício",
-      "is_interactive": true
-    },
-    "Aplicacao.dc.html": {
-      "x": 4640,
-      "y": 1470,
-      "w": 1080,
-      "h": 1350,
-      "title": "11 Faça a sua conta",
+      "title": "07 Faça a sua conta",
       "is_interactive": true
     },
     "Calculadora.dc.html": {
@@ -112,20 +80,16 @@
     "Capa.dc.html",
     "Origem.dc.html",
     "Main.dc.html",
-    "Passivo.dc.html",
     "DRE.dc.html",
     "Cobertura.dc.html",
-    "Indexacao.dc.html",
-    "Equacao.dc.html",
     "Ajuste.dc.html",
-    "Sensibilidade.dc.html",
     "Aplicacao.dc.html",
     "Calculadora.dc.html"
   ],
   "notes": {
     "cap": {
       "kind": "title1",
-      "maxW": 6880,
+      "maxW": 4560,
       "w": 240,
       "x": 0,
       "y": -300,

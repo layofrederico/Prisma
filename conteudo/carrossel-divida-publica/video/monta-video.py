@@ -9,7 +9,7 @@ import imageio_ffmpeg
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 FF = imageio_ffmpeg.get_ffmpeg_exe()
-ORDEM = ["Capa", "Origem", "Main", "Passivo", "DRE", "Cobertura", "Indexacao", "Equacao", "Ajuste", "Sensibilidade", "Aplicacao"]
+ORDEM = ["Capa", "Origem", "Main", "DRE", "Cobertura", "Ajuste", "Aplicacao"]
 MIN_SLIDE = 2.6       # s — tempo para as animações terminarem (a mais longa leva ~2,4 s)
 SEGURA_FIM = 1.5      # s — o último slide fica parado depois da última palavra
 
