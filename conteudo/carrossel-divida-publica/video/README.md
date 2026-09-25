@@ -24,3 +24,7 @@ python3 monta-video.py locucao-editada.wav reel-divida-publica.mp4
 
 - `reel-divida-publica.mp4`: Reel final com a voz editada.
 - `locucao-editada.m4a`: a voz depois da limpeza, sem a trilha.
+- `locucao-ia.srt`: as 7 falas com os tempos do Reel, para gerar a voz por IA (TTS ou dublagem a
+  partir de legenda). Números por extenso, para a voz sintética não ler símbolo. Cada bloco vai do
+  início ao fim da fala na locução editada (medido com `silencedetect` a −35 dB); os cortes de slide
+  caem no meio das pausas de 0,6 s entre blocos. UTF-8 sem BOM, fim de linha CRLF.
