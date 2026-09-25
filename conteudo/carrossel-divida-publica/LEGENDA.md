@@ -21,31 +21,35 @@ ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem ac
 
 ## Versão para Instagram — foco no comércio (usar no post)
 
-1.756 caracteres de 2.200. Segue a ordem dos slides e as mesmas quatro portas do card 06. Texto puro para colar: `legenda-instagram.txt`.
+Cerca de 1.803 caracteres de 2.200, com emojis. Segue a ordem dos slides e as mesmas quatro portas do card 06. Texto puro para colar: `legenda-instagram.txt`.
 
-Hoje, cada brasileiro deve R$ 51.103,59. E quem sente essa conta primeiro é o balcão da sua loja.
+🇧🇷 Hoje, cada brasileiro deve R$ 51.103,59. E quem sente essa conta primeiro é o balcão da sua loja. 🏪
 
-A dívida bruta do governo chegou a R$ 10,9 trilhões, 82,5% do PIB. E não é de hoje: o primeiro empréstimo foi tomado em Londres, em 1824. De cada R$ 100 que faltam nas contas públicas, R$ 93 são juros.
+📊 A dívida bruta do governo chegou a R$ 10,9 trilhões, 82,5% do PIB. E não é de hoje: o primeiro empréstimo foi tomado em Londres, em 1824. ⛵ De cada R$ 100 que faltam nas contas públicas, R$ 93 são juros.
 
-Para rolar essa dívida, o governo disputa o mesmo dinheiro que financia o comércio, e os juros ficam altos por mais tempo. A Selic está em 13,75% ao ano.
+🏦 Para rolar essa dívida, o governo disputa o mesmo dinheiro que financia o comércio, e os juros ficam altos por mais tempo. A Selic está em 13,75% ao ano.
 
-Arraste o carrossel e veja as quatro portas por onde essa conta entra na sua loja:
+👉 Arraste o carrossel e veja as quatro portas por onde essa conta entra na sua loja:
 
-1. Crédito caro. Capital de giro, cheque especial e antecipação do cartão partem da Selic. Estoque parado custa juros todo mês.
+1️⃣ Crédito caro 💳
+Capital de giro, cheque especial e antecipação do cartão partem da Selic. Estoque parado custa juros todo mês.
 
-2. Imposto na prateleira. A carga tributária foi de 32,4% do PIB em 2025 e pesa sobre o consumo, ou seja, sobre o que você vende.
+2️⃣ Imposto na prateleira 🧾
+A carga tributária foi de 32,4% do PIB em 2025 e pesa sobre o consumo, ou seja, sobre o que você vende.
 
-3. Dólar e frete. Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto produto importado, diesel e frete.
+3️⃣ Dólar e frete 🚚
+Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto produto importado, diesel e frete.
 
-4. Cliente sem crédito. Com cartão e carnê caros, o consumidor adia a compra, pede mais prazo ou leva o produto mais barato.
+4️⃣ Cliente sem crédito 🛍️
+Com cartão e carnê caros, o consumidor adia a compra, pede mais prazo ou leva o produto mais barato.
 
-O comércio não controla a dívida do governo. Controla preço, prazo e margem. Em cada porta, o contador mede o custo, revisa regime e créditos e refaz o preço.
+🎯 O comércio não controla a dívida do governo. Controla preço, prazo e margem. Em cada porta, o contador mede o custo, revisa regime e créditos e refaz o preço.
 
-Um exemplo: a loja que fatura R$ 1,2 milhão por ano no cartão, vende em 12x e antecipa a 2% ao mês perde R$ 142.465,88 por ano. São 11,87% do faturamento.
+💸 Um exemplo: a loja que fatura R$ 1,2 milhão por ano no cartão, vende em 12x e antecipa a 2% ao mês perde R$ 142.465,88 por ano. São 11,87% do faturamento.
 
-Quer saber quanto o parcelado custa para a sua loja? Comente EU QUERO e receba no direct a calculadora do custo do seu crédito.
+🧮 Quer saber quanto o parcelado custa para a sua loja? Comente EU QUERO 💬 e receba no direct a calculadora do custo do seu crédito.
 
-Fontes: BCB (dívida bruta do governo geral, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026), Tesouro Nacional (carga tributária 2025).
+📌 Fontes: BCB (dívida bruta do governo geral, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026), Tesouro Nacional (carga tributária 2025).
 
 #comercio #varejo #lojista #empresario #contabilidade #palmasto #tocantins #capitaldegiro #selic
 
