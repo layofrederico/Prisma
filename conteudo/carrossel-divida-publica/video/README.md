@@ -28,3 +28,10 @@ python3 monta-video.py locucao-editada.wav reel-divida-publica.mp4
   partir de legenda). Números por extenso, para a voz sintética não ler símbolo. Cada bloco vai do
   início ao fim da fala na locução editada (medido com `silencedetect` a −35 dB); os cortes de slide
   caem no meio das pausas de 0,6 s entre blocos. UTF-8 sem BOM, fim de linha CRLF.
+
+## Reel sem voz
+
+`python3 monta-video.py --sem-audio reel-sem-audio.mp4` gera o Reel mudo com tempos fixos de leitura
+(`TEMPOS_SEM_AUDIO`): Capa 6,0 s · Origem 7,0 s · Main 6,0 s · DRE 6,0 s · Cobertura 5,5 s ·
+Ajuste 7,5 s · Aplicacao 7,0 s = 45,0 s. Leva uma faixa de áudio silenciosa para os apps aceitarem o
+arquivo sem estranhar; a música entra depois, pela biblioteca do Instagram.
