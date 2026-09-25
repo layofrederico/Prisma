@@ -19,7 +19,39 @@ ferramenta de automação de direct: quem comentar EU QUERO recebe a mensagem ac
 
 ---
 
-## Versão para Instagram
+## Versão para Instagram — foco no comércio
+
+1.888 caracteres de 2.200. Liga a dívida pública ao balcão da loja: giro, parcelado, cliente, imposto e câmbio.
+
+Hoje, cada brasileiro deve R$ 51.103,59. E quem sente essa conta primeiro é o balcão da sua loja.
+
+A dívida bruta do governo chegou a R$ 10,9 trilhões, 82,5% do PIB. Para rolar esse valor, o governo disputa o mesmo dinheiro que financia o comércio. Quanto mais a dívida pesa, mais o mercado cobra para emprestar ao governo, e mais tempo os juros ficam altos. A Selic está em 13,75% ao ano.
+
+Veja como isso chega na sua loja:
+
+1. O giro fica mais caro. Capital de giro, cheque especial e antecipação do cartão partem da Selic. Estoque parado passa a custar juros todo mês.
+
+2. O parcelado come a margem. Uma loja que fatura R$ 1,2 milhão por ano no cartão, vendendo em 12x e antecipando a 2% ao mês, perde R$ 142.465,88 por ano. São 11,87% do faturamento.
+
+3. O cliente compra menos. Com crédito caro, o consumidor adia a compra, pede mais prazo ou troca por um produto mais barato. O ticket cai e o risco de calote sobe.
+
+4. O imposto já vem na etiqueta. A carga tributária foi de 32,4% do PIB em 2025, e boa parte dela recai sobre o consumo, ou seja, sobre o que você vende.
+
+5. O dólar mexe na prateleira. Quando o mercado desconfia das contas públicas, o câmbio tende a subir e leva junto produto importado, diesel e frete.
+
+O comércio não controla a dívida do governo. Controla preço, prazo e margem.
+
+É aí que entra o contador: medir quanto o juro come da sua margem, calcular até quantas parcelas vale vender, revisar regime e créditos para não pagar imposto a mais e refazer o preço quando o custo muda.
+
+Quer saber quanto o parcelado custa para a sua loja? Comente EU QUERO e receba no direct a calculadora do custo do seu crédito.
+
+Fontes: BCB (dívida bruta do governo geral, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026) e Tesouro Nacional (carga tributária 2025).
+
+#comercio #varejo #lojista #empresario #contabilidade #palmasto #tocantins #capitaldegiro #selic
+
+---
+
+## Versão para Instagram — quatro portas do caixa
 
 Hoje, cada brasileiro deve R$ 51.103,59 — inclusive quem acabou de nascer.
 
