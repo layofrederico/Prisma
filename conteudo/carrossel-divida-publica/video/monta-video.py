@@ -3,7 +3,8 @@
 renderiza cada slide com a duração do seu trecho e gera o Reel 1080x1920 com a voz.
 
 Uso: python3 monta-video.py <audio> [saida.mp4]
-     python3 monta-video.py --sem-audio [saida.mp4]   (Reel mudo, tempos de leitura fixos)
+     python3 monta-video.py --sem-audio [saida.mp4] [--fim vinheta.mp4]
+       (Reel sem voz, com tempo de leitura fixo por slide; --fim acrescenta a vinheta da marca no final)
 """
 import sys, os, re, json, subprocess, shutil
 import imageio_ffmpeg
@@ -13,10 +14,12 @@ FF = imageio_ffmpeg.get_ffmpeg_exe()
 ORDEM = ["Capa", "Origem", "Main", "DRE", "Cobertura", "Ajuste", "Aplicacao"]
 MIN_SLIDE = 2.6       # s — tempo para as animações terminarem (a mais longa leva ~2,4 s)
 SEGURA_FIM = 1.5      # s — o último slide fica parado depois da última palavra
-# Reel sem voz: cada slide fica o tempo de a animação terminar (~2,4 s) e de ler a legenda e o card
-# (~3,3 palavras/s). Origem espera a viagem do navio; Ajuste tem quatro portas; Aplicacao segura a chamada.
-TEMPOS_SEM_AUDIO = {"Capa": 6.0, "Origem": 7.0, "Main": 6.0, "DRE": 6.0,
-                    "Cobertura": 5.5, "Ajuste": 7.5, "Aplicacao": 7.0}
+# Reel sem voz: cada slide fica o tempo de a animação terminar (~2,5 s) e de ler título, número, card e
+# legenda. O parágrafo explicativo inteiro não cabe em tempo de Reel; quem quiser lê-lo segura a tela
+# (o Instagram pausa) ou vai ao carrossel. Com a vinheta, o total fica abaixo de 90 s.
+TEMPOS_SEM_AUDIO = {"Capa": 10.0, "Origem": 12.0, "Main": 11.0, "DRE": 12.0,
+                    "Cobertura": 11.0, "Ajuste": 15.0, "Aplicacao": 12.0}
+TRANSICAO = 0.5       # s — fusão entre o último slide e a vinheta
 
 def duracao(arq):
     out = subprocess.run([FF, "-hide_banner", "-i", arq], capture_output=True, text=True).stderr
@@ -68,25 +71,45 @@ def renderiza(plano):
                    check=True, env=env)
     return pasta
 
-def sem_audio(saida):
+def sem_audio(saida, vinheta=None):
     plano = [{"slide": s, "dur": TEMPOS_SEM_AUDIO[s]} for s in ORDEM]
     total, t = sum(p["dur"] for p in plano), 0.0
     for i, p in enumerate(plano, 1):
         print("  %02d %-14s entra em %5.1f s | dura %4.1f s" % (i, p["slide"], t, p["dur"]))
         t += p["dur"]
     pasta = renderiza(plano)
+    slides = saida if not vinheta else saida + ".slides.mp4"
     # faixa de áudio silenciosa: alguns apps recusam ou tratam mal vídeo sem trilha nenhuma
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y",
                     "-framerate", "30", "-i", os.path.join(pasta, "%05d.jpg"),
                     "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
                     "-map", "0:v", "-map", "1:a",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-                    "-c:a", "aac", "-b:a", "128k", "-t", "%.3f" % total, "-movflags", "+faststart", saida], check=True)
+                    "-c:a", "aac", "-b:a", "128k", "-t", "%.3f" % total, "-movflags", "+faststart", slides], check=True)
+    if vinheta:
+        # vinheta horizontal (16:9) ocupa a tela vertical inteira: escala pela altura e corta o centro,
+        # onde fica o logo; 30 fps e áudio 48 kHz estéreo para casar com os slides
+        filtro = ("[1:v]fps=30,scale=-2:1920:flags=lanczos,crop=1080:1920,setsar=1,format=yuv420p[iv];"
+                  "[0:v]setsar=1,format=yuv420p[sv];"
+                  "[sv][iv]xfade=transition=fade:duration=%.2f:offset=%.3f[v];"
+                  "[1:a]aresample=48000,aformat=channel_layouts=stereo[ia];"
+                  "[0:a][ia]acrossfade=d=%.2f[a]") % (TRANSICAO, total - TRANSICAO, TRANSICAO)
+        subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-i", slides, "-i", os.path.abspath(vinheta),
+                        "-filter_complex", filtro, "-map", "[v]", "-map", "[a]",
+                        "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
+                        "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", saida], check=True)
+        os.remove(slides)
+        print("  vinheta       entra em %5.1f s | dura %4.1f s" % (total - TRANSICAO, duracao(os.path.abspath(vinheta))))
     print("vídeo:", saida, "| %.1f s" % duracao(saida))
 
 def main():
     if sys.argv[1] == "--sem-audio":
-        return sem_audio(os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else os.path.join(AQUI, "reel-sem-audio.mp4")))
+        args = sys.argv[2:]
+        vinheta = None
+        if "--fim" in args:
+            i = args.index("--fim"); vinheta = args[i + 1]; del args[i:i + 2]
+        saida = os.path.abspath(args[0] if args else os.path.join(AQUI, "reel-sem-audio.mp4"))
+        return sem_audio(saida, vinheta)
     audio = os.path.abspath(sys.argv[1])
     saida = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else os.path.join(AQUI, "reel-com-audio.mp4"))
     total, pontos, ruido = cortes(audio)

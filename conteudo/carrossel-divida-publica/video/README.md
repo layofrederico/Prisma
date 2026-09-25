@@ -31,7 +31,26 @@ python3 monta-video.py locucao-editada.wav reel-divida-publica.mp4
 
 ## Reel sem voz
 
-`python3 monta-video.py --sem-audio reel-sem-audio.mp4` gera o Reel mudo com tempos fixos de leitura
-(`TEMPOS_SEM_AUDIO`): Capa 6,0 s · Origem 7,0 s · Main 6,0 s · DRE 6,0 s · Cobertura 5,5 s ·
-Ajuste 7,5 s · Aplicacao 7,0 s = 45,0 s. Leva uma faixa de áudio silenciosa para os apps aceitarem o
-arquivo sem estranhar; a música entra depois, pela biblioteca do Instagram.
+`python3 monta-video.py --sem-audio reel-sem-audio.mp4 --fim vinheta-prisma.mp4` gera o Reel mudo com
+tempo fixo de leitura por slide (`TEMPOS_SEM_AUDIO`) e a vinheta da marca no final:
+
+| Slide | Dura (s) |
+|---|---|
+| Capa | 10,0 |
+| Origem | 12,0 |
+| Main | 11,0 |
+| DRE | 12,0 |
+| Cobertura | 11,0 |
+| Ajuste | 15,0 |
+| Aplicacao | 12,0 |
+| Vinheta (fusão de 0,5 s) | 6,1 |
+| **Total** | **88,6** |
+
+Cada tempo cobre a animação (~2,5 s) e a leitura de título, número, card e legenda. O parágrafo
+explicativo inteiro não cabe em tempo de Reel: quem quiser lê-lo segura o dedo na tela (o Instagram
+pausa) ou lê no carrossel. O total fica abaixo de 90 s.
+
+`vinheta-prisma.mp4` é horizontal (1280×720, 24 fps): na montagem ela é escalada pela altura, cortada
+no centro (onde fica o logo), convertida para 30 fps e entra com fusão de 0,5 s de imagem e som. Os
+slides levam uma faixa de áudio silenciosa; o único som é o da vinheta. A música entra depois, pela
+biblioteca do Instagram.
