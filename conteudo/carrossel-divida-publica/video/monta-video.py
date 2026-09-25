@@ -25,6 +25,23 @@ def silencios(arq, ruido_db, minimo):
     fim = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", out)]
     return list(zip(ini, fim))
 
+def normaliza_voz(arq, destino, dur_total):
+    """Compressão leve + loudnorm em duas passadas: -14 LUFS e pico abaixo de -1,5 dBTP.
+    Em uma passada só, o loudnorm não alcança o alvo quando a voz tem pico alto e fica ~2 dB abaixo."""
+    comp = destino + ".comp.wav"
+    subprocess.run([FF, "-v", "error", "-y", "-i", arq, "-af",
+                    "acompressor=threshold=-26dB:ratio=3:attack=5:release=90:makeup=6dB,alimiter=limit=0.7:level=false",
+                    "-c:a", "pcm_s16le", comp], check=True)
+    out = subprocess.run([FF, "-hide_banner", "-i", comp, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json",
+                          "-f", "null", "-"], capture_output=True, text=True).stderr
+    m = json.loads(out[out.rindex("{"):out.rindex("}") + 1])
+    medida = "measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s:linear=true" % (
+        m["input_i"], m["input_tp"], m["input_lra"], m["input_thresh"], m["target_offset"])
+    subprocess.run([FF, "-v", "error", "-y", "-i", comp, "-af",
+                    "loudnorm=I=-14:TP=-1.5:LRA=11:%s,aresample=48000,apad=whole_dur=%.3f" % (medida, dur_total),
+                    "-ar", "48000", destino], check=True)
+    os.remove(comp)
+
 def cortes(arq):
     total = duracao(arq)
     # tenta limiares do mais rigoroso ao mais tolerante até achar as pausas entre os parágrafos
@@ -56,15 +73,16 @@ def main():
     subprocess.run(["node", os.path.join(AQUI, "renderiza.js"), os.path.join(AQUI, "plano-audio.json"), pasta, "30"],
                    check=True, env=env)
 
-    # vídeo + voz; loudnorm deixa o volume no padrão das redes (-14 LUFS)
+    # vídeo + voz no padrão das redes (-14 LUFS), em estéreo
+    voz = os.path.join(AQUI, "voz-normalizada.wav")
+    normaliza_voz(audio, voz, total + SEGURA_FIM)
     subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y",
                     "-framerate", "30", "-i", os.path.join(pasta, "%05d.jpg"),
-                    "-i", audio,
+                    "-i", voz,
                     "-map", "0:v", "-map", "1:a",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-                    "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,apad",
-                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
-                    "-shortest", "-movflags", "+faststart", saida], check=True)
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+                    "-t", "%.3f" % (total + SEGURA_FIM), "-movflags", "+faststart", saida], check=True)
     print("vídeo:", saida, "| %.1f s" % duracao(saida))
 
 if __name__ == "__main__":

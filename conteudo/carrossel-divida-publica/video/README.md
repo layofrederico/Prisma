@@ -12,7 +12,7 @@
    depende da velocidade da máquina.
 5. `monta-video.py <audio> [saida.mp4]` detecta as 6 pausas entre os 7 parágrafos (ffmpeg
    `silencedetect`, do limiar mais rigoroso ao mais tolerante), usa o meio de cada pausa como troca de
-   slide, renderiza e junta com a voz normalizada a −14 LUFS.
+   slide, renderiza e junta com a voz comprimida de leve e normalizada em duas passadas a −14 LUFS (pico ≤ −1,5 dBTP), áudio estéreo.
 
 Sequência usada no Reel:
 
