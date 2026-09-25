@@ -54,3 +54,11 @@ pausa) ou lê no carrossel. O total fica abaixo de 90 s.
 no centro (onde fica o logo), convertida para 30 fps e entra com fusão de 0,5 s de imagem e som. Os
 slides levam uma faixa de áudio silenciosa; o único som é o da vinheta. A música entra depois, pela
 biblioteca do Instagram.
+
+## Carrossel em vídeo (a pessoa avança no próprio ritmo)
+
+`python3 carrossel-videos.py carrossel-videos --vinheta vinheta-prisma.mp4`, depois do Reel sem voz,
+recorta dos mesmos quadros um MP4 4:5 (1080×1350) por slide em `carrossel-videos/`. Cada card toca a
+animação uma vez (6 s) e segura o quadro final até 30 s; como o Instagram repete vídeo de carrossel em
+loop, o quadro parado longo evita que os contadores recomecem enquanto a pessoa lê. O card 08 é a
+vinheta recortada em 4:5. Publique os oito na ordem dos números, num único post de carrossel.

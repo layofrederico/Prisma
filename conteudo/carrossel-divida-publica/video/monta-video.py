@@ -89,11 +89,13 @@ def sem_audio(saida, vinheta=None):
     if vinheta:
         # vinheta horizontal (16:9) ocupa a tela vertical inteira: escala pela altura e corta o centro,
         # onde fica o logo; 30 fps e áudio 48 kHz estéreo para casar com os slides
-        filtro = ("[1:v]fps=30,scale=-2:1920:flags=lanczos,crop=1080:1920,setsar=1,format=yuv420p[iv];"
-                  "[0:v]setsar=1,format=yuv420p[sv];"
+        # xfade exige a mesma base de tempo nos dois vídeos; acrossfade, o mesmo formato de amostra
+        filtro = ("[1:v]fps=30,scale=-2:1920:flags=lanczos,crop=1080:1920,setsar=1,format=yuv420p,settb=AVTB[iv];"
+                  "[0:v]setsar=1,format=yuv420p,settb=AVTB[sv];"
                   "[sv][iv]xfade=transition=fade:duration=%.2f:offset=%.3f[v];"
-                  "[1:a]aresample=48000,aformat=channel_layouts=stereo[ia];"
-                  "[0:a][ia]acrossfade=d=%.2f[a]") % (TRANSICAO, total - TRANSICAO, TRANSICAO)
+                  "[1:a]aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[ia];"
+                  "[0:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[sa];"
+                  "[sa][ia]acrossfade=d=%.2f[a]") % (TRANSICAO, total - TRANSICAO, TRANSICAO)
         subprocess.run([FF, "-hide_banner", "-loglevel", "error", "-y", "-i", slides, "-i", os.path.abspath(vinheta),
                         "-filter_complex", filtro, "-map", "[v]", "-map", "[a]",
                         "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
