@@ -1,0 +1,272 @@
+<title>Roteiro do Reel da Dívida</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  color-scheme:dark;
+  --navy:#01066A; --navy-2:#0A1180; --navy-3:#161E96;
+  --ink:#FFFFFF; --ink-2:#C9CCF2; --ink-3:#8C91D6;
+  --rosa:#FFC8DD; --ceu:#BDE0FE; --lilas:#CDB4DB;
+  --linha:rgba(255,255,255,.14);
+  --fs:clamp(26px,5.2vw,44px);
+}
+*{box-sizing:border-box}
+html,body{background:var(--navy)}
+body{
+  margin:0;color:var(--ink);
+  font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;line-height:1.5;
+  padding-inline:max(16px,4vw);padding-block:28px 64px;
+}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.faixa{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--rosa),var(--lilas),var(--ceu))}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ceu)}
+h1{margin:0;font-size:clamp(28px,6vw,46px);font-weight:800;line-height:1.1;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:500;padding:5px 12px;border-radius:999px;border:1px solid var(--linha);color:var(--ink-2);font-variant-numeric:tabular-nums}
+.chip b{color:var(--ink);font-weight:700}
+
+.barra{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--navy);padding-block:10px;border-bottom:1px solid var(--linha)}
+.grupo{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+button{font:inherit;font-size:14px;font-weight:600;color:var(--ink);background:var(--navy-2);border:1px solid var(--linha);
+  border-radius:10px;padding:9px 14px;cursor:pointer;min-height:40px}
+button:hover{background:var(--navy-3)}
+button:focus-visible{outline:3px solid var(--ceu);outline-offset:2px}
+button[aria-pressed="true"]{background:var(--ink);color:var(--navy);border-color:var(--ink)}
+button.primario{background:var(--rosa);color:var(--navy);border-color:var(--rosa)}
+.rotulo{font-size:12px;color:var(--ink-3);font-weight:500;margin-right:2px}
+
+/* leitura */
+.falas{display:flex;flex-direction:column}
+.fala{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding-block:20px}
+.num{font-size:15px;font-weight:700;color:var(--ceu);font-variant-numeric:tabular-nums;padding-top:.55em}
+.slide{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.slide span{color:var(--ink-2);letter-spacing:0;text-transform:none;font-weight:500;margin-left:6px;font-variant-numeric:tabular-nums}
+.texto{grid-column:2;font-size:var(--fs);font-weight:500;line-height:1.3;text-wrap:pretty}
+.texto em{font-style:normal;font-weight:800;color:var(--rosa)}
+.dir{grid-column:2;font-size:14px;color:var(--ink-2);max-width:62ch}
+.dir::before{content:"Como dizer · ";color:var(--ceu);font-weight:600}
+.pausa{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.pausa::before,.pausa::after{content:"";flex:1;height:1px;background:var(--linha)}
+
+/* teleprompter */
+#tp{display:flex;flex-direction:column;gap:18px;min-height:60vh}
+.tp-topo{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.tp-estado{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--navy-2);color:var(--ceu)}
+.tp-estado.fale{background:var(--rosa);color:var(--navy)}
+.tp-estado.pausa-st{background:var(--ceu);color:var(--navy)}
+.tp-pos{font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.tp-atual{font-size:calc(var(--fs) * 1.25);font-weight:600;line-height:1.25;text-wrap:pretty;min-height:4.2em}
+.tp-atual em{font-style:normal;font-weight:800;color:var(--rosa)}
+.tp-dir{font-size:15px;color:var(--ink-2)}
+.tp-prox{font-size:calc(var(--fs) * .62);color:var(--ink-3);line-height:1.35;border-top:1px dashed var(--linha);padding-top:14px}
+.tp-prox b{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:4px}
+.trilho{height:8px;border-radius:4px;background:var(--navy-2);overflow:hidden}
+.trilho i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rosa),var(--ceu))}
+.contagem{font-size:clamp(90px,24vw,200px);font-weight:800;text-align:center;line-height:1;color:var(--rosa);font-variant-numeric:tabular-nums}
+.atalhos{font-size:13px;color:var(--ink-3)}
+kbd{font:inherit;font-size:12px;border:1px solid var(--linha);border-radius:5px;padding:1px 6px;color:var(--ink-2)}
+
+/* checklist */
+section h2{font-size:20px;font-weight:700;margin:0 0 10px}
+.check{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.check label{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border:1px solid var(--linha);border-radius:12px;font-size:14px;color:var(--ink-2);cursor:pointer}
+.check input{accent-color:var(--rosa);width:18px;height:18px;margin-top:2px;flex:none}
+.check label b{color:var(--ink);font-weight:600}
+.check input:checked + span{opacity:.55;text-decoration:line-through}
+.rodape{font-size:13px;color:var(--ink-3);max-width:70ch}
+@media (max-width:520px){.fala{grid-template-columns:1fr}.num{padding-top:0}.texto,.dir{grid-column:1}}
+@media (prefers-reduced-motion:reduce){.trilho i{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="faixa" aria-hidden="true"></div>
+  <header>
+    <div class="eyebrow">Prisma Contábil · roteiro de locução</div>
+    <h1>Hoje, cada brasileiro deve</h1>
+    <div class="meta">
+      <span class="chip"><b>7</b> falas · 1 por slide</span>
+      <span class="chip"><b>94</b> palavras</span>
+      <span class="chip"><b>37,6 s</b> de voz</span>
+      <span class="chip">Reel com <b>~45 s</b></span>
+      <span class="chip">Pausa entre falas: <b>1 s</b></span>
+    </div>
+  </header>
+
+  <div class="barra">
+    <div class="grupo" role="group" aria-label="Modo">
+      <button id="bt-ler" aria-pressed="true">Ler tudo</button>
+      <button id="bt-tp" aria-pressed="false">Teleprompter</button>
+    </div>
+    <div class="grupo">
+      <span class="rotulo">Letra</span>
+      <button id="fs-menos" aria-label="Diminuir letra">A−</button>
+      <button id="fs-mais" aria-label="Aumentar letra">A+</button>
+    </div>
+  </div>
+
+  <div id="ler">
+    <div class="falas" id="falas"></div>
+  </div>
+
+  <div id="tp" hidden>
+    <div class="tp-topo">
+      <span class="tp-estado" id="tp-estado">Pronto</span>
+      <span class="tp-pos" id="tp-pos">1 de 7</span>
+    </div>
+    <div class="trilho" aria-hidden="true"><i id="tp-barra"></i></div>
+    <div id="tp-corpo">
+      <div class="tp-atual" id="tp-atual"></div>
+      <div class="tp-dir" id="tp-dir"></div>
+    </div>
+    <div class="tp-prox" id="tp-prox"></div>
+    <div class="grupo">
+      <button class="primario" id="tp-play">Iniciar com contagem</button>
+      <button id="tp-volta" aria-label="Fala anterior">◀ Anterior</button>
+      <button id="tp-avanca" aria-label="Próxima fala">Próxima ▶</button>
+      <button id="tp-zera">Recomeçar</button>
+      <span class="rotulo" style="margin-left:8px">Ritmo</span>
+      <button id="rt-menos" aria-label="Mais devagar">−</button>
+      <span class="tp-pos" id="rt-val">100%</span>
+      <button id="rt-mais" aria-label="Mais rápido">+</button>
+    </div>
+    <p class="atalhos"><kbd>Espaço</kbd> inicia ou pausa · <kbd>→</kbd> próxima · <kbd>←</kbd> anterior. O modo automático conta 3 segundos, espera os 2 segundos de silêncio inicial, mostra cada fala pelo tempo previsto e marca a pausa de 1 s antes da próxima.</p>
+  </div>
+
+  <section>
+    <h2>Antes de apertar o gravar</h2>
+    <div class="check">
+      <label><input type="checkbox" id="c1"><span><b>Lugar silencioso.</b> Ventilador e ar-condicionado desligados; quarto com cortina abafa o eco.</span></label>
+      <label><input type="checkbox" id="c2"><span><b>Celular a um palmo da boca</b>, um pouco abaixo do queixo, para não estourar “p” e “b”.</span></label>
+      <label><input type="checkbox" id="c3"><span><b>2 s de silêncio</b> no começo e no fim da gravação.</span></label>
+      <label><input type="checkbox" id="c4"><span><b>Pausa de 1 s</b> entre as falas. Dentro da frase, respire normalmente.</span></label>
+      <label><input type="checkbox" id="c5"><span><b>Errou? Recomece do início</b> em outra gravação. Repetir só um trecho cria pausa a mais e desalinha os cortes.</span></label>
+      <label><input type="checkbox" id="c6"><span><b>Grave duas vezes</b> e envie a que soar mais natural, em m4a, mp3, wav ou áudio do WhatsApp.</span></label>
+    </div>
+  </section>
+
+  <p class="rodape">Números arredondados na fala, com base nos dados de 07/2026 dos slides: R$ 51.103,59 por pessoa (“cinquenta e um mil”); R$ 10,947 tri de dívida bruta (“dez vírgula nove trilhões”); 82,5% do PIB (“quase oitenta e três por cento”); R$ 1,15 tri de juros em 12 meses ÷ 365 ≈ R$ 3,15 bi por dia (“mais de três bilhões”); R$ 1,15 tri de juros ÷ R$ 1,24 tri de déficit nominal = 92,8% (“noventa e três”). Tempos estimados a 2,5 palavras por segundo; no vídeo, os cortes seguem as pausas reais da sua gravação.</p>
+</div>
+
+<script>
+const FALAS = [
+  {slide:"Cada brasileiro deve", t:"Hoje, cada brasileiro deve <em>cinquenta e um mil reais</em>. Inclusive quem acabou de <em>nascer</em>.", d:"Tom de revelação. Pausa rápida antes de “Inclusive”; “nascer” desce, não sobe."},
+  {slide:"A dívida nasceu com o Brasil", t:"A dívida nasceu com o país: em <em>mil oitocentos e vinte e quatro</em>, em Londres.", d:"Um pouco mais lento, como quem conta uma história. Pausa curta depois de “país”."},
+  {slide:"82,5% do PIB", t:"O governo deve <em>dez vírgula nove trilhões</em>. Quase oitenta e três por cento do PIB.", d:"Firme, sem dramatizar. Deixe o número respirar antes do “Quase”."},
+  {slide:"R$ 3 bi por dia", t:"Mais de <em>três bilhões de juros por dia</em>. Um mês supera a meta anual.", d:"Mais rápido no número; a segunda frase sai seca."},
+  {slide:"Quase tudo é juro", t:"De cada cem reais que faltam, <em>noventa e três são juros</em>.", d:"A fala mais curta. Pausa leve antes de “noventa e três”."},
+  {slide:"No seu caixa", t:"Crédito, imposto, dólar e cliente sem dinheiro. Em cada porta, <em>dá para agir</em>.", d:"Enumere as quatro portas no mesmo ritmo e mude o tom em “dá para agir”: é a virada do vídeo."},
+  {slide:"Faça a sua conta", t:"Quer saber quanto está <em>perdendo</em>? Comente <em>eu quero</em> e receba a calculadora.", d:"Conversa direta com quem assiste, sorrindo. “Eu quero” bem destacado."}
+];
+const WPS = 2.5, PAUSA = 1, SIL_INI = 2;
+const palavras = s => s.replace(/<[^>]+>/g,"").split(/\s+/).filter(Boolean).length;
+FALAS.forEach(f => { f.n = palavras(f.t); f.dur = f.n / WPS; });
+let acc = 0; FALAS.forEach(f => { f.ini = acc; acc += f.dur + PAUSA; });
+const fmt = s => { const v = Math.floor(s + 1e-9); return Math.floor(v/60) + ":" + String(v%60).padStart(2,"0"); };
+const dec = x => x.toFixed(1).replace(".", ",");
+
+// leitura
+const L = document.getElementById("falas");
+FALAS.forEach((f,i) => {
+  const el = document.createElement("div"); el.className = "fala";
+  el.innerHTML = `<div class="num">${String(i+1).padStart(2,"0")}</div>
+    <div class="slide">${f.slide}<span>entra em ${fmt(f.ini)} · ${dec(f.dur)} s · ${f.n} palavras</span></div>
+    <div class="texto">${f.t}</div><div class="dir">${f.d}</div>`;
+  L.appendChild(el);
+  if (i < FALAS.length-1){ const p = document.createElement("div"); p.className = "pausa"; p.textContent = "pausa · 1 s"; L.appendChild(p); }
+});
+
+// tamanho da letra
+const LS = { get(k){ try{return localStorage.getItem(k)}catch(e){return null} }, set(k,v){ try{localStorage.setItem(k,v)}catch(e){} } };
+let fs = parseFloat(LS.get("fs")) || 0;
+function aplicaFs(){ document.documentElement.style.setProperty("--fs", fs ? fs+"px" : ""); }
+aplicaFs();
+function passoFs(d){ const atual = parseFloat(getComputedStyle(document.querySelector(".texto")||document.body).fontSize) || 36; fs = Math.min(80, Math.max(20, (fs||atual) + d)); aplicaFs(); LS.set("fs", fs); }
+document.getElementById("fs-menos").onclick = () => passoFs(-4);
+document.getElementById("fs-mais").onclick = () => passoFs(4);
+
+// modos
+const btLer = document.getElementById("bt-ler"), btTp = document.getElementById("bt-tp");
+function modo(m){
+  const tp = m === "tp";
+  document.getElementById("ler").hidden = tp; document.getElementById("tp").hidden = !tp;
+  btLer.setAttribute("aria-pressed", !tp); btTp.setAttribute("aria-pressed", tp);
+  if (!tp) parar(); else render();
+}
+btLer.onclick = () => modo("ler"); btTp.onclick = () => modo("tp");
+
+// teleprompter
+const $ = id => document.getElementById(id);
+let idx = 0, rodando = false, fase = "pronto", t0 = 0, restante = 0, raf = 0, ritmo = 1, wake = null;
+function render(){
+  const f = FALAS[idx];
+  $("tp-pos").textContent = `${idx+1} de ${FALAS.length} · ${f.slide}`;
+  if (fase !== "conta"){ $("tp-corpo").innerHTML = `<div class="tp-atual">${f.t}</div><div class="tp-dir">${f.d}</div>`; }
+  const px = FALAS[idx+1];
+  $("tp-prox").innerHTML = px ? `<b>Depois</b>${px.t.replace(/<\/?em>/g,"")}` : `<b>Depois</b>Silêncio de 2 s e pare a gravação.`;
+  const e = $("tp-estado");
+  e.className = "tp-estado" + (fase==="fala" ? " fale" : fase==="pausa" ? " pausa-st" : "");
+  e.textContent = {pronto:"Pronto", conta:"Prepare-se", silencio:"Silêncio · 2 s", fala:"Fale", pausa:"Pausa · 1 s", fim:"Fim · pare a gravação", pausado:"Pausado"}[fase];
+}
+function duracaoFase(){ return fase==="silencio" ? SIL_INI : fase==="fala" ? FALAS[idx].dur / ritmo : fase==="pausa" ? PAUSA : fase==="conta" ? 3 : 0; }
+function entra(f){ fase = f; t0 = performance.now(); restante = duracaoFase(); render(); }
+function tick(now){
+  if (!rodando) return;
+  const dur = duracaoFase(), dec_ = (now - t0)/1000, frac = Math.min(1, dec_/dur);
+  if (fase === "conta"){ $("tp-corpo").innerHTML = `<div class="contagem">${Math.max(1, Math.ceil(dur - dec_))}</div>`; }
+  $("tp-barra").style.width = (fase==="fala" ? frac*100 : fase==="pausa" ? 100 : 0) + "%";
+  if (dec_ >= dur){
+    if (fase === "conta") entra("silencio");
+    else if (fase === "silencio") entra("fala");
+    else if (fase === "fala"){ if (idx < FALAS.length-1) entra("pausa"); else { fase = "fim"; parar(true); } }
+    else if (fase === "pausa"){ idx++; entra("fala"); }
+  }
+  raf = requestAnimationFrame(tick);
+}
+async function iniciar(){
+  rodando = true; $("tp-play").textContent = "Pausar";
+  try { wake = await navigator.wakeLock?.request("screen"); } catch(e){ wake = null; }
+  if (fase === "pausado" && restante){ fase = fase_ant; t0 = performance.now() - (duracaoFase() - restante)*1000; render(); }
+  else { if (fase === "fim") idx = 0; entra("conta"); }
+  raf = requestAnimationFrame(tick);
+}
+let fase_ant = "fala";
+function parar(fim){
+  if (rodando && !fim && ["fala","pausa","silencio","conta"].includes(fase)){
+    fase_ant = fase === "conta" ? "silencio" : fase; restante = duracaoFase() - (performance.now()-t0)/1000; fase = "pausado";
+  }
+  rodando = false; cancelAnimationFrame(raf);
+  $("tp-play").textContent = fase === "pausado" ? "Continuar" : "Iniciar com contagem";
+  try { wake?.release(); } catch(e){} wake = null;
+  if (fase === "fim") $("tp-barra").style.width = "100%";
+  render();
+}
+function salta(d){
+  const n = Math.min(FALAS.length-1, Math.max(0, idx+d)); if (n === idx) return;
+  idx = n; $("tp-barra").style.width = "0%";
+  if (rodando) entra("fala"); else { fase = "pronto"; render(); }
+}
+$("tp-play").onclick = () => rodando ? parar() : iniciar();
+$("tp-avanca").onclick = () => salta(1);
+$("tp-volta").onclick = () => salta(-1);
+$("tp-zera").onclick = () => { parar(true); idx = 0; fase = "pronto"; $("tp-barra").style.width = "0%"; render(); $("tp-play").textContent = "Iniciar com contagem"; };
+function setRitmo(r){ ritmo = Math.round(Math.min(1.3, Math.max(0.7, r))*100)/100; $("rt-val").textContent = Math.round(ritmo*100) + "%"; }
+$("rt-menos").onclick = () => setRitmo(ritmo - .05);
+$("rt-mais").onclick = () => setRitmo(ritmo + .05);
+document.addEventListener("keydown", e => {
+  if ($("tp").hidden || e.target.closest("input")) return;
+  if (e.code === "Space"){ e.preventDefault(); rodando ? parar() : iniciar(); }
+  else if (e.key === "ArrowRight") salta(1);
+  else if (e.key === "ArrowLeft") salta(-1);
+});
+
+// checklist lembrado neste navegador
+document.querySelectorAll(".check input").forEach(c => {
+  c.checked = LS.get("ck-"+c.id) === "1";
+  c.onchange = () => LS.set("ck-"+c.id, c.checked ? "1" : "0");
+});
+render();
+</script>
