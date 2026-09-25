@@ -93,5 +93,29 @@ Fontes: Tratado de Paz e Aliança (1825), BCB (Estatísticas Fiscais, jul/2026),
 
 ## Versão para LinkedIn
 
-Mesmo texto. No LinkedIn a chamada do comentário também funciona; as hashtags caem para três,
-no máximo. O LinkedIn aceita até 3.000 caracteres, então cabe sem cortes.
+2.350 caracteres de 3.000. Tom mais analítico, 3 hashtags. Texto puro para colar: `legenda-linkedin.txt`.
+No LinkedIn não existe carrossel de vídeos: publique `video/reel-sem-audio.mp4` como vídeo ou os slides em PDF (documento).
+
+Cada brasileiro deve hoje R$ 51.103,59 da dívida do governo. Quem sente essa conta primeiro não é o governo. É o caixa do comércio.
+
+A conta é simples: R$ 10,9 trilhões de dívida bruta do governo geral (82,5% do PIB) divididos por 214,2 milhões de habitantes. O problema não é o tamanho, é o custo. De cada R$ 100 do déficit nominal dos últimos 12 meses, R$ 93 foram juros.
+
+Para rolar essa dívida, o governo disputa o mesmo crédito que financia as empresas. Com a Selic em 13,75% ao ano, isso chega ao varejo por quatro caminhos:
+
+📌 Crédito caro. Capital de giro, cheque especial e antecipação de recebíveis têm a Selic como piso. Estoque parado passa a ter custo financeiro explícito.
+
+📌 Imposto sobre o consumo. A carga tributária foi de 32,4% do PIB em 2025, com peso relevante sobre bens e serviços, justamente o que o comércio vende.
+
+📌 Câmbio e frete. Quando o mercado desconfia da trajetória fiscal, o dólar tende a subir e contamina importados, diesel e logística.
+
+📌 Demanda mais fraca. Crédito caro para o consumidor significa compra adiada, pedido de mais prazo e troca por itens de menor valor.
+
+Um exemplo que costuma surpreender: uma loja com R$ 1,2 milhão de faturamento anual no cartão, vendendo em 12x e antecipando a 2% ao mês, perde R$ 142.465,88 por ano, 11,87% do faturamento. Se a mesma antecipação fosse cobrada à Selic, a taxa que remunera os títulos do governo, custaria R$ 80.117,50. A diferença, cerca de R$ 62,3 mil por ano, é o que o intermediário cobra a mais.
+
+A empresa não controla a dívida pública. Controla preço, prazo e margem. É nesse ponto que a contabilidade deixa de ser obrigação e vira gestão: medir o custo financeiro das vendas a prazo, definir até quantas parcelas o preço aguenta, revisar regime e créditos tributários e refazer a formação de preço quando o custo muda.
+
+Montei uma calculadora do custo do parcelado: você informa faturamento no cartão, número de parcelas e taxa de antecipação, e ela mostra quanto a operação consome por ano. Comente "EU QUERO" ou me chame por mensagem que eu envio o link.
+
+Fontes: BCB (Estatísticas Fiscais, jul/2026), IBGE (população em 01/07/2026), Copom (16/09/2026), Tesouro Nacional (carga tributária 2025 e Relatório Mensal da Dívida). A dívida bruta segue a metodologia do BCB; pelo conceito do FMI, 95,4% do PIB.
+
+#Contabilidade #GestaoFinanceira #Varejo
