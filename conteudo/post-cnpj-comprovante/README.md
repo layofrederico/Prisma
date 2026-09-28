@@ -95,3 +95,10 @@ outra IN, essa alteração intermediária não foi verificada.
 
 O Anexo II da IN RFB nº 2.119/2022 é outro documento: o "Protocolo de Transmissão do CNPJ" (Protocolo
 Redesim), previsto no art. 13, que não foi alterado pela IN RFB nº 2.345/2026.
+
+## Carrossel em vídeo (pasta `carrossel-videos/`)
+
+`carrossel-cnpj.py`, rodado depois de `reel-cnpj.py`, gera um MP4 4:5 (1080×1350) por card, com as
+animações. São 9 arquivos: os 8 cards e a vinheta. Cada card toca a animação uma vez e segura o quadro
+final até 30 s. A capa leva o "Arraste para o lado", que o Reel não tem. Publique os nove na ordem dos
+números, num único post de carrossel, com a legenda de `legenda-instagram.txt`.

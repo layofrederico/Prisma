@@ -82,7 +82,7 @@ def selo(txt, cor, d):
 K1, K2 = 860 / 942, 860 / 1000
 pagina("Datas.dc.html", "Antes e depois",
     kicker("ANTES E DEPOIS") + "\n" + h1("A data de abertura<br>virou duas datas"),
-    '''    <div style="display: flex; flex-direction: column; gap: 14px; width: 884px; margin-top: 18px;">
+    '''    <div style="display: flex; flex-direction: column; gap: 14px; width: 884px;">
 %s
 %s
       <div style="height: 16px;"></div>
