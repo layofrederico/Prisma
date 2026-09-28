@@ -13,18 +13,19 @@ sys.path.insert(0, VIDEO)
 ORDEM = ["Main", "Datas", "Codigos", "ModeloII", "Norma", "Acao"]
 LEGENDAS = [
     "A Receita publicou um novo modelo do comprovante do CNPJ.",
-    "Ele traz a data de inscrição no CNPJ e a data de constituição.",
+    "A data de abertura virou duas: inscrição no CNPJ e constituição.",
     "No rodapé, código QR e código de barras.",
     "O Modelo II inclui representante legal, sócios e código de autenticidade.",
     "A IN RFB nº 2.345/2026 vale desde 23/09/2026.",
     "Salve e confira o comprovante da sua empresa.",
 ]
 # animação (~2,5 s) + leitura do card e da legenda; o card 05 cita os dois artigos na íntegra
-TEMPOS = {"Main": 8.0, "Datas": 9.0, "Codigos": 8.0, "ModeloII": 11.0, "Norma": 13.0, "Acao": 10.0}
+TEMPOS = {"Main": 8.0, "Datas": 11.0, "Codigos": 8.0, "ModeloII": 11.0, "Norma": 13.0, "Acao": 10.0}
 # recortes do anexo do DOU: o canvas usa /_blob/, o vídeo usa os arquivos locais
 BLOBS = {"23cf6b0763d4290c886720ddec1ce63f": "anexo-modelo1.jpg", "0cb83345f6032071ecd466c0ec9278a3": "anexo-modelo2.jpg",
          "636bdaaad54e10001afb0ace169fb71a": "crop-datas.png", "7101ef130cc5bf8775e57d73d439b573": "crop-qr.png",
-         "f164ad31cb9211107174cf2338f21031": "crop-qsa.png"}
+         "f164ad31cb9211107174cf2338f21031": "crop-qsa.png",
+         "dc006f1fe22dca44823c727835b63f07": "crop-datas-2022.png"}
 
 def carrega(nome, arq):
     spec = importlib.util.spec_from_file_location(nome, os.path.join(VIDEO, arq))
