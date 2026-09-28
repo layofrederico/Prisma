@@ -157,6 +157,48 @@ pagina("Norma.dc.html", "O que diz a IN",
                  artigo("Art. 2º", "“Esta Instrução Normativa entra em vigor na data de sua publicação no Diário Oficial da União.”", 0.7, "#8ED1F5")),
     nota("Publicada no DOU de 23/09/2026. Fundamentos citados na IN: Lei nº 5.614/1970, art. 59 da LC nº 214/2025, arts. 104 e 105 do Decreto nº 12.955/2026 e Portaria MF nº 220/2026."))
 
+# ================= 05b · O que a IN não exige =================
+def nao(txt, d):
+    return ("""      <div class="rise" style="%s display: flex; gap: 24px; align-items: center; text-align: left; padding: 18px 8px; border-bottom: 2px solid %s;">
+        <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" style="flex: none;"><circle cx="32" cy="32" r="29" fill="rgba(245,163,199,0.16)" stroke="#F5A3C7" stroke-width="3"/>
+          <path d="M22 22l20 20M42 22L22 42" fill="none" stroke="#F5A3C7" stroke-width="6" stroke-linecap="round"/></svg>
+        <span style="font-size: 38px; font-weight: 600; line-height: 1.25;">%s</span>
+      </div>""" % (atraso(d), GRID, txt))
+pagina("NaoExige.dc.html", "O que a IN não exige",
+    kicker("O QUE A IN NÃO EXIGE") + "\n" + h1("A IN só troca<br>o modelo"),
+    """    <div style="display: flex; flex-direction: column; width: 100%%; max-width: 880px;">
+%s
+%s
+%s
+%s
+    </div>""" % (nao("Não cria recadastramento", 0.3), nao("Não altera o número do CNPJ", 0.55),
+                 nao("Não manda substituir comprovantes já emitidos", 0.8), nao("Não cria prazo, taxa nem obrigação nova", 1.05)),
+    explica("A IN RFB nº 2.345/2026 tem dois artigos: o 1º troca o Anexo III da IN RFB nº 2.119/2022 e o 2º trata da vigência."))
+
+# ================= 05c · Cadastro único da reforma =================
+def cad(sigla, txt, d):
+    return ("""        <div class="rise" style="%s flex: 1; border: 2px solid %s; border-radius: 22px; padding: 26px 18px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 54px; font-weight: 800; letter-spacing: 0.02em;">%s</div>
+          <div style="font-size: 26px; line-height: 1.35; color: %s;">%s</div>
+        </div>""" % (atraso(d), "#9FE7C4" if sigla == "CNPJ" else LINE, sigla, SOFT, txt))
+pagina("Reforma.dc.html", "Cadastro único da reforma",
+    kicker("REFORMA TRIBUTÁRIA") + "\n" + h1("A IN cita o cadastro<br>único da reforma"),
+    """    <div style="display: flex; flex-direction: column; gap: 34px; width: 100%%; max-width: 900px;">
+      <div class="rise" style="%s text-align: left; border-left: 6px solid %s; padding: 6px 0 6px 28px;">
+        <div style="font-size: 28px; font-weight: 800; color: %s;">LC nº 214/2025, art. 59</div>
+        <div style="font-size: 32px; line-height: 1.42; margin-top: 6px;">“As pessoas físicas e jurídicas e as entidades sem personalidade jurídica sujeitas ao IBS e à CBS são obrigadas a se registrar em cadastro com identificação única (...)”</div>
+      </div>
+      <div style="display: flex; gap: 18px;">
+%s
+%s
+%s
+      </div>
+    </div>""" % (atraso(0.3), ROSA, SOFT,
+                 cad("CPF", "pessoas físicas", 0.8),
+                 cad("CNPJ", "pessoas jurídicas e entidades sem personalidade jurídica", 1.05),
+                 cad("CIB", "imóveis rurais e urbanos", 1.3)),
+    nota("O art. 59 da LC nº 214/2025 está entre os fundamentos citados na IN RFB nº 2.345/2026. Os três cadastros são administrados pela RFB (§ 1º)."))
+
 # ================= 06 · O que conferir =================
 def passo(n, txt, d):
     return ('''      <div class="rise" style="%s display: flex; gap: 24px; align-items: center; text-align: left;">
@@ -178,8 +220,8 @@ pagina("Acao.dc.html", "O que conferir",
         atraso(1.3), WHITE, NAVY, atraso(1.5), SOFT),
     nota(FONTE + " Substitui o Anexo III da IN RFB nº 2.119/2022."))
 
-ORDEM = ["Main.dc.html", "Datas.dc.html", "Codigos.dc.html", "ModeloII.dc.html", "Norma.dc.html", "Acao.dc.html"]
-TIT = ["01 · Capa", "02 · Duas datas", "03 · Código QR e de barras", "04 · Modelo II", "05 · O que diz a IN", "06 · O que conferir"]
+ORDEM = ["Main.dc.html", "Datas.dc.html", "Codigos.dc.html", "ModeloII.dc.html", "Norma.dc.html", "NaoExige.dc.html", "Reforma.dc.html", "Acao.dc.html"]
+TIT = ["01 · Capa", "02 · Antes e depois", "03 · Código QR e de barras", "04 · Modelo II", "05 · O que diz a IN", "06 · O que a IN não exige", "07 · Cadastro único da reforma", "08 · O que conferir"]
 for velho in ("Mudou.dc.html", "Letras.dc.html", "NaoMuda.dc.html"):
     if os.path.exists(os.path.join(PROJ, velho)):
         os.remove(os.path.join(PROJ, velho))

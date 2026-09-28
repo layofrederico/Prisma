@@ -22,7 +22,7 @@
    "y": 0,
    "w": 1080,
    "h": 1350,
-   "title": "02 · Duas datas"
+   "title": "02 · Antes e depois"
   },
   "Codigos.dc.html": {
    "x": 2320,
@@ -45,12 +45,26 @@
    "h": 1350,
    "title": "05 · O que diz a IN"
   },
-  "Acao.dc.html": {
+  "NaoExige.dc.html": {
    "x": 2320,
    "y": 1470,
    "w": 1080,
    "h": 1350,
-   "title": "06 · O que conferir"
+   "title": "06 · O que a IN não exige"
+  },
+  "Reforma.dc.html": {
+   "x": 0,
+   "y": 2940,
+   "w": 1080,
+   "h": 1350,
+   "title": "07 · Cadastro único da reforma"
+  },
+  "Acao.dc.html": {
+   "x": 1160,
+   "y": 2940,
+   "w": 1080,
+   "h": 1350,
+   "title": "08 · O que conferir"
   }
  },
  "order": [
@@ -59,6 +73,8 @@
   "Codigos.dc.html",
   "ModeloII.dc.html",
   "Norma.dc.html",
+  "NaoExige.dc.html",
+  "Reforma.dc.html",
   "Acao.dc.html"
  ],
  "notes": {},
