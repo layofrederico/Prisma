@@ -20,3 +20,18 @@ Scripts que põem a trilha nos Reels sem voz (CNPJ e dívida pública). A faixa 
 
 A faixa é "With My Own Eyes" (Dario Marianelli, *Atonement*, 2007), obra protegida: ver o alerta de
 direitos autorais antes de publicar.
+
+## Versão 2: emendas inaudíveis e final de teclas na última página
+
+`musica414b.py` substitui `musica414.py`:
+- **Emendas em duas bandas:** as teclas (agudos, acima de 1,8 kHz) trocam em 30 ms no tempo forte e a
+  orquestra (graves) funde em 1,2 s. A digitação segue contínua e o salto da orquestra deixa de ser ouvido.
+  Nas emendas, o nível dos graves varia de 0,3 a 2,3 dB, menos que a variação natural da faixa entre
+  trechos vizinhos (4,4 dB).
+- **Última página:** a última página do Reel toca o trecho final da faixa, com a digitação acelerando até a
+  pancada, que cai na entrada da vinheta:
+  - CNPJ: de 4:28,2 até o fim, a partir de 52,12 s;
+  - dívida: de 4:23,6 até o fim, a partir de 71,24 s.
+- **Blocos repetidos:** 3 compassos cada, com um de 2 compassos para acertar o tempo.
+  - CNPJ: 4 blocos de 3 e 1 de 2; a trilha entra em 1,51 s.
+  - Dívida: 7 blocos de 3 e 1 de 2; a trilha entra em 0,15 s.
