@@ -14,12 +14,14 @@ O que o Anexo Único traz, com os nomes dos campos como publicados:
 
 📌 Dois modelos. O Modelo II inclui NOME DO REPRESENTANTE LEGAL, CPF e QUALIFICAÇÃO, o QUADRO DE SÓCIOS E ADMINISTRADORES e um código de autenticidade que, segundo o próprio modelo, "pode ser consultado no endereço https://www.redesim.gov.br".
 
-Na prática, vale incluir na rotina do cadastro: ao emitir o comprovante, conferir as duas datas e, no Modelo II, o representante legal e o quadro de sócios e administradores. Divergência encontrada antes de o documento ser exigido dá tempo de corrigir sem atrasar contrato, crédito ou licitação.
+O que a IN não exige: ela só troca o modelo do documento. Não cria recadastramento, não altera o número do CNPJ, não manda substituir comprovantes já emitidos e não cria prazo, taxa nem obrigação nova.
 
-Entre os fundamentos citados na IN estão a Lei nº 5.614/1970, o art. 59 da LC nº 214/2025, os arts. 104 e 105 do Decreto nº 12.955/2026 e a Portaria MF nº 220/2026.
+Entre os fundamentos, a IN cita o art. 59 da LC nº 214/2025, que obriga quem está sujeito ao IBS e à CBS a se registrar em "cadastro com identificação única": CPF para pessoas físicas, CNPJ para pessoas jurídicas e entidades sem personalidade jurídica, e CIB para imóveis rurais e urbanos.
+
+Na prática, vale incluir na rotina do cadastro: ao emitir o comprovante, conferir as duas datas e, no Modelo II, o representante legal e o quadro de sócios e administradores. Divergência encontrada antes de o documento ser exigido dá tempo de corrigir sem atrasar contrato, crédito ou licitação.
 
 No vídeo, os campos aparecem em recortes do anexo publicado no Diário Oficial.
 
-Fonte: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), arts. 1º e 2º e Anexo Único.
+Fontes: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), arts. 1º e 2º e Anexo Único; LC nº 214/2025, art. 59.
 
 #Contabilidade #ReceitaFederal #CNPJ
