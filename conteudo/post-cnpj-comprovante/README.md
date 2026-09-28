@@ -80,3 +80,21 @@ retiradas:
 - "o comprovante antigo continua válido".
 
 Algumas notícias também diziam que o Modelo II foi eliminado. O anexo publicado traz o Modelo II.
+
+## Comparação com o modelo original da IN RFB nº 2.119/2022 [VERIFICADO no DOU]
+
+Imagens em `anexo/in2119-2022-*.jpg`, baixadas da publicação original da IN RFB nº 2.119/2022 (DOU de
+08/12/2022). A comparação é com essa versão original: se o Anexo III foi alterado entre 2022 e 2026 por
+outra IN, essa alteração intermediária não foi verificada.
+
+| Item | Anexo III original (2022) | Anexo Único da IN RFB nº 2.345/2026 |
+|---|---|---|
+| Campo de data no topo | DATA DE ABERTURA | DATA DE INSCRIÇÃO NO CNPJ |
+| Data de constituição | Não havia | DATA DE CONSTITUIÇÃO |
+| Código QR e código de barras | Não havia | Nos Modelos I e II |
+| Código de autenticidade no modelo | Não aparecia | Modelo II: "Código de autenticidade" e "O código pode ser consultado no endereço https://www.redesim.gov.br" |
+| Nota sobre dispensa de alvarás e licenças (Resolução CGSIM nº 51/2019) | Nota (*) no rodapé dos dois modelos | Não aparece |
+| Rodapé de emissão | Não havia | Data e hora de emissão; no Modelo II, também o usuário logado e o CPF |
+
+O Anexo II da IN RFB nº 2.119/2022 é outro documento: o "Protocolo de Transmissão do CNPJ" (Protocolo
+Redesim), previsto no art. 13, que não foi alterado pela IN RFB nº 2.345/2026.
