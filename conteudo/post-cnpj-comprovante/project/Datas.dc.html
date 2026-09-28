@@ -45,12 +45,9 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .acende { animation: acende 5s ease-in-out infinite; }
 
 @keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
-@keyframes drawOnce { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 @keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(222,58,118,0); } 50% { box-shadow: 0 0 0 10px rgba(222,58,118,0.28); } }
 .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
-.draw { animation: drawOnce 1.2s ease-out both; }
 .glow { animation: glow 2.4s ease-in-out infinite; }
-.chegada { animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 
 </style>
 </helmet>
@@ -60,34 +57,32 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
-    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">DATA DE ABERTURA</p>
-    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Onde havia uma data,<br>agora são duas</h1>
+    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">NO TOPO DO COMPROVANTE</p>
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Duas datas,<br>lado a lado</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 26px;">
-      <div class="rise" style="display: inline-flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 600; color: rgba(255,255,255,0.78);">
-        <span style="text-decoration: line-through; text-decoration-color: #DE3A76; text-decoration-thickness: 4px;">Data de abertura</span>
-        <span class="nudge" style="font-size: 36px;">&#8594;</span><span style="color: #FFFFFF;">separada em duas</span></div>
-    <svg viewBox="0 0 820 280" width="820" height="280" role="img" xmlns="http://www.w3.org/2000/svg">
-      <line x1="190" y1="120" x2="630" y2="120" stroke="rgba(255,255,255,0.14)" stroke-width="6" stroke-linecap="round"/>
-      <line class="draw" style="--len: 440; stroke-dasharray: 440; animation-delay: .6s;" x1="190" y1="120" x2="630" y2="120" stroke="#8ED1F5" stroke-width="6" stroke-linecap="round"/>
-      <circle class="pop" style="animation-delay: .4s;" cx="190" cy="120" r="26" fill="#DE3A76"/>
-      <circle class="pop" style="animation-delay: 1.7s;" cx="630" cy="120" r="26" fill="#8ED1F5"/>
-      <circle class="pulse" cx="190" cy="120" r="10" fill="#FFFFFF"/>
-      <circle class="pulse" style="animation-delay: .6s;" cx="630" cy="120" r="10" fill="#01066A"/>
-      <text x="190" y="205" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle">Constituição</text>
-      <text x="630" y="205" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle">Inscrição no CNPJ</text>
-      <text x="190" y="250" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">a empresa nasce</text>
-      <text x="630" y="250" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">entra no cadastro</text>
-    </svg>
-    <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 32px; font-weight: 600; line-height: 1.34;"><b>Constituição</b>: quando a empresa foi criada.<br><b>Inscrição no CNPJ</b>: quando entrou no cadastro da Receita.</span></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+    <div class="rise" style="animation-delay: 0.30s; position: relative; background: #FFFFFF; border-radius: 18px; padding: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.35);">
+      <div style="position: relative; width: 900px; height: 153px;">
+      <img src="/_blob/636bdaaad54e10001afb0ace169fb71a" alt="Campos Data de inscrição no CNPJ e Data de constituição do Modelo I" style="display: block; width: 900px; height: 153px;">
+      <div class="pop glow" style="animation-delay: 0.90s; position: absolute; left: 673px; top: 5px; width: 217px; height: 68px; border: 5px solid #DE3A76; border-radius: 10px;"></div>
+      <div class="pop glow" style="animation-delay: 1.15s; position: absolute; left: 673px; top: 90px; width: 217px; height: 54px; border: 5px solid #DE3A76; border-radius: 10px;"></div>
+      </div>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 24px; color: rgba(255,255,255,0.56);">Recorte do Modelo I · Anexo Único da IN RFB nº 2.345/2026</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div class="rise" style="animation-delay: 1.20s; display: flex; gap: 16px; align-items: center; text-align: left;"><span style="flex: none; width: 16px; height: 16px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 32px; font-weight: 700; letter-spacing: 0.02em;">DATA DE INSCRIÇÃO NO CNPJ</span></div>
+      <div class="rise" style="animation-delay: 1.45s; display: flex; gap: 16px; align-items: center; text-align: left;"><span style="flex: none; width: 16px; height: 16px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 32px; font-weight: 700; letter-spacing: 0.02em;">DATA DE CONSTITUIÇÃO</span></div>
+      </div>
     </div>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
     <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
       <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
       <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
-      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">Banco, fornecedor e licitação costumam pedir o tempo de existência da empresa. Confira qual das duas datas o documento exige.</p>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">As duas aparecem em campos separados, no alto do comprovante. Confira as duas no documento da sua empresa.</p>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>

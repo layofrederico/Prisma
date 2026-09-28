@@ -1,30 +1,25 @@
-📄 O comprovante do CNPJ mudou. Veja o que isso muda para a sua empresa.
+📄 Novo modelo do comprovante do CNPJ: veja o que aparece no documento.
 
-A Receita Federal publicou a IN RFB nº 2.345/2026, que traz um novo modelo do Comprovante de Inscrição e de Situação Cadastral. Está em vigor desde 23/09/2026. 🗓️
+A Receita Federal publicou a Instrução Normativa RFB nº 2.345, de 22/09/2026, no Diário Oficial da União de 23/09/2026. Ela substitui o Anexo III da IN RFB nº 2.119/2022, que é o modelo do Comprovante de Inscrição e de Situação Cadastral, e entra em vigor na data da publicação. 🗓️
 
-👉 Arraste o carrossel e veja o que muda na prática:
+👉 Arraste o carrossel e veja os campos do novo modelo, como publicados no anexo:
 
-🔳 QR Code e código de barras
-O documento ganhou espaço para leitura eletrônica. A norma ainda não diz o que o QR Code vai abrir nem como será a validação; isso depende da implantação pela Receita.
+📅 Duas datas
+No alto do comprovante, em campos separados: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
 
-📅 Duas datas no lugar de uma
-A antiga "data de abertura" deu lugar a dois campos: data de constituição da empresa e data de inscrição no CNPJ. Banco, fornecedor e licitação costumam pedir o tempo de existência da empresa, então vale conferir qual das duas o documento exige.
+🔳 Código QR e código de barras
+No rodapé do comprovante. A IN traz os dois campos no modelo, mas não detalha o que cada código vai conter.
 
-🔤 CNPJ com letras
-Desde 31/07/2026, novas inscrições podem sair no formato alfanumérico. Seu sistema, sua planilha e o cadastro de clientes e fornecedores precisam aceitar letras no CNPJ.
+📑 Dois modelos
+O anexo traz o Modelo I e o Modelo II. O Modelo II inclui NOME DO REPRESENTANTE LEGAL, CPF e QUALIFICAÇÃO, o QUADRO DE SÓCIOS E ADMINISTRADORES e um código de autenticidade, que, segundo o próprio modelo, "pode ser consultado no endereço https://www.redesim.gov.br".
 
-✅ O que NÃO muda
-• Não há recadastramento
-• O número do seu CNPJ continua o mesmo
-• Não é preciso trocar o comprovante já emitido
-
-📌 O que fazer agora
-1️⃣ Ao emitir o comprovante, confira as duas datas e os dados cadastrais
-2️⃣ Teste se seus sistemas aceitam CNPJ com letras
-3️⃣ Achou erro no cadastro? Corrija antes de precisar do documento
+📌 O que conferir
+1️⃣ Ao emitir o comprovante, confira a data de inscrição no CNPJ e a data de constituição
+2️⃣ No Modelo II, confira o representante legal e o quadro de sócios e administradores
+3️⃣ Encontrou divergência? Corrija antes de precisar do documento
 
 💬 Comente CNPJ que a gente confere o cadastro da sua empresa.
 
-Fonte: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), que substitui o Anexo III da IN RFB nº 2.119/2022.
+Fonte: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), art. 1º e Anexo Único.
 
-#cnpj #receitafederal #empresario #contabilidade #palmasto #tocantins #mei #gestaoempresarial
+#cnpj #receitafederal #empresario #contabilidade #palmasto #tocantins #gestaoempresarial

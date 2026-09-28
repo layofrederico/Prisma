@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>O comprovante do CNPJ mudou</title>
+<title>Novo comprovante do CNPJ</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -45,12 +45,9 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .acende { animation: acende 5s ease-in-out infinite; }
 
 @keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
-@keyframes drawOnce { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 @keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(222,58,118,0); } 50% { box-shadow: 0 0 0 10px rgba(222,58,118,0.28); } }
 .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
-.draw { animation: drawOnce 1.2s ease-out both; }
 .glow { animation: glow 2.4s ease-in-out infinite; }
-.chegada { animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 
 </style>
 </helmet>
@@ -60,163 +57,23 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
-    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">RECEITA FEDERAL · IN RFB Nº 2.345/2026</p>
-    <h1 class="rise" style="margin: 0; font-size: 84px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">O comprovante do<br>CNPJ mudou</h1>
+    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">IN RFB Nº 2.345, DE 22/09/2026</p>
+    <h1 class="rise" style="margin: 0; font-size: 80px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Novo modelo do<br>comprovante do CNPJ</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <div class="float" style="transform-origin: center; width: 820px; max-width: 100%;">
-    <div class="rise" style="background: #FFFFFF; color: #01066A; border-radius: 26px; padding: 28px 30px 24px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); display: flex; flex-direction: column; gap: 14px; text-align: left;">
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
-        <div>
-          <div style="font-size: 18px; font-weight: 600; letter-spacing: 0.14em; color: #4A4F8C;">CADASTRO NACIONAL DA PESSOA JURÍDICA</div>
-          <div style="font-size: 27px; font-weight: 800; line-height: 1.15; margin-top: 4px;">Comprovante de Inscrição<br>e de Situação Cadastral</div>
-        </div>
-        <span class="glow" style="flex: none; background: #DE3A76; color: #FFFFFF; font-size: 20px; font-weight: 700; border-radius: 999px; padding: 8px 16px;">NOVO MODELO</span>
-      </div>
-      <div style="display: flex; gap: 12px;"><div class="rise" style="animation-delay: 0.40s; flex: 1; text-align: left; border-radius: 12px; padding: 12px 16px; background: #EEF0FA;"><div style="font-size: 18px; font-weight: 600; letter-spacing: 0.06em; color: #4A4F8C;">NÚMERO DE INSCRIÇÃO</div><div style="font-size: 27px; font-weight: 700; margin-top: 2px;">12.ABC.345/01DE-35</div></div><div class="rise" style="animation-delay: 0.50s; flex: 1; text-align: left; border-radius: 12px; padding: 12px 16px; background: #EEF0FA;"><div style="font-size: 18px; font-weight: 600; letter-spacing: 0.06em; color: #4A4F8C;">SITUAÇÃO CADASTRAL</div><div style="font-size: 27px; font-weight: 700; margin-top: 2px;">ATIVA</div></div></div>
-      <div style="display: flex; gap: 12px;"><div class="rise" style="animation-delay: 0.70s; flex: 1; text-align: left; border-radius: 12px; padding: 12px 16px; background: #FDE7F0; border: 2px solid #DE3A76;"><div style="font-size: 18px; font-weight: 600; letter-spacing: 0.06em; color: #DE3A76;">DATA DE CONSTITUIÇÃO</div><div style="font-size: 27px; font-weight: 700; margin-top: 2px;">20/08/2026</div></div><div class="rise" style="animation-delay: 0.85s; flex: 1; text-align: left; border-radius: 12px; padding: 12px 16px; background: #FDE7F0; border: 2px solid #DE3A76;"><div style="font-size: 18px; font-weight: 600; letter-spacing: 0.06em; color: #DE3A76;">DATA DE INSCRIÇÃO NO CNPJ</div><div style="font-size: 27px; font-weight: 700; margin-top: 2px;">25/08/2026</div></div></div>
-      <div style="display: flex; gap: 18px; align-items: flex-end;">
-        <div style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
-          <div style="height: 14px; border-radius: 7px; background: #EEF0FA; width: 92%;"></div>
-          <div style="height: 14px; border-radius: 7px; background: #EEF0FA; width: 78%;"></div>
-          <div style="height: 14px; border-radius: 7px; background: #EEF0FA; width: 85%;"></div>
-          <svg viewBox="0 0 470 70" width="470" height="70" style="max-width: 100%; margin-top: 6px;" role="img" aria-label="Código de barras ilustrativo"><g class="grow-x" style="animation-delay: 1.60s;"><rect x="0" y="0" width="2" height="70" fill="#01066A"/><rect x="4" y="0" width="2" height="70" fill="#01066A"/><rect x="10" y="0" width="2" height="70" fill="#01066A"/><rect x="15" y="0" width="2" height="70" fill="#01066A"/><rect x="21" y="0" width="6" height="70" fill="#01066A"/><rect x="29" y="0" width="2" height="70" fill="#01066A"/><rect x="33" y="0" width="2" height="70" fill="#01066A"/><rect x="37" y="0" width="4" height="70" fill="#01066A"/><rect x="43" y="0" width="2" height="70" fill="#01066A"/><rect x="48" y="0" width="2" height="70" fill="#01066A"/><rect x="54" y="0" width="3" height="70" fill="#01066A"/><rect x="60" y="0" width="2" height="70" fill="#01066A"/><rect x="64" y="0" width="3" height="70" fill="#01066A"/><rect x="71" y="0" width="4" height="70" fill="#01066A"/><rect x="79" y="0" width="2" height="70" fill="#01066A"/><rect x="85" y="0" width="4" height="70" fill="#01066A"/><rect x="91" y="0" width="4" height="70" fill="#01066A"/><rect x="99" y="0" width="3" height="70" fill="#01066A"/><rect x="104" y="0" width="4" height="70" fill="#01066A"/><rect x="111" y="0" width="6" height="70" fill="#01066A"/><rect x="120" y="0" width="4" height="70" fill="#01066A"/><rect x="126" y="0" width="6" height="70" fill="#01066A"/><rect x="135" y="0" width="6" height="70" fill="#01066A"/><rect x="145" y="0" width="6" height="70" fill="#01066A"/><rect x="155" y="0" width="4" height="70" fill="#01066A"/><rect x="163" y="0" width="6" height="70" fill="#01066A"/><rect x="172" y="0" width="2" height="70" fill="#01066A"/><rect x="176" y="0" width="2" height="70" fill="#01066A"/><rect x="182" y="0" width="4" height="70" fill="#01066A"/><rect x="189" y="0" width="2" height="70" fill="#01066A"/><rect x="193" y="0" width="2" height="70" fill="#01066A"/><rect x="197" y="0" width="3" height="70" fill="#01066A"/><rect x="202" y="0" width="6" height="70" fill="#01066A"/><rect x="212" y="0" width="4" height="70" fill="#01066A"/><rect x="220" y="0" width="3" height="70" fill="#01066A"/><rect x="225" y="0" width="2" height="70" fill="#01066A"/><rect x="231" y="0" width="3" height="70" fill="#01066A"/><rect x="238" y="0" width="4" height="70" fill="#01066A"/><rect x="246" y="0" width="2" height="70" fill="#01066A"/><rect x="251" y="0" width="6" height="70" fill="#01066A"/><rect x="259" y="0" width="2" height="70" fill="#01066A"/><rect x="265" y="0" width="6" height="70" fill="#01066A"/><rect x="275" y="0" width="4" height="70" fill="#01066A"/><rect x="281" y="0" width="6" height="70" fill="#01066A"/><rect x="289" y="0" width="2" height="70" fill="#01066A"/><rect x="294" y="0" width="2" height="70" fill="#01066A"/><rect x="300" y="0" width="6" height="70" fill="#01066A"/><rect x="309" y="0" width="2" height="70" fill="#01066A"/><rect x="315" y="0" width="2" height="70" fill="#01066A"/><rect x="321" y="0" width="3" height="70" fill="#01066A"/><rect x="326" y="0" width="4" height="70" fill="#01066A"/><rect x="332" y="0" width="3" height="70" fill="#01066A"/><rect x="338" y="0" width="2" height="70" fill="#01066A"/><rect x="342" y="0" width="3" height="70" fill="#01066A"/><rect x="347" y="0" width="2" height="70" fill="#01066A"/><rect x="352" y="0" width="4" height="70" fill="#01066A"/><rect x="358" y="0" width="2" height="70" fill="#01066A"/><rect x="362" y="0" width="4" height="70" fill="#01066A"/><rect x="370" y="0" width="2" height="70" fill="#01066A"/><rect x="376" y="0" width="2" height="70" fill="#01066A"/><rect x="382" y="0" width="6" height="70" fill="#01066A"/><rect x="392" y="0" width="3" height="70" fill="#01066A"/><rect x="399" y="0" width="2" height="70" fill="#01066A"/><rect x="404" y="0" width="4" height="70" fill="#01066A"/><rect x="412" y="0" width="3" height="70" fill="#01066A"/><rect x="419" y="0" width="3" height="70" fill="#01066A"/><rect x="424" y="0" width="4" height="70" fill="#01066A"/><rect x="430" y="0" width="6" height="70" fill="#01066A"/><rect x="438" y="0" width="3" height="70" fill="#01066A"/><rect x="445" y="0" width="4" height="70" fill="#01066A"/><rect x="452" y="0" width="3" height="70" fill="#01066A"/><rect x="458" y="0" width="2" height="70" fill="#01066A"/></g></svg>
-        </div>
-        <svg viewBox="0 0 176 176" width="176" height="176" role="img" aria-label="QR Code ilustrativo" style="flex: none;">
-          <rect x="0" y="0" width="176" height="176" rx="10" fill="#FFFFFF"/>
-<rect class="pop" style="animation-delay: 1.10s;" x="68" y="4" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.12s;" x="76" y="4" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.15s;" x="84" y="4" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.12s;" x="68" y="12" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.23s;" x="100" y="12" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.15s;" x="68" y="20" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.20s;" x="84" y="20" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="100" y="20" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.18s;" x="68" y="28" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.20s;" x="76" y="28" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.27s;" x="100" y="28" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.20s;" x="68" y="36" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="84" y="36" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.27s;" x="92" y="36" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="76" y="44" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.27s;" x="84" y="44" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="92" y="44" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.33s;" x="100" y="44" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="68" y="52" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="84" y="52" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.33s;" x="92" y="52" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.38s;" x="100" y="60" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.10s;" x="4" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.12s;" x="12" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.15s;" x="20" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.18s;" x="28" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="52" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.33s;" x="76" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.40s;" x="100" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.45s;" x="116" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="132" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.52s;" x="140" y="68" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.12s;" x="4" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.15s;" x="12" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.18s;" x="20" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="44" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="60" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.33s;" x="68" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.40s;" x="92" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.45s;" x="108" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="156" y="76" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="52" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.38s;" x="76" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.48s;" x="108" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.52s;" x="124" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="132" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.58s;" x="140" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.62s;" x="156" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="164" y="84" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.20s;" x="12" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="28" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="44" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.48s;" x="100" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="108" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="124" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="140" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.62s;" x="148" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="156" y="92" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.23s;" x="12" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.25s;" x="20" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.27s;" x="28" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.30s;" x="36" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.33s;" x="44" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.45s;" x="84" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="100" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="116" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="156" y="100" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.45s;" x="76" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.48s;" x="84" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="108" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="124" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.62s;" x="132" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="140" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="148" y="108" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="84" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.52s;" x="92" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="100" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="116" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.62s;" x="124" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="132" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.70s;" x="148" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.75s;" x="164" y="116" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="76" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="92" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="108" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.70s;" x="140" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.73s;" x="148" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.75s;" x="156" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.77s;" x="164" y="124" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.50s;" x="68" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.58s;" x="92" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="100" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="116" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.70s;" x="132" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.73s;" x="140" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.80s;" x="164" y="132" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="76" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.58s;" x="84" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="92" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="116" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.77s;" x="148" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.83s;" x="164" y="140" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.55s;" x="68" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.58s;" x="76" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.65s;" x="100" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="108" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.70s;" x="116" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.77s;" x="140" y="148" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="100" y="156" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.73s;" x="116" y="156" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.77s;" x="132" y="156" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.88s;" x="164" y="156" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.60s;" x="68" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.68s;" x="92" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.70s;" x="100" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.73s;" x="108" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.75s;" x="116" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.77s;" x="124" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.83s;" x="140" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.88s;" x="156" y="164" width="8" height="8" fill="#01066A"/>
-<rect class="pop" style="animation-delay: 1.90s;" x="164" y="164" width="8" height="8" fill="#01066A"/>
-<g class="pop" style="animation-delay: 0.90s;"><rect x="8" y="8" width="48" height="48" fill="none" stroke="#01066A" stroke-width="8"/><rect x="20" y="20" width="24" height="24" fill="#01066A"/></g>
-<g class="pop" style="animation-delay: 0.90s;"><rect x="120" y="8" width="48" height="48" fill="none" stroke="#01066A" stroke-width="8"/><rect x="132" y="20" width="24" height="24" fill="#01066A"/></g>
-<g class="pop" style="animation-delay: 0.90s;"><rect x="8" y="120" width="48" height="48" fill="none" stroke="#01066A" stroke-width="8"/><rect x="20" y="132" width="24" height="24" fill="#01066A"/></g>
-        </svg>
+    <div class="float">
+    <div class="rise" style="animation-delay: 0.30s; position: relative; background: #FFFFFF; border-radius: 18px; padding: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.35);">
+      <div style="position: relative; width: 436px; height: 615px;">
+      <img src="/_blob/23cf6b0763d4290c886720ddec1ce63f" alt="Modelo I do Comprovante de Inscrição e de Situação Cadastral, Anexo Único da IN RFB nº 2.345/2026" style="display: block; width: 436px; height: 615px;">
+
       </div>
     </div>
     </div>
-    <p style="margin: 14px 0 0; font-size: 22px; color: rgba(255,255,255,0.56);">Ilustração com dados fictícios</p>
+    <p style="margin: 12px 0 0; font-size: 24px; color: rgba(255,255,255,0.56);">Modelo I · Anexo Único da IN RFB nº 2.345/2026</p>
   </div>
   <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
     <div class="rise" style="animation-delay: 1.20s; display: inline-flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 600;">
-      <span class="pulse" style="width: 14px; height: 14px; border-radius: 999px; background: #9FE7C4;"></span>Em vigor desde 23/09/2026</div>
+      <span class="pulse" style="width: 14px; height: 14px; border-radius: 999px; background: #9FE7C4;"></span>Em vigor desde a publicação no DOU, 23/09/2026</div>
     <span class="arraste" style="display: inline-flex; align-items: center; gap: 16px; padding: 12px 30px; border-radius: 999px; border: 2px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.1); font-size: 32px; font-weight: 700; letter-spacing: 0.02em;">Arraste para o lado<span class="nudge" style="font-size: 38px; line-height: 1;">&#8594;</span></span>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>

@@ -1,29 +1,53 @@
 # Post — novo comprovante do CNPJ (IN RFB nº 2.345/2026)
 
-Carrossel de 6 cards 4:5 (1080×1350) no kit visual da Prisma, com animações leves, e legenda para o
-Instagram.
+Carrossel de 6 cards 4:5 (1080×1350) no kit visual da Prisma e legenda para o Instagram. Tudo o que o
+post afirma sai do texto da IN e do seu Anexo Único, publicados no DOU de 23/09/2026. As imagens são
+recortes do anexo oficial, sem redesenho.
 
 | Card | Arquivo | Conteúdo |
 |---|---|---|
-| 01 | `project/Main.dc.html` | Capa: ilustração do novo comprovante (dados fictícios), vigência e "Arraste" |
-| 02 | `project/Mudou.dc.html` | O que mudou: QR Code, código de barras, duas datas, página única |
-| 03 | `project/Datas.dc.html` | "Data de abertura" separada em constituição e inscrição no CNPJ |
-| 04 | `project/Letras.dc.html` | CNPJ alfanumérico, exemplo fictício `12.ABC.345/01DE-35` |
-| 05 | `project/NaoMuda.dc.html` | O que não muda |
-| 06 | `project/Acao.dc.html` | Checklist e chamada "Comente CNPJ" |
+| 01 | `project/Main.dc.html` | Capa: Modelo I inteiro, como publicado, e vigência (art. 2º) |
+| 02 | `project/Datas.dc.html` | Campos DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO (recorte do Modelo I) |
+| 03 | `project/Codigos.dc.html` | Campos CÓDIGO QR e CÓDIGO DE BARRAS (recorte do Modelo I) |
+| 04 | `project/ModeloII.dc.html` | Modelo II: representante legal, quadro de sócios e administradores, código de autenticidade |
+| 05 | `project/Norma.dc.html` | Arts. 1º e 2º transcritos e fundamentos citados na IN |
+| 06 | `project/Acao.dc.html` | O que conferir e chamada "Comente CNPJ" |
 
-- `legenda-instagram.txt`: legenda pronta para colar (1.562 caracteres de 2.200).
-- `gera-cnpj.py`: gera os cards; reaproveita os estilos do gerador do carrossel da dívida pública.
+- `anexo/anexo-modelo1.jpg` e `anexo/anexo-modelo2.jpg`: Modelos I e II do Anexo Único, baixados do DOU.
+- `legenda-instagram.txt`: legenda pronta para colar.
+- `gera-cnpj2.py`: gera os cards; reaproveita os estilos do gerador do carrossel da dívida pública.
 
-## Base normativa e grau de confirmação (posição em 28/09/2026)
+## Texto da norma (DOU de 23/09/2026) [VERIFICADO]
 
-- IN RFB nº 2.345, de 22/09/2026, publicada no DOU de 23/09/2026 (edição extra), vigência na
-  publicação; substitui o Anexo III (modelo do comprovante) da IN RFB nº 2.119/2022.
-- Conteúdo confirmado em três fontes secundárias concordantes (Contábeis, Sitecontabil,
-  MG Contécnica). O texto integral no portal Normas da Receita e no DOU não abriu nesta sessão
-  (acesso bloqueado). Antes de publicar, conferir em `normas.receita.fazenda.gov.br` ou no DOU de
-  23/09/2026.
-- Primeiro CNPJ alfanumérico em 31/07/2026, conforme as mesmas fontes; formato criado pela
-  IN RFB nº 2.229/2024.
-- A norma não informa o que o QR Code vai conter nem como será a validação: o post diz isso de forma
-  explícita, sem supor.
+Fonte: <https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.345-de-22-de-setembro-de-2026-733661854>
+
+> Altera a Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, para adequar o Comprovante de
+> Inscrição e de Situação Cadastral às alterações promovidas no Cadastro Nacional da Pessoa Jurídica.
+>
+> Art. 1º O Anexo III da Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, denominado
+> Comprovante de Inscrição e de Situação Cadastral, fica substituído pelo Anexo Único desta
+> Instrução Normativa.
+>
+> Art. 2º Esta Instrução Normativa entra em vigor na data de sua publicação no Diário Oficial da União.
+
+Fundamentos citados no preâmbulo: art. 350, III, do Regimento Interno da RFB (Portaria ME nº 284/2020);
+Portaria MF nº 220/2026; Lei nº 5.614/1970; art. 59 da LC nº 214/2025; arts. 104 e 105 do Decreto
+nº 12.955/2026.
+
+Anexo Único:
+- **Modelo I**, rodapé "Emitido no dia XX/XX/XXXX às XX:XX:XX (data e hora de Brasília)".
+- **Modelo II**, "Informações vigentes na data da emissão", rodapé "Emitido no dia xx/xx/xxxx às
+  xx:xx:xx (data e hora de Brasília) por <nome do usuário logado> - CPF xxx.xxx.xxx-xx" e "O código
+  pode ser consultado no endereço <https://www.redesim.gov.br>".
+
+## O que ficou fora do post, por não estar na norma
+
+A primeira versão, feita com base em notícias, trazia afirmações que a IN não contém. Todas foram
+retiradas:
+- "data de abertura" substituída;
+- "página única";
+- CNPJ alfanumérico desde 31/07/2026;
+- "não há recadastramento";
+- "o comprovante antigo continua válido".
+
+Algumas notícias também diziam que o Modelo II foi eliminado. O anexo publicado traz o Modelo II.

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>CNPJ com letras</title>
+<title>Código QR e código de barras</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -45,12 +45,9 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .acende { animation: acende 5s ease-in-out infinite; }
 
 @keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
-@keyframes drawOnce { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 @keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(222,58,118,0); } 50% { box-shadow: 0 0 0 10px rgba(222,58,118,0.28); } }
 .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
-.draw { animation: drawOnce 1.2s ease-out both; }
 .glow { animation: glow 2.4s ease-in-out infinite; }
-.chegada { animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 
 </style>
 </helmet>
@@ -60,20 +57,24 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
   </div>
   <div style="width: 100%; margin-top: 34px;">
-    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">CNPJ ALFANUMÉRICO</p>
-    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Novos CNPJs já<br>podem ter letras</h1>
+    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">NO RODAPÉ DO COMPROVANTE</p>
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Código QR e<br>código de barras</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-      <div class="breathe" style="font-size: 82px; font-weight: 800; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; white-space: nowrap;"><span class="pop" style="display: inline-block; animation-delay: 0.30s; color: #FFFFFF;">1</span><span class="pop" style="display: inline-block; animation-delay: 0.37s; color: #FFFFFF;">2</span><span class="pop" style="display: inline-block; animation-delay: 0.44s; color: #FFFFFF;">.</span><span class="pop" style="display: inline-block; animation-delay: 0.51s; color: #DE3A76;">A</span><span class="pop" style="display: inline-block; animation-delay: 0.58s; color: #DE3A76;">B</span><span class="pop" style="display: inline-block; animation-delay: 0.65s; color: #DE3A76;">C</span><span class="pop" style="display: inline-block; animation-delay: 0.72s; color: #FFFFFF;">.</span><span class="pop" style="display: inline-block; animation-delay: 0.79s; color: #FFFFFF;">3</span><span class="pop" style="display: inline-block; animation-delay: 0.86s; color: #FFFFFF;">4</span><span class="pop" style="display: inline-block; animation-delay: 0.93s; color: #FFFFFF;">5</span><span class="pop" style="display: inline-block; animation-delay: 1.00s; color: #FFFFFF;">/</span><span class="pop" style="display: inline-block; animation-delay: 1.07s; color: #FFFFFF;">0</span><span class="pop" style="display: inline-block; animation-delay: 1.14s; color: #FFFFFF;">1</span><span class="pop" style="display: inline-block; animation-delay: 1.21s; color: #DE3A76;">D</span><span class="pop" style="display: inline-block; animation-delay: 1.28s; color: #DE3A76;">E</span><span class="pop" style="display: inline-block; animation-delay: 1.35s; color: #FFFFFF;">-</span><span class="pop" style="display: inline-block; animation-delay: 1.42s; color: #FFFFFF;">3</span><span class="pop" style="display: inline-block; animation-delay: 1.49s; color: #FFFFFF;">5</span></div>
-      <p class="rise" style="margin: 0; font-size: 26px; color: rgba(255,255,255,0.56); animation-delay: 1.60s;">Exemplo fictício · letras em rosa</p>
-      <div style="display: flex; gap: 20px; margin-top: 26px; width: 100%; max-width: 900px;">
-        <div class="rise" style="animation-delay: 1.80s; flex: 1; border: 2px solid rgba(255,255,255,0.26); border-radius: 22px; padding: 24px 22px;">
-          <div style="font-size: 26px; color: rgba(255,255,255,0.78);">Desde</div><div style="font-size: 46px; font-weight: 800;">31/07/2026</div>
-          <div style="font-size: 26px; color: rgba(255,255,255,0.78);">novas inscrições podem sair com letras</div></div>
-        <div class="rise" style="animation-delay: 2.00s; flex: 1; border: 2px solid #9FE7C4; border-radius: 22px; padding: 24px 22px;">
-          <div style="font-size: 26px; color: rgba(255,255,255,0.78);">Quem já tem CNPJ</div><div style="font-size: 46px; font-weight: 800;">não muda</div>
-          <div style="font-size: 26px; color: rgba(255,255,255,0.78);">o número atual continua valendo</div></div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+      <div style="display: flex; flex-direction: column; align-items: center;">
+    <div class="rise" style="animation-delay: 0.30s; position: relative; background: #FFFFFF; border-radius: 18px; padding: 12px; box-shadow: 0 20px 50px rgba(0,0,0,0.35);">
+      <div style="position: relative; width: 900px; height: 194px;">
+      <img src="/_blob/7101ef130cc5bf8775e57d73d439b573" alt="Campos Código QR e Código de barras do Modelo I" style="display: block; width: 900px; height: 194px;">
+      <div class="pop glow" style="animation-delay: 0.90s; position: absolute; left: 7px; top: 7px; width: 255px; height: 180px; border: 5px solid #DE3A76; border-radius: 10px;"></div>
+      <div class="pop glow" style="animation-delay: 1.15s; position: absolute; left: 271px; top: 7px; width: 621px; height: 180px; border: 5px solid #DE3A76; border-radius: 10px;"></div>
+      </div>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 24px; color: rgba(255,255,255,0.56);">Recorte do Modelo I · Anexo Único da IN RFB nº 2.345/2026</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+      <div class="rise" style="animation-delay: 1.20s; display: flex; gap: 16px; align-items: center; text-align: left;"><span style="flex: none; width: 16px; height: 16px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 32px; font-weight: 700; letter-spacing: 0.02em;">CÓDIGO QR</span></div>
+      <div class="rise" style="animation-delay: 1.45s; display: flex; gap: 16px; align-items: center; text-align: left;"><span style="flex: none; width: 16px; height: 16px; border-radius: 999px; background: #DE3A76;"></span><span style="font-size: 32px; font-weight: 700; letter-spacing: 0.02em;">CÓDIGO DE BARRAS</span></div>
       </div>
     </div>
   </div>
@@ -81,7 +82,7 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
     <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
       <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
       <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
-      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">Seu sistema, sua planilha e o cadastro de clientes e fornecedores aceitam letras no CNPJ? Vale testar antes do primeiro cliente novo.</p>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">A IN traz os dois campos no modelo, mas não detalha o que cada código vai conter.</p>
     </div>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
       <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>

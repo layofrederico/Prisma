@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<title>O que fazer agora</title>
+<title>O que conferir</title>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -45,12 +45,9 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
 .acende { animation: acende 5s ease-in-out infinite; }
 
 @keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
-@keyframes drawOnce { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
 @keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(222,58,118,0); } 50% { box-shadow: 0 0 0 10px rgba(222,58,118,0.28); } }
 .pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
-.draw { animation: drawOnce 1.2s ease-out both; }
 .glow { animation: glow 2.4s ease-in-out infinite; }
-.chegada { animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 
 </style>
 </helmet>
@@ -61,21 +58,21 @@ a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
   </div>
   <div style="width: 100%; margin-top: 34px;">
     <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">CHECKLIST</p>
-    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">O que fazer agora</h1>
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">O que conferir</h1>
   </div>
   <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
     <div style="display: flex; flex-direction: column; gap: 30px; width: 100%; max-width: 880px;">
       <div class="rise" style="animation-delay: 0.30s; display: flex; gap: 24px; align-items: center; text-align: left;">
         <span style="flex: none; width: 72px; height: 72px; border-radius: 999px; background: #FFFFFF; color: #01066A; font-size: 38px; font-weight: 800; display: flex; align-items: center; justify-content: center;">1</span>
-        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">Ao emitir o comprovante, confira as duas datas e os dados cadastrais</span>
+        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">Ao emitir o comprovante, confira a data de inscrição no CNPJ e a data de constituição</span>
       </div>
       <div class="rise" style="animation-delay: 0.60s; display: flex; gap: 24px; align-items: center; text-align: left;">
         <span style="flex: none; width: 72px; height: 72px; border-radius: 999px; background: #FFFFFF; color: #01066A; font-size: 38px; font-weight: 800; display: flex; align-items: center; justify-content: center;">2</span>
-        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">Teste se sistemas e planilhas aceitam CNPJ com letras</span>
+        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">No Modelo II, confira o representante legal e o quadro de sócios e administradores</span>
       </div>
       <div class="rise" style="animation-delay: 0.90s; display: flex; gap: 24px; align-items: center; text-align: left;">
         <span style="flex: none; width: 72px; height: 72px; border-radius: 999px; background: #FFFFFF; color: #01066A; font-size: 38px; font-weight: 800; display: flex; align-items: center; justify-content: center;">3</span>
-        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">Achou erro? Corrija antes de precisar do documento</span>
+        <span style="font-size: 34px; font-weight: 600; line-height: 1.3;">Encontrou divergência? Corrija antes de precisar do documento</span>
       </div>
     </div>
     <div class="rise glow" style="animation-delay: 1.30s; margin-top: 44px; background: #FFFFFF; color: #01066A; border-radius: 999px; padding: 24px 48px; font-size: 38px; font-weight: 800;">Comente CNPJ</div>

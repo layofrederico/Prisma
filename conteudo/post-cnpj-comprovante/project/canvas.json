@@ -17,48 +17,48 @@
    "h": 1350,
    "title": "01 · Capa"
   },
-  "Mudou.dc.html": {
+  "Datas.dc.html": {
    "x": 1160,
    "y": 0,
    "w": 1080,
    "h": 1350,
-   "title": "02 · O que mudou"
+   "title": "02 · Duas datas"
   },
-  "Datas.dc.html": {
+  "Codigos.dc.html": {
    "x": 2320,
    "y": 0,
    "w": 1080,
    "h": 1350,
-   "title": "03 · Duas datas"
+   "title": "03 · Código QR e de barras"
   },
-  "Letras.dc.html": {
+  "ModeloII.dc.html": {
    "x": 0,
    "y": 1470,
    "w": 1080,
    "h": 1350,
-   "title": "04 · CNPJ com letras"
+   "title": "04 · Modelo II"
   },
-  "NaoMuda.dc.html": {
+  "Norma.dc.html": {
    "x": 1160,
    "y": 1470,
    "w": 1080,
    "h": 1350,
-   "title": "05 · O que não muda"
+   "title": "05 · O que diz a IN"
   },
   "Acao.dc.html": {
    "x": 2320,
    "y": 1470,
    "w": 1080,
    "h": 1350,
-   "title": "06 · O que fazer"
+   "title": "06 · O que conferir"
   }
  },
  "order": [
   "Main.dc.html",
-  "Mudou.dc.html",
   "Datas.dc.html",
-  "Letras.dc.html",
-  "NaoMuda.dc.html",
+  "Codigos.dc.html",
+  "ModeloII.dc.html",
+  "Norma.dc.html",
   "Acao.dc.html"
  ],
  "notes": {},
