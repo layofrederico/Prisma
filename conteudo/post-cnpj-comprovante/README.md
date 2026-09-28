@@ -27,24 +27,21 @@ Sequência de dois stories para levar ao Reel:
 
 ## Reel
 
-`reel-cnpj.py` gera `reel-cnpj.mp4` (1080×1920, sem voz): cada card entra com a legenda na tela e a
-vinheta da Prisma fecha o vídeo. Reaproveita `converte.py` e `monta-video.py` do Reel da dívida
-pública; no Reel o "Arraste para o lado" sai.
+`reel-cnpj.py` gera `reel-cnpj.mp4` (1080×1920, 64,9 s) e `reel-cnpj.srt`. Cada card dura o tempo da
+sua fala (2,5 palavras/s) + 0,4 s de entrada + 1,0 s de respiro, com mínimo de 5 s. A fala aparece na
+tela e vai para o SRT com os mesmos tempos. A vinheta da Prisma fecha o vídeo.
 
-| Card | Dura (s) | Legenda na tela |
-|---|---|---|
-| 01 Capa | 8,0 | A Receita publicou um novo modelo do comprovante do CNPJ. |
-| 02 Antes e depois | 11,0 | A data de abertura virou duas: inscrição no CNPJ e constituição. |
-| 03 Códigos | 8,0 | No rodapé, código QR e código de barras. |
-| 04 Modelo II | 11,0 | O Modelo II inclui representante legal, sócios e código de autenticidade. |
-| 05 Texto da IN | 13,0 | A IN RFB nº 2.345/2026 vale desde 23/09/2026. |
-| 06 O que conferir | 10,0 | Salve e confira o comprovante da sua empresa. |
-| Vinheta (fusão 0,5 s) | 6,1 | — |
-| **Total** | **66,6** | |
-
-- `anexo/anexo-modelo1.jpg` e `anexo/anexo-modelo2.jpg`: Modelos I e II do Anexo Único, baixados do DOU.
-- `legenda-instagram.txt`: legenda pronta para colar.
-- `gera-cnpj2.py`: gera os cards; reaproveita os estilos do gerador do carrossel da dívida pública.
+| # | Card | Card (s) | Fala no SRT (s) |
+|---|---|---|---|
+| 1 | Capa com o Modelo I | 0,0–5,9 | 0,4–4,8 |
+| 2 | Antes e depois | 5,9–14,9 | 6,3–13,9 |
+| 3 | Código QR e de barras | 14,9–23,9 | 15,3–22,9 |
+| 4 | Modelo II | 23,9–30,9 | 24,3–29,9 |
+| 5 | Texto da IN | 30,9–38,7 | 31,3–37,7 |
+| 6 | O que a IN não exige | 38,7–45,3 | 39,1–44,3 |
+| 7 | Cadastro único da reforma | 45,3–51,5 | 45,7–50,5 |
+| 8 | O que conferir | 51,5–59,3 | 51,9–58,3 |
+| — | Vinheta (fusão de 0,5 s) | 58,8–64,9 | — |
 
 ## Texto da norma (DOU de 23/09/2026) [VERIFICADO]
 

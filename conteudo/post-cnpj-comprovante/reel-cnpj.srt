@@ -1,0 +1,31 @@
+1
+00:00:00,400 --> 00:00:04,800
+A Receita Federal publicou um novo modelo do comprovante do CNPJ.
+
+2
+00:00:06,300 --> 00:00:13,900
+No lugar da data de abertura, agora aparecem duas datas: a de inscrição no CNPJ e a de constituição.
+
+3
+00:00:15,300 --> 00:00:22,900
+No rodapé, entram código QR e código de barras. A norma ainda não detalha o que eles vão conter.
+
+4
+00:00:24,300 --> 00:00:29,900
+O Modelo II traz também representante legal, quadro de sócios e código de autenticidade.
+
+5
+00:00:31,300 --> 00:00:37,700
+A Instrução Normativa 2.345 tem só dois artigos e vale desde 23 de setembro de 2026.
+
+6
+00:00:39,100 --> 00:00:44,300
+Ela só troca o modelo. Não cria recadastramento, prazo, taxa nem obrigação nova.
+
+7
+00:00:45,700 --> 00:00:50,500
+E cita o cadastro único da reforma tributária: CPF, CNPJ e CIB.
+
+8
+00:00:51,900 --> 00:00:58,300
+Na próxima emissão, confira as duas datas e os dados da sua empresa. Salve este post.
