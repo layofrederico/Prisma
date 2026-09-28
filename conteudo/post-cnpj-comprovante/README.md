@@ -7,7 +7,7 @@ recortes do anexo oficial, sem redesenho.
 | Card | Arquivo | Conteúdo |
 |---|---|---|
 | 01 | `project/Main.dc.html` | Capa: Modelo I inteiro, como publicado, e vigência (art. 2º) |
-| 02 | `project/Datas.dc.html` | Campos DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO (recorte do Modelo I) |
+| 02 | `project/Datas.dc.html` | Antes e depois: DATA DE ABERTURA (Anexo III original da IN RFB nº 2.119/2022) → DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO (IN RFB nº 2.345/2026) |
 | 03 | `project/Codigos.dc.html` | Campos CÓDIGO QR e CÓDIGO DE BARRAS (recorte do Modelo I) |
 | 04 | `project/ModeloII.dc.html` | Modelo II: representante legal, quadro de sócios e administradores, código de autenticidade |
 | 05 | `project/Norma.dc.html` | Arts. 1º e 2º transcritos e fundamentos citados na IN |
@@ -71,9 +71,9 @@ Anexo Único:
 
 ## O que ficou fora do post, por não estar na norma
 
-A primeira versão, feita com base em notícias, trazia afirmações que a IN não contém. Todas foram
-retiradas:
-- "data de abertura" substituída;
+A primeira versão, feita com base em notícias, trazia afirmações que a IN não contém. Foram
+retiradas (a troca da "data de abertura" voltou depois, confirmada pela comparação com o Anexo III
+original publicado no DOU; ver abaixo):
 - "página única";
 - CNPJ alfanumérico desde 31/07/2026;
 - "não há recadastramento";

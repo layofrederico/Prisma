@@ -8,7 +8,7 @@ Art. 2º "Esta Instrução Normativa entra em vigor na data de sua publicação 
 
 O que o Anexo Único traz, com os nomes dos campos como publicados:
 
-📌 Duas datas em campos separados, no alto do comprovante: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
+📌 Onde o modelo anterior (Anexo III original da IN RFB nº 2.119/2022) trazia DATA DE ABERTURA, o novo traz dois campos separados: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
 
 📌 CÓDIGO QR e CÓDIGO DE BARRAS no rodapé. A IN não detalha o que cada código vai conter.
 

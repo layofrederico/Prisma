@@ -4,8 +4,8 @@ A Receita Federal publicou a Instrução Normativa RFB nº 2.345, de 22/09/2026,
 
 👉 Arraste o carrossel e veja os campos do novo modelo, como publicados no anexo:
 
-📅 Duas datas
-No alto do comprovante, em campos separados: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
+📅 A data de abertura virou duas datas
+No modelo anterior (IN RFB nº 2.119/2022), o alto do comprovante tinha o campo DATA DE ABERTURA. No novo, são dois campos separados: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
 
 🔳 Código QR e código de barras
 No rodapé do comprovante. A IN traz os dois campos no modelo, mas não detalha o que cada código vai conter.

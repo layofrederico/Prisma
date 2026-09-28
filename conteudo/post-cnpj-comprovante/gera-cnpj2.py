@@ -73,24 +73,35 @@ pagina("Main.dc.html", "Novo comprovante do CNPJ",
       <span class="pulse" style="width: 14px; height: 14px; border-radius: 999px; background: #9FE7C4;"></span>Em vigor desde a publicação no DOU, 23/09/2026</div>
 %s''' % (atraso(1.2), ARRASTE))
 
-# ================= 02 · As duas datas =================
-pagina("Datas.dc.html", "Duas datas",
-    kicker("NO TOPO DO COMPROVANTE") + "\n" + h1("Duas datas,<br>lado a lado"),
-    '''    <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-      <div style="display: flex; flex-direction: column; align-items: center;">
+# ================= 02 · Antes e depois das datas =================
+C_2022 = "/_blob/dc006f1fe22dca44823c727835b63f07"   # Modelo I original, IN RFB nº 2.119/2022 (DOU de 08/12/2022)
+def selo(txt, cor, d):
+    return ('      <div class="rise" style="%s align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; '
+            'font-size: 26px; font-weight: 700; letter-spacing: 0.12em; color: %s;">'
+            '<span style="width: 14px; height: 14px; border-radius: 999px; background: %s;"></span>%s</div>' % (atraso(d), cor, cor, txt))
+K1, K2 = 860 / 942, 860 / 1000
+pagina("Datas.dc.html", "Antes e depois",
+    kicker("ANTES E DEPOIS") + "\n" + h1("A data de abertura<br>virou duas datas"),
+    '''    <div style="display: flex; flex-direction: column; gap: 14px; width: 884px; margin-top: 18px;">
+%s
+%s
+      <div style="height: 16px;"></div>
+%s
+%s
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 18px;">
 %s
 %s
       </div>
-      <div style="display: flex; flex-direction: column; gap: 18px;">
-%s
-%s
-      </div>
-    </div>''' % (recorte(C_DATAS, 900, 153, "Campos Data de inscrição no CNPJ e Data de constituição do Modelo I",
-                         marcas=[(int(748 * E), int(6 * E), int(242 * E), int(76 * E)),
-                                 (int(748 * E), int(100 * E), int(242 * E), int(60 * E))]),
-                 legenda_img("Recorte do Modelo I · " + REF),
-                 rotulo("DATA DE INSCRIÇÃO NO CNPJ", 1.2), rotulo("DATA DE CONSTITUIÇÃO", 1.45)),
-    explica("As duas aparecem em campos separados, no alto do comprovante. Confira as duas no documento da sua empresa."))
+    </div>''' % (selo("ANTES · IN RFB Nº 2.119/2022", SOFT, 0.2),
+                 recorte(C_2022, 860, 130, "Campo Data de abertura do Modelo I original, IN RFB nº 2.119/2022", d=0.3,
+                         marcas=[(int(682 * K1), int(4 * K1), int(258 * K1), int(70 * K1))]),
+                 selo("AGORA · IN RFB Nº 2.345/2026", "#9FE7C4", 0.9),
+                 recorte(C_DATAS, 860, 146, "Campos Data de inscrição no CNPJ e Data de constituição do novo Modelo I", d=1.0,
+                         marcas=[(int(748 * K2), int(6 * K2), int(242 * K2), int(76 * K2)),
+                                 (int(748 * K2), int(100 * K2), int(242 * K2), int(60 * K2))]),
+                 rotulo("DATA DE ABERTURA &#8594; DATA DE INSCRIÇÃO NO CNPJ", 1.7),
+                 rotulo("NOVO CAMPO: DATA DE CONSTITUIÇÃO", 1.95)),
+    explica("Recortes do Modelo I: Anexo III original da IN RFB nº 2.119/2022 e Anexo Único da IN RFB nº 2.345/2026, ambos do DOU."))
 
 # ================= 03 · Código QR e código de barras =================
 pagina("Codigos.dc.html", "Código QR e código de barras",
