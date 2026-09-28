@@ -35,3 +35,14 @@ direitos autorais antes de publicar.
 - **Blocos repetidos:** 3 compassos cada, com um de 2 compassos para acertar o tempo.
   - CNPJ: 4 blocos de 3 e 1 de 2; a trilha entra em 1,51 s.
   - Dívida: 7 blocos de 3 e 1 de 2; a trilha entra em 0,15 s.
+
+## Versão 3 (em uso): sem nenhuma emenda
+
+`mixcont.py` usa **um trecho contínuo da faixa**, sem cortes, repetições nem sobreposições. O trecho
+termina com a pancada final (274,881 s) na entrada da vinheta e começa onde a duração do Reel manda.
+O trecho de 4:14 fica sempre no fim do Reel, com as teclas na última página.
+
+| Reel | Trecho da faixa | 4:14 entra em | Última página (teclas finais) |
+|---|---|---|---|
+| CNPJ | 3:36,1 a 4:35,2 | 37,9 s | 52,1 s a 58,8 s |
+| Dívida | 3:12,4 a 4:35,2 | 61,6 s | 71,3 s a 82,5 s |
