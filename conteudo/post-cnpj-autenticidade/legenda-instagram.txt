@@ -1,0 +1,25 @@
+🔐 Código de autenticidade do CNPJ: o que é e como conferir.
+
+O comprovante do CNPJ tem dois modelos, e os dois estão no Anexo Único da IN RFB nº 2.345/2026 (DOU de 23/09/2026). Só o Modelo II traz o código de autenticidade.
+
+👉 Arraste o carrossel:
+
+📍 Onde ele aparece
+Na última linha do Modelo II: "Código de autenticidade". O próprio modelo diz: "O código pode ser consultado no endereço https://www.redesim.gov.br".
+
+👥 O que mais vem no Modelo II
+NOME DO REPRESENTANTE LEGAL, CPF e QUALIFICAÇÃO, e o QUADRO DE SÓCIOS E ADMINISTRADORES. O rodapé registra quem emitiu, com nome e CPF, e o documento traz "Informações vigentes na data da emissão".
+
+✅ Como conferir
+No gov.br: Empresas e Negócios › Redesim › Validar Comprovantes › Validar Comprovante de Inscrição.
+
+📌 Na prática
+1️⃣ Recebeu o comprovante de um fornecedor ou parceiro? Peça o que tem código de autenticidade
+2️⃣ Confira o código na Redesim antes de fechar contrato ou cadastrar o fornecedor
+3️⃣ Vai enviar o da sua empresa? Na Redesim, use "Emitir Comprovante de Inscrição com Código de Autenticidade"
+
+🔖 Salve este post para usar na próxima conferência.
+
+Fontes: Anexo Único da IN RFB nº 2.345/2026; art. 10 da IN RFB nº 2.119/2022; Redesim (gov.br).
+
+#cnpj #receitafederal #redesim #empresario #contabilidade #palmasto #tocantins
