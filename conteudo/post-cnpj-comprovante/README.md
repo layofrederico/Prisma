@@ -13,6 +13,18 @@ recortes do anexo oficial, sem redesenho.
 | 05 | `project/Norma.dc.html` | Arts. 1º e 2º transcritos e fundamentos citados na IN |
 | 06 | `project/Acao.dc.html` | O que conferir e chamada "Salve este post" |
 
+## Story com enquete (pasta `story/`)
+
+Sequência de dois stories para levar ao Reel:
+
+1. `story-cnpj.mp4` (10 s, animado) ou `story-cnpj.png` (estático), 1080×1920: pergunta "Você já viu o
+   novo comprovante do CNPJ?", o Modelo I do anexo e uma área livre para a enquete do Instagram
+   ("Sim, já vi" / "Ainda não"). `story-cnpj-guia.png` mostra onde encaixar a enquete e não deve ser
+   publicado. As faixas de 0 a 220 px e de 1720 a 1920 px ficam livres para a interface do Instagram.
+2. O próprio Reel compartilhado no story (avião de papel → Adicionar ao story).
+
+`story-cnpj.html` é a página de origem; renderizada pelo `renderiza.js` do pipeline de vídeo.
+
 ## Reel
 
 `reel-cnpj.py` gera `reel-cnpj.mp4` (1080×1920, sem voz): cada card entra com a legenda na tela e a
