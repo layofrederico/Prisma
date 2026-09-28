@@ -1,0 +1,30 @@
+📄 O comprovante do CNPJ mudou. Veja o que isso muda para a sua empresa.
+
+A Receita Federal publicou a IN RFB nº 2.345/2026, que traz um novo modelo do Comprovante de Inscrição e de Situação Cadastral. Está em vigor desde 23/09/2026. 🗓️
+
+👉 Arraste o carrossel e veja o que muda na prática:
+
+🔳 QR Code e código de barras
+O documento ganhou espaço para leitura eletrônica. A norma ainda não diz o que o QR Code vai abrir nem como será a validação; isso depende da implantação pela Receita.
+
+📅 Duas datas no lugar de uma
+A antiga "data de abertura" deu lugar a dois campos: data de constituição da empresa e data de inscrição no CNPJ. Banco, fornecedor e licitação costumam pedir o tempo de existência da empresa, então vale conferir qual das duas o documento exige.
+
+🔤 CNPJ com letras
+Desde 31/07/2026, novas inscrições podem sair no formato alfanumérico. Seu sistema, sua planilha e o cadastro de clientes e fornecedores precisam aceitar letras no CNPJ.
+
+✅ O que NÃO muda
+• Não há recadastramento
+• O número do seu CNPJ continua o mesmo
+• Não é preciso trocar o comprovante já emitido
+
+📌 O que fazer agora
+1️⃣ Ao emitir o comprovante, confira as duas datas e os dados cadastrais
+2️⃣ Teste se seus sistemas aceitam CNPJ com letras
+3️⃣ Achou erro no cadastro? Corrija antes de precisar do documento
+
+💬 Comente CNPJ que a gente confere o cadastro da sua empresa.
+
+Fonte: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), que substitui o Anexo III da IN RFB nº 2.119/2022.
+
+#cnpj #receitafederal #empresario #contabilidade #palmasto #tocantins #mei #gestaoempresarial

@@ -1,0 +1,66 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-09-28T12:05:00Z"
+ },
+ "title": "Novo comprovante do CNPJ",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "01 · Capa"
+  },
+  "Mudou.dc.html": {
+   "x": 1160,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "02 · O que mudou"
+  },
+  "Datas.dc.html": {
+   "x": 2320,
+   "y": 0,
+   "w": 1080,
+   "h": 1350,
+   "title": "03 · Duas datas"
+  },
+  "Letras.dc.html": {
+   "x": 0,
+   "y": 1470,
+   "w": 1080,
+   "h": 1350,
+   "title": "04 · CNPJ com letras"
+  },
+  "NaoMuda.dc.html": {
+   "x": 1160,
+   "y": 1470,
+   "w": 1080,
+   "h": 1350,
+   "title": "05 · O que não muda"
+  },
+  "Acao.dc.html": {
+   "x": 2320,
+   "y": 1470,
+   "w": 1080,
+   "h": 1350,
+   "title": "06 · O que fazer"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Mudou.dc.html",
+  "Datas.dc.html",
+  "Letras.dc.html",
+  "NaoMuda.dc.html",
+  "Acao.dc.html"
+ ],
+ "notes": {},
+ "designSystems": []
+}

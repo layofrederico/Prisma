@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Duas datas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body { margin: 0; background: #01066A; }
+a { color: #FFFFFF; } a:hover { color: #8ED1F5; }
+
+@keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(1.3); } }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@keyframes floatY { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes flowDash { to { stroke-dashoffset: -40; } }
+@keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+@keyframes nudgeX { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(14px); } }
+.rise { animation: riseIn 0.85s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+@keyframes growXOnce { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes growYOnce { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes fadeInOnce { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cutOnce { from { stroke-dashoffset: 300; opacity: 0; } to { stroke-dashoffset: 0; opacity: 1; } }
+.grow-x { transform-box: fill-box; transform-origin: left center; animation: growXOnce 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.grow-y { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 1.4s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.grow-y-fast { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 0.9s cubic-bezier(0.16, 0.9, 0.3, 1) both; }
+.grow-y-slow { transform-box: fill-box; transform-origin: bottom center; animation: growYOnce 2.4s cubic-bezier(0.5, 0.2, 0.5, 1) both; }
+.pulse { animation: pulseDot 2.2s ease-in-out infinite; }
+.blink { animation: blink 1.6s ease-in-out infinite; }
+.float { animation: floatY 4.5s ease-in-out infinite; }
+.flow { stroke-dasharray: 10 10; animation: flowDash 1.3s linear infinite; }
+.cycle { animation: fadeInOnce 0.7s ease-out 1.2s both; }
+.breathe { animation: breathe 3.4s ease-in-out infinite; }
+.nudge { animation: nudgeX 1.6s ease-in-out infinite; }
+.cut { stroke-dasharray: 300; animation: cutOnce 1.1s ease-out 1s both; }
+@keyframes holofote { 0%, 100% { opacity: 0.5; transform: scale(0.95); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes varre { 0%, 8% { transform: translateX(-130%) skewX(-14deg); } 58%, 100% { transform: translateX(130%) skewX(-14deg); } }
+@keyframes acende { 0%, 100% { text-shadow: 0 0 22px rgba(255,255,255,0.18); } 50% { text-shadow: 0 0 34px rgba(255,255,255,0.42); } }
+.spot { animation: holofote 5s ease-in-out infinite; }
+.sweep { animation: varre 5s cubic-bezier(0.4, 0, 0.3, 1) infinite; }
+.acende { animation: acende 5s ease-in-out infinite; }
+
+@keyframes popIn { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: scale(1); } }
+@keyframes drawOnce { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+@keyframes glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(222,58,118,0); } 50% { box-shadow: 0 0 0 10px rgba(222,58,118,0.28); } }
+.pop { transform-box: fill-box; transform-origin: center; animation: popIn 0.45s cubic-bezier(0.2, 0.8, 0.3, 1.2) both; }
+.draw { animation: drawOnce 1.2s ease-out both; }
+.glow { animation: glow 2.4s ease-in-out infinite; }
+.chegada { animation: riseIn 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+
+</style>
+</helmet>
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; padding: 58px 80px 52px; background: #01066A; color: #FFFFFF; font-family: 'Poppins', system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; text-align: center;">
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+    <span style="font-size: 24px; font-weight: 600; letter-spacing: 0.44em;">PRISMA CONTÁBIL</span>
+    <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+  </div>
+  <div style="width: 100%; margin-top: 34px;">
+    <p style="margin: 0 0 14px; font-size: 27px; font-weight: 600; letter-spacing: 0.26em; color: rgba(255,255,255,0.56);">DATA DE ABERTURA</p>
+    <h1 class="rise" style="margin: 0; font-size: 76px; font-weight: 700; line-height: 1.06; letter-spacing: -0.02em;">Onde havia uma data,<br>agora são duas</h1>
+  </div>
+  <div style="flex-grow: 1; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 26px;">
+      <div class="rise" style="display: inline-flex; align-items: center; gap: 18px; font-size: 32px; font-weight: 600; color: rgba(255,255,255,0.78);">
+        <span style="text-decoration: line-through; text-decoration-color: #DE3A76; text-decoration-thickness: 4px;">Data de abertura</span>
+        <span class="nudge" style="font-size: 36px;">&#8594;</span><span style="color: #FFFFFF;">separada em duas</span></div>
+    <svg viewBox="0 0 820 280" width="820" height="280" role="img" xmlns="http://www.w3.org/2000/svg">
+      <line x1="190" y1="120" x2="630" y2="120" stroke="rgba(255,255,255,0.14)" stroke-width="6" stroke-linecap="round"/>
+      <line class="draw" style="--len: 440; stroke-dasharray: 440; animation-delay: .6s;" x1="190" y1="120" x2="630" y2="120" stroke="#8ED1F5" stroke-width="6" stroke-linecap="round"/>
+      <circle class="pop" style="animation-delay: .4s;" cx="190" cy="120" r="26" fill="#DE3A76"/>
+      <circle class="pop" style="animation-delay: 1.7s;" cx="630" cy="120" r="26" fill="#8ED1F5"/>
+      <circle class="pulse" cx="190" cy="120" r="10" fill="#FFFFFF"/>
+      <circle class="pulse" style="animation-delay: .6s;" cx="630" cy="120" r="10" fill="#01066A"/>
+      <text x="190" y="205" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle">Constituição</text>
+      <text x="630" y="205" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#FFFFFF" text-anchor="middle">Inscrição no CNPJ</text>
+      <text x="190" y="250" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">a empresa nasce</text>
+      <text x="630" y="250" font-family="Poppins, sans-serif" font-size="28" font-weight="500" fill="rgba(255,255,255,0.78)" text-anchor="middle">entra no cadastro</text>
+    </svg>
+    <div class="rise" style="max-width: 860px; background: #FFFFFF; color: #01066A; border: none; border-radius: 22px; padding: 26px 40px;"><span style="font-size: 32px; font-weight: 600; line-height: 1.34;"><b>Constituição</b>: quando a empresa foi criada.<br><b>Inscrição no CNPJ</b>: quando entrou no cadastro da Receita.</span></div>
+    </div>
+  </div>
+  <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+    <div style="position: relative; max-width: 880px; margin: 24px auto 0; padding: 24px 38px; overflow: hidden; border-radius: 28px;">
+      <div class="spot" style="position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 45%, rgba(255,255,255,0) 72%); filter: blur(10px); pointer-events: none;"></div>
+      <div class="sweep" style="position: absolute; top: -20%; left: 0; width: 34%; height: 140%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.20) 50%, rgba(255,255,255,0) 100%); filter: blur(14px); pointer-events: none;"></div>
+      <p class="acende" style="position: relative; margin: 0; font-size: 32px; font-weight: 500; line-height: 1.45; color: #FFFFFF;">Banco, fornecedor e licitação costumam pedir o tempo de existência da empresa. Confira qual das duas datas o documento exige.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 6px;">
+      <div style="width: 169px; height: 9px; border-radius: 999px; background: linear-gradient(90deg, #F5A3C7 0%, #F7DE8B 34%, #9FE7C4 66%, #8ED1F5 100%);"></div>
+      <span style="font-size: 36px; font-weight: 600;">@prismacontabilto</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1080,"height":1350}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
