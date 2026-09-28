@@ -11,7 +11,24 @@ recortes do anexo oficial, sem redesenho.
 | 03 | `project/Codigos.dc.html` | Campos CÓDIGO QR e CÓDIGO DE BARRAS (recorte do Modelo I) |
 | 04 | `project/ModeloII.dc.html` | Modelo II: representante legal, quadro de sócios e administradores, código de autenticidade |
 | 05 | `project/Norma.dc.html` | Arts. 1º e 2º transcritos e fundamentos citados na IN |
-| 06 | `project/Acao.dc.html` | O que conferir e chamada "Comente CNPJ" |
+| 06 | `project/Acao.dc.html` | O que conferir e chamada "Salve este post" |
+
+## Reel
+
+`reel-cnpj.py` gera `reel-cnpj.mp4` (1080×1920, sem voz): cada card entra com a legenda na tela e a
+vinheta da Prisma fecha o vídeo. Reaproveita `converte.py` e `monta-video.py` do Reel da dívida
+pública; no Reel o "Arraste para o lado" sai.
+
+| Card | Dura (s) | Legenda na tela |
+|---|---|---|
+| 01 Capa | 8,0 | A Receita publicou um novo modelo do comprovante do CNPJ. |
+| 02 Duas datas | 9,0 | Ele traz a data de inscrição no CNPJ e a data de constituição. |
+| 03 Códigos | 8,0 | No rodapé, código QR e código de barras. |
+| 04 Modelo II | 11,0 | O Modelo II inclui representante legal, sócios e código de autenticidade. |
+| 05 Texto da IN | 13,0 | A IN RFB nº 2.345/2026 vale desde 23/09/2026. |
+| 06 O que conferir | 10,0 | Salve e confira o comprovante da sua empresa. |
+| Vinheta (fusão 0,5 s) | 6,1 | — |
+| **Total** | **64,6** | |
 
 - `anexo/anexo-modelo1.jpg` e `anexo/anexo-modelo2.jpg`: Modelos I e II do Anexo Único, baixados do DOU.
 - `legenda-instagram.txt`: legenda pronta para colar.

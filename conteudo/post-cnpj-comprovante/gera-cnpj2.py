@@ -159,8 +159,8 @@ pagina("Acao.dc.html", "O que conferir",
 %s
 %s
     </div>
-    <div class="rise glow" style="%s margin-top: 44px; background: %s; color: %s; border-radius: 999px; padding: 24px 48px; font-size: 38px; font-weight: 800;">Comente CNPJ</div>
-    <p class="rise" style="%s margin: 16px 0 0; font-size: 30px; color: %s;">e a gente confere o cadastro da sua empresa</p>''' % (
+    <div class="rise glow" style="%s margin-top: 44px; background: %s; color: %s; border-radius: 999px; padding: 24px 48px; font-size: 38px; font-weight: 800;">Salve este post</div>
+    <p class="rise" style="%s margin: 16px 0 0; font-size: 30px; color: %s;">e confira quando emitir o comprovante</p>''' % (
         passo(1, "Ao emitir o comprovante, confira a data de inscrição no CNPJ e a data de constituição", 0.3),
         passo(2, "No Modelo II, confira o representante legal e o quadro de sócios e administradores", 0.6),
         passo(3, "Encontrou divergência? Corrija antes de precisar do documento", 0.9),
