@@ -1,0 +1,25 @@
+A Receita Federal publicou um novo modelo do Comprovante de Inscrição e de Situação Cadastral do CNPJ. É o documento que costuma ser pedido por bancos, clientes e órgãos públicos.
+
+A Instrução Normativa RFB nº 2.345, de 22/09/2026, publicada no DOU de 23/09/2026, tem dois artigos:
+
+Art. 1º "O Anexo III da Instrução Normativa RFB nº 2.119, de 6 de dezembro de 2022, denominado Comprovante de Inscrição e de Situação Cadastral, fica substituído pelo Anexo Único desta Instrução Normativa."
+
+Art. 2º "Esta Instrução Normativa entra em vigor na data de sua publicação no Diário Oficial da União."
+
+O que o Anexo Único traz, com os nomes dos campos como publicados:
+
+📌 Duas datas em campos separados, no alto do comprovante: DATA DE INSCRIÇÃO NO CNPJ e DATA DE CONSTITUIÇÃO.
+
+📌 CÓDIGO QR e CÓDIGO DE BARRAS no rodapé. A IN não detalha o que cada código vai conter.
+
+📌 Dois modelos. O Modelo II inclui NOME DO REPRESENTANTE LEGAL, CPF e QUALIFICAÇÃO, o QUADRO DE SÓCIOS E ADMINISTRADORES e um código de autenticidade que, segundo o próprio modelo, "pode ser consultado no endereço https://www.redesim.gov.br".
+
+Na prática, vale incluir na rotina do cadastro: ao emitir o comprovante, conferir as duas datas e, no Modelo II, o representante legal e o quadro de sócios e administradores. Divergência encontrada antes de o documento ser exigido dá tempo de corrigir sem atrasar contrato, crédito ou licitação.
+
+Entre os fundamentos citados na IN estão a Lei nº 5.614/1970, o art. 59 da LC nº 214/2025, os arts. 104 e 105 do Decreto nº 12.955/2026 e a Portaria MF nº 220/2026.
+
+No vídeo, os campos aparecem em recortes do anexo publicado no Diário Oficial.
+
+Fonte: IN RFB nº 2.345, de 22/09/2026 (DOU de 23/09/2026), arts. 1º e 2º e Anexo Único.
+
+#Contabilidade #ReceitaFederal #CNPJ
